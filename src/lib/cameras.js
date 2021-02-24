@@ -76,7 +76,7 @@ export function initCameras (inspector) {
     }
     Events.emit('cameratoggle', {camera: inspector.camera, value: `ortho${dir}`});
   });
-
+  Events.emit('cameraorthographictoggle','top')
   return inspector.cameras;
 };
 

@@ -4,13 +4,11 @@ var classNames = require('classnames');
 import Select from 'react-select';
 
 const options = [
-  { value: 'perspective', event: 'cameraperspectivetoggle', payload: null, label: 'Perspective' },
+  { value: 'orthotop', event: 'cameraorthographictoggle', payload: 'top', label: 'Plan View (Top)' },
+  { value: 'orthofront', event: 'cameraorthographictoggle', payload: 'front', label: 'Outbound View (Front)' },
+  { value: 'orthoback', event: 'cameraorthographictoggle', payload: 'back', label: 'Inbound View (Back)' },
   { value: 'ortholeft', event: 'cameraorthographictoggle', payload: 'left', label: 'Left View' },
   { value: 'orthoright', event: 'cameraorthographictoggle', payload: 'right', label: 'Right View' },
-  { value: 'orthotop', event: 'cameraorthographictoggle', payload: 'top', label: 'Top View' },
-  { value: 'orthobottom', event: 'cameraorthographictoggle', payload: 'bottom', label: 'Bottom View' },
-  { value: 'orthoback', event: 'cameraorthographictoggle', payload: 'back', label: 'Back View' },
-  { value: 'orthofront', event: 'cameraorthographictoggle', payload: 'front', label: 'Front View' },
 ];
 
 function getOption (value) {
@@ -21,7 +19,7 @@ export default class CameraToolbar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      selectedCamera: 'perspective'
+      selectedCamera: 'orthotop'
     };
     this.justChangedCamera = false;
   }
