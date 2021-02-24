@@ -1,7 +1,7 @@
 {
   "name": "3dstreet-editor",
   "version": "1.2.0",
-  "description": "An editor for 3DStreet.com based on the A-Frame Inspector",
+  "description": "An editor for 3DStreet.co based on the A-Frame Inspector",
   "main": "dist/3dstreet-editor.min.js",
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --progress --colors",
