@@ -1,8 +1,8 @@
-# A-Frame Inspector
+# 3DStreet Editor (fork from [A-Frame Inspector](https://github.com/aframevr/aframe-inspector/))
 
 [![build status][travis-image]][travis-url]
 
-A visual inspector tool for [A-Frame](https://aframe.io) scenes. Just hit
+A modification of the visual inspector tool for [A-Frame](https://aframe.io) scenes. Just hit
 `<ctrl> + <alt> + i` on any A-Frame scene to open up the Inspector.
 
 - [Documentation / Guide](https://aframe.io/docs/master/introduction/visual-inspector-and-dev-tools.html)
