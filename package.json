@@ -1,8 +1,8 @@
 {
-  "name": "aframe-inspector",
+  "name": "3dstreet-editor",
   "version": "1.2.0",
-  "description": "A visual inspector tool for A-Frame.",
-  "main": "dist/aframe-inspector.min.js",
+  "description": "An editor for 3DStreet.com based on the A-Frame Inspector",
+  "main": "dist/3dstreet-editor.min.js",
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --progress --colors",
     "deploy": "npm run ghpages",
@@ -20,7 +20,7 @@
     "test": "jest --watch",
     "test:ci": "jest"
   },
-  "repository": "aframevr/aframe-inspector",
+  "repository": "kfarr/3dstreet-editor",
   "license": "MIT",
   "dependencies": {
     "autoprefixer": "^9.4.2",
