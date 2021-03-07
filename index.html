@@ -1,8 +1,215 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="refresh" content="0; url=examples/">
+    <title>3DStreet.co</title>
+    <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/3dstreet@0.1.1/dist/aframe-street-component.js"></script>
+    <script src="https://raw.githack.com/dbradleyfl/aframe-gridhelper/master/dist/aframe-gridhelper-component.min.js"></script> 
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.min.css" integrity="sha256-2pUeJf+y0ltRPSbKOeJh09ipQFYxUdct5nTY6GAXswA=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-extensions@4.0.1/bulma-tooltip/dist/css/bulma-tooltip.min.css" integrity="sha256-4sEalG00AgYSQIYA/likT3rU/pElCgDfnyHz/mf+j30=" crossorigin="anonymous">
+
+    <!-- user controls
+    <script src="https://raw.githack.com/fernandojsg/aframe-teleport-controls/master/dist/aframe-teleport-controls.min.js"></script>
+    <script src="src/lib/aframe-orbit-controls.min.js"></script> -->
+
+    <!-- ocean, ground, sky -->
+    <!-- <script src="src/components/ocean-plane.js"></script>
+    <script src="src/lib/aframe-cubemap-component.js"></script> -->
+
+    <!-- 2d ui toolbar
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"> -->
+    <script>
+      AFRAME.registerComponent('timed-inspector', {
+        init: function() {
+          this.data // seconds
+          setTimeout( function () {
+            window.postMessage('INJECT_AFRAME_INSPECTOR')
+            document.querySelector("#inspector-exists").classList.add("spinner");
+          }, this.data * 1000)
+        }
+      });
+    </script>
+    <!-- move a-frame performance `stats` below toolbar -->
+    <style>
+      .rs-base {
+        left: 20px;
+        top: 80px;
+      }
+
+      body {
+        background-color: gray;
+      }
+
+      .logo {
+        /* color: rgb(201, 0, 201); */
+        background-image: url("assets/3dstreet.png");
+        background-size: contain;
+        height: 70px;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: center;
+      } 
+    </style>
+
+    <style>
+      .wizard {
+        z-index: 5;
+        border-radius: 10px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        padding: 1.5em;
+        color: #FFF;
+        background: rgba(0, 0, 0, 0.75);
+        font-family: Source Sans Pro, Helvetica Neue, Helvetica, Arial, sans-serif;
+      }
+
+      @keyframes spinner {
+        to {transform: rotate(360deg);}
+      }
+
+      .spinner:before {
+        content: '';
+        box-sizing: border-box;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 20px;
+        height: 20px;
+        margin-top: -10px;
+        margin-left: -10px;
+        border-radius: 50%;
+        border: 2px solid transparent;
+        border-top-color: #FFFF33;
+        border-bottom-color: #FFFF33;
+        animation: spinner .8s ease infinite;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <a-scene 
+    renderer="colorManagement: true; highRefreshRate: true; foveationLevel: 3; physicallyCorrectLights: true; logarithmicDepthBuffer: false;"
+    fogoff="type: linear; color: #D5C69B; far: 200"
+    gltf-model="dracoDecoderPath: https://www.gstatic.com/draco/v1/decoders/;"
+    gridhelper="size:1000;divisions:50;colorGrid:#c900c9;colorCenterLine:#c900c9;"
+    background="color: black"
+    timed-inspector="5"
+    inspector="url: dist/3dstreet-editor.js"
+    loading-screen="dotsColor: #c900c9; backgroundColor: black">
+      <a-assets>
+        <!-- <streetmix-assets url="./"></streetmix-assets> -->
+<!-- 
+        <a-cubemap id="skycube">
+          <img src="assets/images/skybox/posx.jpg">
+          <img src="assets/images/skybox/negx.jpg">
+          <img src="assets/images/skybox/posy.jpg">
+          <img src="assets/images/skybox/negy.jpg">
+          <img src="assets/images/skybox/posz.jpg">
+          <img src="assets/images/skybox/negz.jpg">
+        </a-cubemap> -->
+
+      </a-assets>
+
+      <a-entity id="cameraRig" position="0 500 0" rotation="-90 0 0">
+        <a-entity id="camera" camera="far: 1000; zoom: 20" wasd-controls="enabled: false" 
+        animation__zoomin="property: camera.zoom; from: 1; to: 22; dur: 7000; easing: easeInOutQuad; "
+        ></a-entity>
+        <a-entity id="leftHand" hand-controls="hand: left; handModelStyle: lowPoly; color: #ccffcc" teleport-controls="cameraRig: #cameraRig; button: trigger"></a-entity>
+        <a-entity id="rightHand" hand-controls="hand: right; handModelStyle: lowPoly; color: #ccffcc" teleport-controls="cameraRig: #cameraRig; button: trigger"></a-entity>
+      </a-entity>
+
+      <a-entity light="type: ambient; color: #FFF; intensity: 2"></a-entity>
+      <a-entity light="type: directional; color: #FFF; intensity: 0.6" position="0.5 1 -1"></a-entity>
+
+      <!-- <a-ocean-plane height="100" width="100" position="0 -1 0" material="envMap: #skycube;"></a-ocean-plane> -->
+
+      <!-- <a-entity id="skybox" cubemap="folder: assets/images/skybox/"></a-entity> -->
+
+      <a-entity id="street-parent" street streetmix-loader set-loader-from-hash="defaultURL: https://streetmix.net/kfarr/3"></a-entity>
+
+    </a-scene>
+    <div class="wizard content">
+
+      <h1 class="logo image"></h1>
+
+      <!-- <figure class="image is-128x128">
+        <img src="assets/3dstreet.png">
+      </figure>       -->
+      <p class="tooltip is-tooltip-left" data-tooltip="✅ = AFRAME global variable exists"><span id="app-loaded" class="spinner" style="position: relative;">❌</span> #1 Load and Start App</p>
+      <p class="tooltip is-tooltip-left" data-tooltip="✅ = street json has a value"><span id="street-json" class="spinner" style="position: relative;">❌</span> #2 Import Street from Streetmix to 3DStreet.co</p>
+      <p class="tooltip is-tooltip-left" data-tooltip="✅ = init scene = true?"><span id="init-scene">❌</span> #3 Create 3D Scene from 2D Segments</p>
+      <p class="tooltip is-tooltip-left" data-tooltip="✅ = See if AFRAME.INSPECTOR exists"><span id="inspector-exists" style="position: relative;">❌</span> #4 Load “Plan View” in the 3DStreet.co Editor</p>
+      <p><a onclick="AFRAME.scenes[0].components['screenshot'].capture('perspective')" class="button is-primary">Screenshot</a></p>
+    </div>
+
+  </body>
+  <script>
+
+    var AFRAMEExistsInterval = setInterval(function(){
+        if (AFRAME) {
+          document.querySelector("#app-loaded").textContent = "✅";
+          document.querySelector("#app-loaded").classList.remove("spinner");
+          clearInterval(AFRAMEExistsInterval);
+        }
+    },500);
+//document.getElementById('street-parent').getAttribute('street', 'JSON')
+
+    var StreetJSONExistsInterval = setInterval(function(){
+      // console.log(document.getElementById('street-parent').components['street'].data.JSON)
+      if (document.getElementById('street-parent').components['street'].data.JSON) {
+        document.querySelector("#street-json").textContent = "✅";
+        document.querySelector("#street-json").classList.remove("spinner");
+        clearInterval(StreetJSONExistsInterval);
+      }
+    },500);
+
+    document.querySelector('a-scene').addEventListener('loaded', function () {
+      document.querySelector("#init-scene").textContent = "✅";
+
+    });
+
+    var AFRAMEINSPECTORExistsInterval = setInterval(function(){
+        if (AFRAME.INSPECTOR) {
+          document.querySelector("#inspector-exists").textContent = "✅";
+          document.querySelector("#inspector-exists").classList.remove("spinner");
+          clearInterval(AFRAMEINSPECTORExistsInterval);
+        }
+    },500);
+
+    // document.querySelector('a-scene').addEventListener('inspectorloaded', function () {
+    //   document.querySelector("#inspector-loaded").textContent = "✅";
+    // });
+
+    // AFRAME.INSPECTOR.on('inspectorloaded', function () {
+    //   document.querySelector("#inspector-loaded").textContent = "✅";
+    // });
+
+
+    AFRAME.registerComponent('set-loader-from-hash', {
+      dependencies: ['streetmix-loader'],
+      schema: {
+        defaultURL: { type: 'string' }
+      },
+      init: function () {
+        // get hash from window
+        const streetURL = window.location.hash.substring(1);
+        if (streetURL !== undefined && streetURL.length > 0) {
+          console.log('[set-loader-from-hash]','Using URL from hash', streetURL)
+          this.el.setAttribute('streetmix-loader', 'streetmixStreetURL', streetURL);
+        } else {
+          console.log('[set-loader-from-hash]','Using default URL', this.data.defaultURL)
+          this.el.setAttribute('streetmix-loader', 'streetmixStreetURL', this.data.defaultURL);
+        }
+      }
+    });
+
+    window.onload = function () {
+      if (window.location.hash.substring(1).length === 0) window.location.hash = '#https://streetmix.net/kfarr/3';
+      // document.querySelector('#inputUrl').value = window.location.hash.substring(1);
+    }
+
+  </script>
 </html>
