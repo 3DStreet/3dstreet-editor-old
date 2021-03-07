@@ -5,7 +5,7 @@ let currentOrthoDir = '';
 const orthoCameraMemory = {
   left: {position: new THREE.Vector3(-10, 0, 0), rotation: new THREE.Euler()},
   right: {position: new THREE.Vector3(10, 0, 0), rotation: new THREE.Euler()},
-  top: {position: new THREE.Vector3(0, 10, 0), rotation: new THREE.Euler()},
+  top: {position: new THREE.Vector3(0, 20, 0), rotation: new THREE.Euler()},
   bottom: {position: new THREE.Vector3(0, -10, 0), rotation: new THREE.Euler()},
   back: {position: new THREE.Vector3(0, 0, -10), rotation: new THREE.Euler()},
   front: {position: new THREE.Vector3(0, 0, 10), rotation: new THREE.Euler()}
@@ -93,9 +93,9 @@ function saveOrthoCamera (camera, dir) {
 
 function setOrthoCamera (camera, dir, ratio) {
   const info = orthoCameraMemory[dir];
-  camera.left = info.left || (-10 * ratio);
-  camera.right = info.right || (10 * ratio);
-  camera.top = info.top || 10;
+  camera.left = info.left || (-20 * ratio);
+  camera.right = info.right || (20 * ratio);
+  camera.top = info.top || 30;
   camera.bottom = info.bottom || -10;
   camera.position.copy(info.position);
   camera.rotation.copy(info.rotation);
