@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.min.css" integrity="sha256-2pUeJf+y0ltRPSbKOeJh09ipQFYxUdct5nTY6GAXswA=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-extensions@4.0.1/bulma-tooltip/dist/css/bulma-tooltip.min.css" integrity="sha256-4sEalG00AgYSQIYA/likT3rU/pElCgDfnyHz/mf+j30=" crossorigin="anonymous">
 
+    <script src="https://cdn.scaleflex.it/plugins/filerobot-image-editor/3.12.16/filerobot-image-editor.min.js"></script>
+
     <!-- user controls
     <script src="https://raw.githack.com/fernandojsg/aframe-teleport-controls/master/dist/aframe-teleport-controls.min.js"></script>
     <script src="src/lib/aframe-orbit-controls.min.js"></script> -->
@@ -30,8 +32,26 @@
           }, this.data * 1000)
         }
       });
+
+      
     </script>
-    <!-- move a-frame performance `stats` below toolbar -->
+    <script>
+      const captureToEditor = function() {
+        var config = {
+          tools: ['filters', 'crop', 'rotate', 'adjust'],
+          translations: {
+            en: {'header.image_editor_title': 'Edit Snapshot'}
+          }
+        }
+        const ImageEditor = new FilerobotImageEditor(config);
+        // consoel.log () 
+        AFRAME.scenes[0].setAttribute('screenshot','width',AFRAME.scenes[0].canvas.width)
+        AFRAME.scenes[0].setAttribute('screenshot','height',AFRAME.scenes[0].canvas.height)
+        const dataURL = AFRAME.scenes[0].components['screenshot'].getCanvas('perspective').toDataURL('image/png', 1.0);
+        ImageEditor.open(dataURL);
+
+      }
+    </script>
     <style>
       .rs-base {
         left: 20px;
@@ -147,6 +167,7 @@
       <p class="tooltip is-tooltip-left" data-tooltip="✅ = init scene = true?"><span id="init-scene">⏳</span> #3 Create 3D Scene from Street Segments</p>
       <p class="tooltip is-tooltip-left" data-tooltip="✅ = See if AFRAME.INSPECTOR exists"><span id="inspector-exists" style="position: relative;">⏳</span> #4 Load “Plan View” in Editor</p>
       <p><a onclick="AFRAME.scenes[0].components['screenshot'].capture('perspective')" class="button is-primary">Screenshot</a></p>
+      <p><a onclick="captureToEditor()" class="button is-primary">Screenshot with Editor</a></p>
     </div>
 
   </body>
