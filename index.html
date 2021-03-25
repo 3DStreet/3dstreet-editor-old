@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>3DStreet.co</title>
+    <title>3DStreet</title>
     <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
     <script src="https://unpkg.com/3dstreet@0.1.1/dist/aframe-street-component.js"></script>
     <script src="https://raw.githack.com/dbradleyfl/aframe-gridhelper/master/dist/aframe-gridhelper-component.min.js"></script> 
@@ -91,6 +91,18 @@
         font-family: Source Sans Pro, Helvetica Neue, Helvetica, Arial, sans-serif;
       }
 
+      .faded-out {
+        visibility:hidden;
+        opacity:0;
+        transition:visibility 0s linear 0.5s,opacity 0.5s linear;
+      }
+
+      .faded-in {
+        visibility:visible;
+        opacity:1;
+        transition-delay:0s;
+      }
+
       @keyframes spinner {
         to {transform: rotate(360deg);}
       }
@@ -155,7 +167,7 @@
       <a-entity id="street-parent" street streetmix-loader set-loader-from-hash="defaultURL: https://streetmix.net/kfarr/3"></a-entity>
 
     </a-scene>
-    <div class="wizard content">
+    <div id="loader" class="wizard content faded-in">
 
       <h1 class="logo image"></h1>
 
@@ -201,6 +213,7 @@
           document.querySelector("#inspector-exists").textContent = "✅";
           document.querySelector("#inspector-exists").classList.remove("spinner");
           clearInterval(AFRAMEINSPECTORExistsInterval);
+          document.querySelector('#loader').classList.replace("faded-in","faded-out");
         }
     },500);
 
