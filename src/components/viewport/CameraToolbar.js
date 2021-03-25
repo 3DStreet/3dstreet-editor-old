@@ -42,9 +42,26 @@ export default class CameraToolbar extends React.Component {
     Events.emit(option.event, option.payload);
   }
 
+  captureToEditor() {
+    var config = {
+      tools: ['filters', 'crop', 'rotate', 'adjust'],
+      translations: {
+        en: {'header.image_editor_title': 'Edit Snapshot'}
+      }
+    }
+    const ImageEditor = new FilerobotImageEditor(config);
+    // consoel.log () 
+    AFRAME.scenes[0].setAttribute('screenshot','width',AFRAME.scenes[0].canvas.width)
+    AFRAME.scenes[0].setAttribute('screenshot','height',AFRAME.scenes[0].canvas.height)
+    const dataURL = AFRAME.scenes[0].components['screenshot'].getCanvas('perspective').toDataURL('image/png', 1.0);
+    ImageEditor.open(dataURL);
+
+  }
+
   render() {
     return (
       <div id="cameraToolbar">
+        <button onClick={this.captureToEditor.bind(this)}>📸 Snapshot</button>
         <Select
           id="cameraSelect"
           classNamePrefix="select"
