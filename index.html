@@ -2,10 +2,11 @@
 <html>
   <head>
     <title>3DStreet</title>
-    <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
-    <script src="https://unpkg.com/3dstreet@0.1.1/dist/aframe-street-component.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@52136de6a863f32d8cb806b65c3c3223f6b0f8a3/dist/aframe-master.min.js"></script>
+    <script src="https://github.3d.st/dist/aframe-street-component.js"></script>
     <script src="https://raw.githack.com/dbradleyfl/aframe-gridhelper/master/dist/aframe-gridhelper-component.min.js"></script> 
 
+    <!-- tooltip for loader -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.min.css" integrity="sha256-2pUeJf+y0ltRPSbKOeJh09ipQFYxUdct5nTY6GAXswA=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-extensions@4.0.1/bulma-tooltip/dist/css/bulma-tooltip.min.css" integrity="sha256-4sEalG00AgYSQIYA/likT3rU/pElCgDfnyHz/mf+j30=" crossorigin="anonymous">
 
@@ -32,9 +33,7 @@
             document.querySelector("#inspector-exists").classList.add("spinner");
           }, this.data * 1000)
         }
-      });
-
-      
+      });      
     </script>
     <script>
       const captureToEditor = function() {
@@ -50,7 +49,6 @@
         AFRAME.scenes[0].setAttribute('screenshot','height',AFRAME.scenes[0].canvas.height)
         const dataURL = AFRAME.scenes[0].components['screenshot'].getCanvas('perspective').toDataURL('image/png', 1.0);
         ImageEditor.open(dataURL);
-
       }
     </script>
     <style>
@@ -161,6 +159,19 @@
       <a-entity light="type: ambient; color: #FFF; intensity: 2"></a-entity>
       <a-entity light="type: directional; color: #FFF; intensity: 0.6" position="0.5 1 -1"></a-entity>
 
+      <a-entity id="compasstext" position="15 15.790 -5" scale="4 4 4" rotation="-90 0 0"
+          text="color: #00FFFF; align: center; value: Outbound\n/\\n|\n\n|\n\/\nInbound; width: 10; "></a-entity> 
+
+      <a-entity id="labelParent1" scale="3 3 3" position="-3.887 15.790 10" rotation="-90 0 0" visible="true">
+        <a-entity position="0 1 0" geometry="primitive: plane; width: 10; height: auto" material="src: #subtitle; alphaTest: 0.; transparent: true;"
+        text="color: white; align: left; value: Made with 3DStreet for non-commercial use">
+          <a-entity position="-5.1 0 0.001" geometry="primitive: plane; width: 0.1; height: 0.46" material="color: #c900c9;"></a-entity>
+        </a-entity> 
+        <a-entity position="5 2 0" geometry="primitive: plane; width: 20; height: auto" material="src: #subtitle; alphaTest: 0.; transparent: true;"
+        text="color: white; align: left; value: 17th Street Existing Conditions; width: 20; ">
+<a-entity position="-10.1 0 0.001" geometry="primitive: plane; width: 0.1; height: 0.92" material="color: #c900c9;"></a-entity>
+</a-entity>
+      </a-entity>
       <!-- <a-ocean-plane height="100" width="100" position="0 -1 0" material="envMap: #skycube;"></a-ocean-plane> -->
 
       <!-- <a-entity id="skybox" cubemap="folder: assets/images/skybox/"></a-entity> -->
