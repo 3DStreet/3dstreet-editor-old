@@ -22679,7 +22679,7 @@ THREE.EditorControls.prototype.constructor = THREE.EditorControls;
           child.updateMatrix();
 
           var tempGeometry = child.geometry.clone();
-          tempGeometry.applyMatrix(child.matrix);
+          tempGeometry.applyMatrix4(child.matrix);
           child.geometry = tempGeometry;
 
           child.position.set(0, 0, 0);
@@ -22726,13 +22726,13 @@ THREE.EditorControls.prototype.constructor = THREE.EditorControls;
     arrowGeometry.translate(0, 0.5, 0);
 
     var lineXGeometry = new THREE.BufferGeometry();
-    lineXGeometry.addAttribute('position', new THREE.Float32BufferAttribute([0, 0, 0, 1, 0, 0], 3));
+    lineXGeometry.setAttribute('position', new THREE.Float32BufferAttribute([0, 0, 0, 1, 0, 0], 3));
 
     var lineYGeometry = new THREE.BufferGeometry();
-    lineYGeometry.addAttribute('position', new THREE.Float32BufferAttribute([0, 0, 0, 0, 1, 0], 3));
+    lineYGeometry.setAttribute('position', new THREE.Float32BufferAttribute([0, 0, 0, 0, 1, 0], 3));
 
     var lineZGeometry = new THREE.BufferGeometry();
-    lineZGeometry.addAttribute('position', new THREE.Float32BufferAttribute([0, 0, 0, 0, 0, 1], 3));
+    lineZGeometry.setAttribute('position', new THREE.Float32BufferAttribute([0, 0, 0, 0, 0, 1], 3));
 
     this.handleGizmos = {
       X: [[new THREE.Mesh(arrowGeometry, new GizmoMaterial({ color: 0xff0000 })), [0.5, 0, 0], [0, 0, -Math.PI / 2]], [new THREE.Line(lineXGeometry, new GizmoLineMaterial({ color: 0xff0000 }))]],
@@ -22817,7 +22817,7 @@ THREE.EditorControls.prototype.constructor = THREE.EditorControls;
         if (facing === 'z') vertices.push(Math.sin(i / 32 * Math.PI) * radius, Math.cos(i / 32 * Math.PI) * radius, 0);
       }
 
-      geometry.addAttribute('position', new THREE.Float32BufferAttribute(vertices, 3));
+      geometry.setAttribute('position', new THREE.Float32BufferAttribute(vertices, 3));
       return geometry;
     };
 
@@ -22913,13 +22913,13 @@ THREE.EditorControls.prototype.constructor = THREE.EditorControls;
     arrowGeometry.translate(0, 0.5, 0);
 
     var lineXGeometry = new THREE.BufferGeometry();
-    lineXGeometry.addAttribute('position', new THREE.Float32BufferAttribute([0, 0, 0, 1, 0, 0], 3));
+    lineXGeometry.setAttribute('position', new THREE.Float32BufferAttribute([0, 0, 0, 1, 0, 0], 3));
 
     var lineYGeometry = new THREE.BufferGeometry();
-    lineYGeometry.addAttribute('position', new THREE.Float32BufferAttribute([0, 0, 0, 0, 1, 0], 3));
+    lineYGeometry.setAttribute('position', new THREE.Float32BufferAttribute([0, 0, 0, 0, 1, 0], 3));
 
     var lineZGeometry = new THREE.BufferGeometry();
-    lineZGeometry.addAttribute('position', new THREE.Float32BufferAttribute([0, 0, 0, 0, 0, 1], 3));
+    lineZGeometry.setAttribute('position', new THREE.Float32BufferAttribute([0, 0, 0, 0, 0, 1], 3));
 
     this.handleGizmos = {
       X: [[new THREE.Mesh(arrowGeometry, new GizmoMaterial({ color: 0xff0000 })), [0.5, 0, 0], [0, 0, -Math.PI / 2]], [new THREE.Line(lineXGeometry, new GizmoLineMaterial({ color: 0xff0000 }))]],
