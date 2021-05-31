@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "app-3d-st",
+    "public": ".",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

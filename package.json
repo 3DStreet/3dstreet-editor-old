@@ -1,11 +1,12 @@
 {
   "name": "3dstreet-editor",
   "version": "1.2.0",
-  "description": "An editor for 3DStreet.co based on the A-Frame Inspector",
+  "description": "An editor for 3DStreet based on the A-Frame Inspector",
   "main": "dist/3dstreet-editor.min.js",
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --progress --colors",
-    "deploy": "npm run ghpages",
+    "deploy": "npm run prefirebase && cd public && firebase deploy --only hosting:app-3d-st",
+    "deployghpages": "npm run ghpages",
     "dist": "npm run dist:max && npm run dist:min",
     "dist:max": "cross-env AFRAME_DIST=true npm run build",
     "dist:min": "cross-env MINIFY=true AFRAME_DIST=true npm run build",
@@ -13,6 +14,7 @@
     "lint": "npm run lintfile src/",
     "lint:css": "stylelint src/css/main.css",
     "lintfile": "node --harmony node_modules/.bin/eslint",
+    "prefirebase": "cp -R assets public && cp {index.html,favicon.ico} public && cp dist/3dstreet-editor.min.js public/dist/3dstreet-editor.js",
     "preghpages": "npm run dist && shx rm -rf gh-pages && shx mkdir gh-pages && shx cp -r assets dist examples index.html gh-pages && shx sed -i http://localhost:3333 .. gh-pages/examples/index.html",
     "prepublish": "npm run dist",
     "prettier": "prettier --single-quote es5 --write 'src/**/*.js'",

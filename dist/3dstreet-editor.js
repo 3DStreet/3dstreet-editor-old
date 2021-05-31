@@ -19475,7 +19475,7 @@ var Main = function (_React$Component) {
             'div',
             { id: 'viewportBar' },
             _react2.default.createElement(_CameraToolbar2.default, null),
-            _react2.default.createElement('img', { id: 'logo', src: 'assets/3dstreet.png' })
+            _react2.default.createElement('img', { id: 'logo', src: 'assets/3DStreet.png' })
           )
         ),
         _react2.default.createElement(_ModalHelp2.default, {
