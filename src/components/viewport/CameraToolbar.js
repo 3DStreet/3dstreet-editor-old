@@ -4,6 +4,7 @@ var classNames = require('classnames');
 import Select from 'react-select';
 
 const options = [
+  { value: 'perspective', event: 'cameraperspectivetoggle', payload: null, label: 'Perspective' },
   { value: 'orthotop', event: 'cameraorthographictoggle', payload: 'top', label: 'Plan View (Top)' },
   { value: 'orthofront', event: 'cameraorthographictoggle', payload: 'front', label: 'Outbound View (Front)' },
   { value: 'orthoback', event: 'cameraorthographictoggle', payload: 'back', label: 'Inbound View (Back)' },
