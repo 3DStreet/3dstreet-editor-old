@@ -163,11 +163,11 @@ export default class Main extends React.Component {
           id="inspectorContainer"
           className={this.state.inspectorEnabled ? '' : 'hidden'}
         >
-          <SceneGraph
+          {/* <SceneGraph
             scene={scene}
             selectedEntity={this.state.entity}
             visible={this.state.visible.scenegraph}
-          />
+          /> */}
 
           <div id="viewportBar">
             <CameraToolbar />
