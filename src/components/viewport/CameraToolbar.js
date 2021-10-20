@@ -2,6 +2,7 @@ var React = require('react');
 var Events = require('../../lib/Events.js');
 var classNames = require('classnames');
 import Select from 'react-select';
+import { saveBlob, saveString } from '../../lib/utils';
 
 const options = [
   { value: 'perspective', event: 'cameraperspectivetoggle', payload: null, label: 'Perspective' },
@@ -14,6 +15,34 @@ const options = [
 
 function getOption (value) {
   return options.filter(opt => opt.value === value)[0];
+}
+
+function filterHelpers(scene, visible) {
+  scene.traverse(o => {
+    if (o.userData.source === 'INSPECTOR') {
+      o.visible = visible;
+    }
+  });
+}
+
+function getSceneName(scene) {
+  return scene.id || slugify(window.location.host + window.location.pathname);
+}
+
+/**
+ * Slugify the string removing non-word chars and spaces
+ * @param  {string} text String to slugify
+ * @return {string}      Slugified string
+ */
+function slugify(text) {
+  return text
+    .toString()
+    .toLowerCase()
+    .replace(/\s+/g, '-') // Replace spaces with -
+    .replace(/[^\w\-]+/g, '-') // Replace all non-word chars with -
+    .replace(/\-\-+/g, '-') // Replace multiple - with single -
+    .replace(/^-+/, '') // Trim - from start of text
+    .replace(/-+$/, ''); // Trim - from end of text
 }
 
 export default class CameraToolbar extends React.Component {
@@ -50,6 +79,7 @@ export default class CameraToolbar extends React.Component {
         en: {'header.image_editor_title': 'Edit Snapshot'}
       }
     }
+
     const ImageEditor = new FilerobotImageEditor(config);
     // consoel.log () 
     AFRAME.scenes[0].setAttribute('screenshot','width',AFRAME.scenes[0].canvas.width)
@@ -58,11 +88,28 @@ export default class CameraToolbar extends React.Component {
     ImageEditor.open(dataURL);
 
   }
+  
+  exportSceneToGLTF() {
+    console.log("Trying To Export GLTF")
+    const sceneName = getSceneName(AFRAME.scenes[0]);
+    const scene = AFRAME.scenes[0].object3D;
+    filterHelpers(scene, false);
+    AFRAME.INSPECTOR.exporters.gltf.parse(
+      scene,
+      function(buffer) {
+        filterHelpers(scene, true);
+        const blob = new Blob([buffer], { type: 'application/octet-stream' });
+        saveBlob(blob, sceneName + '.glb');
+      },
+      { binary: true }
+    );
+  }
 
   render() {
     return (
       <div id="cameraToolbar">
-        <button onClick={this.captureToEditor.bind(this)}>📸 Snapshot</button>
+        <button onClick={this.captureToEditor.bind(this)}>📸 PNG</button>
+        <button onClick={this.exportSceneToGLTF.bind(this)}>⬇️ GLTF</button>
         <Select
           id="cameraSelect"
           classNamePrefix="select"
