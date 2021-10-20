@@ -90,7 +90,6 @@ export default class CameraToolbar extends React.Component {
   }
   
   exportSceneToGLTF() {
-    console.log("Trying To Export GLTF")
     const sceneName = getSceneName(AFRAME.scenes[0]);
     const scene = AFRAME.scenes[0].object3D;
     filterHelpers(scene, false);
