@@ -77,7 +77,9 @@ export function initCameras (inspector) {
     }
     Events.emit('cameratoggle', {camera: inspector.camera, value: `ortho${dir}`});
   });
+  // This is a hack to show perspective mode on first launch but not have a "jump" when after switching to ortho top-down view and changing zoom
   Events.emit('cameraorthographictoggle','top')
+  Events.emit('cameraperspectivetoggle')
   return inspector.cameras;
 };
 
