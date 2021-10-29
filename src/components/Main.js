@@ -171,7 +171,7 @@ export default class Main extends React.Component {
 
           <div id="viewportBar">
           
-		    <img id="logo" src="assets/3DStreet.png"></img>
+			<div>3D Street</div>
 		    <CameraToolbar />
 		
             {/* <ViewportHUD />
