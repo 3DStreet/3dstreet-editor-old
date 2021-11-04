@@ -21899,7 +21899,7 @@ var CameraToolbar = function (_React$Component) {
     var _this = _possibleConstructorReturn(this, (CameraToolbar.__proto__ || Object.getPrototypeOf(CameraToolbar)).call(this, props));
 
     _this.state = {
-      selectedCamera: 'orthotop'
+      selectedCamera: 'perspective'
     };
     _this.justChangedCamera = false;
     return _this;
