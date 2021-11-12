@@ -49,7 +49,7 @@ export default class CameraToolbar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      selectedCamera: 'orthotop'
+      selectedCamera: 'perspective'
     };
     this.justChangedCamera = false;
   }
