@@ -171,7 +171,7 @@ export default class Main extends React.Component {
 
           <div id="viewportBar">
           
-			<p style={{fontSize: "18px", padding: "10px"}}>3D Street</p>
+			<a href="https://3d.st"><p style={{fontSize: "18px", padding: "10px"}}>3D Street</p></a>
 		    <CameraToolbar />
 		
             {/* <ViewportHUD />
