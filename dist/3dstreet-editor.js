@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "/dist/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 256);
+/******/ 	return __webpack_require__(__webpack_require__.s = 257);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -165,7 +165,7 @@ if (false) {
 } else {
   // By explicitly using `prop-types` you are opting into new production behavior.
   // http://fb.me/prop-types-in-prod
-  module.exports = __webpack_require__(168)();
+  module.exports = __webpack_require__(169)();
 }
 
 
@@ -286,7 +286,7 @@ module.exports = warning;
 "use strict";
 
 
-var EventEmitter = __webpack_require__(150).EventEmitter;
+var EventEmitter = __webpack_require__(151).EventEmitter;
 var emitter = new EventEmitter();
 emitter.setMaxListeners(0);
 
@@ -2537,7 +2537,7 @@ module.exports = DOMProperty;
 
 
 
-var ReactRef = __webpack_require__(207);
+var ReactRef = __webpack_require__(208);
 var ReactInstrumentation = __webpack_require__(9);
 
 var warning = __webpack_require__(4);
@@ -2709,14 +2709,14 @@ module.exports = ReactReconciler;
 var _assign = __webpack_require__(6);
 
 var ReactBaseClasses = __webpack_require__(100);
-var ReactChildren = __webpack_require__(241);
-var ReactDOMFactories = __webpack_require__(242);
+var ReactChildren = __webpack_require__(242);
+var ReactDOMFactories = __webpack_require__(243);
 var ReactElement = __webpack_require__(22);
-var ReactPropTypes = __webpack_require__(243);
-var ReactVersion = __webpack_require__(244);
+var ReactPropTypes = __webpack_require__(244);
+var ReactVersion = __webpack_require__(245);
 
-var createReactClass = __webpack_require__(245);
-var onlyChild = __webpack_require__(249);
+var createReactClass = __webpack_require__(246);
+var onlyChild = __webpack_require__(250);
 
 var createElement = ReactElement.createElement;
 var createFactory = ReactElement.createFactory;
@@ -4354,7 +4354,7 @@ module.exports = emptyObject;
 "use strict";
 
 
-module.exports = __webpack_require__(184);
+module.exports = __webpack_require__(185);
 
 
 /***/ }),
@@ -4375,10 +4375,10 @@ module.exports = __webpack_require__(184);
 var _assign = __webpack_require__(6);
 
 var EventPluginRegistry = __webpack_require__(42);
-var ReactEventEmitterMixin = __webpack_require__(199);
+var ReactEventEmitterMixin = __webpack_require__(200);
 var ViewportMetrics = __webpack_require__(86);
 
-var getVendorPrefixedEventName = __webpack_require__(231);
+var getVendorPrefixedEventName = __webpack_require__(232);
 var isEventSupported = __webpack_require__(53);
 
 /**
@@ -5222,19 +5222,19 @@ module.exports = setInnerHTML;
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_raf__ = __webpack_require__(170);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_raf__ = __webpack_require__(171);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_raf___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_raf__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_emotion__ = __webpack_require__(149);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_emotion__ = __webpack_require__(150);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_dom__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react_dom__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_prop_types__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_react_input_autosize__ = __webpack_require__(234);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_react_input_autosize__ = __webpack_require__(235);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_react_input_autosize___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_react_input_autosize__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_memoize_one__ = __webpack_require__(165);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_react_transition_group__ = __webpack_require__(237);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_memoize_one__ = __webpack_require__(166);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_react_transition_group__ = __webpack_require__(238);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_react_transition_group___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_react_transition_group__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SelectBase", function() { return Select; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Async", function() { return Async; });
@@ -10312,7 +10312,7 @@ process.umask = function() { return 0; };
 
 
 var DOMLazyTree = __webpack_require__(18);
-var Danger = __webpack_require__(176);
+var Danger = __webpack_require__(177);
 var ReactDOMComponentTree = __webpack_require__(7);
 var ReactInstrumentation = __webpack_require__(9);
 
@@ -11112,7 +11112,7 @@ module.exports = KeyEscapeUtils;
 
 var _prodInvariant = __webpack_require__(3);
 
-var ReactPropTypesSecret = __webpack_require__(205);
+var ReactPropTypesSecret = __webpack_require__(206);
 var propTypesFactory = __webpack_require__(73);
 
 var React = __webpack_require__(21);
@@ -13708,7 +13708,7 @@ exports.default = Vec4Widget;
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (global, factory) {
     if (true) {
-        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [module, __webpack_require__(139), __webpack_require__(255), __webpack_require__(164)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [module, __webpack_require__(140), __webpack_require__(256), __webpack_require__(165)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
 				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
 				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
@@ -14087,7 +14087,7 @@ module.exports = getActiveElement;
 // Therefore we re-export development-only version with all the PropTypes checks here.
 // However if one is migrating to the `prop-types` npm library, they will go through the
 // `index.js` entry point, and it will branch depending on the environment.
-var factory = __webpack_require__(169);
+var factory = __webpack_require__(170);
 module.exports = function(isValidElement) {
   // It is still allowed in 15.5.
   var throwOnDirectAccess = false;
@@ -14413,7 +14413,7 @@ var DOMProperty = __webpack_require__(19);
 var ReactDOMComponentTree = __webpack_require__(7);
 var ReactInstrumentation = __webpack_require__(9);
 
-var quoteAttributeValueForBrowser = __webpack_require__(232);
+var quoteAttributeValueForBrowser = __webpack_require__(233);
 var warning = __webpack_require__(4);
 
 var VALID_ATTRIBUTE_NAME_REGEX = new RegExp('^[' + DOMProperty.ATTRIBUTE_NAME_START_CHAR + '][' + DOMProperty.ATTRIBUTE_NAME_CHAR + ']*$');
@@ -15000,9 +15000,9 @@ module.exports = ReactHostComponent;
 
 
 
-var ReactDOMSelection = __webpack_require__(192);
+var ReactDOMSelection = __webpack_require__(193);
 
-var containsNode = __webpack_require__(153);
+var containsNode = __webpack_require__(154);
 var focusNode = __webpack_require__(71);
 var getActiveElement = __webpack_require__(72);
 
@@ -15134,12 +15134,12 @@ var React = __webpack_require__(21);
 var ReactBrowserEventEmitter = __webpack_require__(32);
 var ReactCurrentOwner = __webpack_require__(13);
 var ReactDOMComponentTree = __webpack_require__(7);
-var ReactDOMContainerInfo = __webpack_require__(186);
-var ReactDOMFeatureFlags = __webpack_require__(188);
+var ReactDOMContainerInfo = __webpack_require__(187);
+var ReactDOMFeatureFlags = __webpack_require__(189);
 var ReactFeatureFlags = __webpack_require__(81);
 var ReactInstanceMap = __webpack_require__(27);
 var ReactInstrumentation = __webpack_require__(9);
-var ReactMarkupChecksum = __webpack_require__(202);
+var ReactMarkupChecksum = __webpack_require__(203);
 var ReactReconciler = __webpack_require__(20);
 var ReactUpdateQueue = __webpack_require__(48);
 var ReactUpdates = __webpack_require__(11);
@@ -16031,11 +16031,11 @@ module.exports = inputValueTracking;
 var _prodInvariant = __webpack_require__(3),
     _assign = __webpack_require__(6);
 
-var ReactCompositeComponent = __webpack_require__(183);
+var ReactCompositeComponent = __webpack_require__(184);
 var ReactEmptyComponent = __webpack_require__(80);
 var ReactHostComponent = __webpack_require__(82);
 
-var getNextDebugID = __webpack_require__(247);
+var getNextDebugID = __webpack_require__(248);
 var invariant = __webpack_require__(0);
 var warning = __webpack_require__(4);
 
@@ -16272,9 +16272,9 @@ module.exports = setTextContent;
 var _prodInvariant = __webpack_require__(3);
 
 var ReactCurrentOwner = __webpack_require__(13);
-var REACT_ELEMENT_TYPE = __webpack_require__(198);
+var REACT_ELEMENT_TYPE = __webpack_require__(199);
 
-var getIteratorFn = __webpack_require__(229);
+var getIteratorFn = __webpack_require__(230);
 var invariant = __webpack_require__(0);
 var KeyEscapeUtils = __webpack_require__(44);
 var warning = __webpack_require__(4);
@@ -17224,7 +17224,7 @@ var _react = _interopRequireDefault(__webpack_require__(1));
 
 var _reactLifecyclesCompat = __webpack_require__(96);
 
-var _ChildMapping = __webpack_require__(238);
+var _ChildMapping = __webpack_require__(239);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -17494,7 +17494,7 @@ var ReactNoopUpdateQueue = __webpack_require__(103);
 var canDefineProperty = __webpack_require__(104);
 var emptyObject = __webpack_require__(30);
 var invariant = __webpack_require__(0);
-var lowPriorityWarning = __webpack_require__(248);
+var lowPriorityWarning = __webpack_require__(249);
 
 /**
  * Base class helpers for the updating state of a component.
@@ -18174,21 +18174,21 @@ var _utils = __webpack_require__(15);
 
 var _entity = __webpack_require__(14);
 
-var _GLTFExporter = __webpack_require__(137);
+var _GLTFExporter = __webpack_require__(138);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /* global VERSION BUILD_TIMESTAMP COMMIT_HASH webFont */
-__webpack_require__(138);
+__webpack_require__(139);
 
 var Events = __webpack_require__(5);
-var Viewport = __webpack_require__(136);
+var Viewport = __webpack_require__(137);
 var AssetsLoader = __webpack_require__(130);
 var Shortcuts = __webpack_require__(135);
 
 // eslint-disable-line no-unused-vars
 
-__webpack_require__(253);
+__webpack_require__(254);
 
 function Inspector() {
   var _this = this;
@@ -19483,7 +19483,7 @@ var Main = function (_React$Component) {
               { href: 'https://3d.st' },
               _react2.default.createElement(
                 'h1',
-                { style: { color: "#4B3461", fontSize: "18px", padding: "10px", "white-space": "nowrap" } },
+                { style: { color: "#4B3461", fontSize: "18px", padding: "10px", whiteSpace: "nowrap" } },
                 '3D Street'
               )
             ),
@@ -22040,17 +22040,16 @@ var StreetName = function (_React$Component) {
     return _this;
   }
 
-  /* componentDidMount() {
-     Events.on('raycastermouseenter', el => {
-       this.setState({ hoveredEntity: el });
-     });
-  
-     Events.on('raycastermouseleave', el => {
-       this.setState({ hoveredEntity: el });
-     });
-   } */
-
   _createClass(StreetName, [{
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      Events.on('streetloaded', function (el) {
+        _this2.setState({ streetName: el.getAttribute('streetmix-loader').name });
+      });
+    }
+  }, {
     key: 'render',
     value: function render() {
       return React.createElement(
@@ -24184,6 +24183,24 @@ module.exports = Shortcuts;
 "use strict";
 
 
+var Events = __webpack_require__(5);
+
+function initStreetNameLoader() {
+  var streetElement = document.querySelector('[streetmix-loader]');
+  streetElement.addEventListener('streetmix-loader-street-loaded', handleLoaded());
+  function handleLoaded() {
+    Events.emit('streetloaded', streetElement);
+  }
+}
+module.exports.initStreetNameLoader = initStreetNameLoader;
+
+/***/ }),
+/* 137 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
 var _lodash = __webpack_require__(24);
 
 var _lodash2 = _interopRequireDefault(_lodash);
@@ -24198,22 +24215,26 @@ var _EditorControls2 = _interopRequireDefault(_EditorControls);
 
 var _raycaster = __webpack_require__(134);
 
+var _streetNameLoader = __webpack_require__(136);
+
 var _utils = __webpack_require__(15);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-/* eslint-disable no-unused-vars */
-
-/* eslint-disable no-unused-vars */
+/* global THREE CustomEvent */
 var Events = __webpack_require__(5);
 
 /**
  * Transform controls stuff mostly.
  */
-/* global THREE CustomEvent */
+
+/* eslint-disable no-unused-vars */
+
+/* eslint-disable no-unused-vars */
 function Viewport(inspector) {
   // Initialize raycaster and picking in differentpmodule.
   var mouseCursor = (0, _raycaster.initRaycaster)(inspector);
+  (0, _streetNameLoader.initStreetNameLoader)();
   var sceneEl = inspector.sceneEl;
 
   var originalCamera = inspector.cameras.original;
@@ -24417,7 +24438,7 @@ function Viewport(inspector) {
 module.exports = Viewport;
 
 /***/ }),
-/* 137 */
+/* 138 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24435,2140 +24456,2140 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
  */
 
 (function () {
-			var GLTFExporter = function () {
-						function GLTFExporter() {
-									_classCallCheck(this, GLTFExporter);
+	var GLTFExporter = function () {
+		function GLTFExporter() {
+			_classCallCheck(this, GLTFExporter);
 
-									this.pluginCallbacks = [];
-									this.register(function (writer) {
+			this.pluginCallbacks = [];
+			this.register(function (writer) {
 
-												return new GLTFLightExtension(writer);
-									});
-									this.register(function (writer) {
+				return new GLTFLightExtension(writer);
+			});
+			this.register(function (writer) {
 
-												return new GLTFMaterialsUnlitExtension(writer);
-									});
-									this.register(function (writer) {
+				return new GLTFMaterialsUnlitExtension(writer);
+			});
+			this.register(function (writer) {
 
-												return new GLTFMaterialsPBRSpecularGlossiness(writer);
-									});
-									this.register(function (writer) {
+				return new GLTFMaterialsPBRSpecularGlossiness(writer);
+			});
+			this.register(function (writer) {
 
-												return new GLTFMaterialsTransmissionExtension(writer);
-									});
-									this.register(function (writer) {
+				return new GLTFMaterialsTransmissionExtension(writer);
+			});
+			this.register(function (writer) {
 
-												return new GLTFMaterialsVolumeExtension(writer);
-									});
-						}
+				return new GLTFMaterialsVolumeExtension(writer);
+			});
+		}
 
-						_createClass(GLTFExporter, [{
-									key: 'register',
-									value: function register(callback) {
+		_createClass(GLTFExporter, [{
+			key: 'register',
+			value: function register(callback) {
 
-												if (this.pluginCallbacks.indexOf(callback) === -1) {
+				if (this.pluginCallbacks.indexOf(callback) === -1) {
 
-															this.pluginCallbacks.push(callback);
-												}
+					this.pluginCallbacks.push(callback);
+				}
 
-												return this;
-									}
-						}, {
-									key: 'unregister',
-									value: function unregister(callback) {
+				return this;
+			}
+		}, {
+			key: 'unregister',
+			value: function unregister(callback) {
 
-												if (this.pluginCallbacks.indexOf(callback) !== -1) {
+				if (this.pluginCallbacks.indexOf(callback) !== -1) {
 
-															this.pluginCallbacks.splice(this.pluginCallbacks.indexOf(callback), 1);
-												}
+					this.pluginCallbacks.splice(this.pluginCallbacks.indexOf(callback), 1);
+				}
 
-												return this;
-									}
-									/**
-          * Parse scenes and generate GLTF output
-          * @param  {Scene or [THREE.Scenes]} input   THREE.Scene or Array of THREE.Scenes
-          * @param  {Function} onDone  Callback on completed
-          * @param  {Object} options options
-          */
+				return this;
+			}
+			/**
+    * Parse scenes and generate GLTF output
+    * @param  {Scene or [THREE.Scenes]} input   THREE.Scene or Array of THREE.Scenes
+    * @param  {Function} onDone  Callback on completed
+    * @param  {Object} options options
+    */
 
-						}, {
-									key: 'parse',
-									value: function parse(input, onDone, options) {
+		}, {
+			key: 'parse',
+			value: function parse(input, onDone, options) {
 
-												var writer = new GLTFWriter();
-												var plugins = [];
+				var writer = new GLTFWriter();
+				var plugins = [];
 
-												for (var i = 0, il = this.pluginCallbacks.length; i < il; i++) {
+				for (var i = 0, il = this.pluginCallbacks.length; i < il; i++) {
 
-															plugins.push(this.pluginCallbacks[i](writer));
-												}
+					plugins.push(this.pluginCallbacks[i](writer));
+				}
 
-												writer.setPlugins(plugins);
-												writer.write(input, onDone, options);
-									}
-						}]);
+				writer.setPlugins(plugins);
+				writer.write(input, onDone, options);
+			}
+		}]);
 
-						return GLTFExporter;
-			}(); //------------------------------------------------------------------------------
-			// Constants
-			//------------------------------------------------------------------------------
+		return GLTFExporter;
+	}(); //------------------------------------------------------------------------------
+	// Constants
+	//------------------------------------------------------------------------------
 
 
-			var WEBGL_CONSTANTS = {
-						POINTS: 0x0000,
-						LINES: 0x0001,
-						LINE_LOOP: 0x0002,
-						LINE_STRIP: 0x0003,
-						TRIANGLES: 0x0004,
-						TRIANGLE_STRIP: 0x0005,
-						TRIANGLE_FAN: 0x0006,
-						UNSIGNED_BYTE: 0x1401,
-						UNSIGNED_SHORT: 0x1403,
-						FLOAT: 0x1406,
-						UNSIGNED_INT: 0x1405,
-						ARRAY_BUFFER: 0x8892,
-						ELEMENT_ARRAY_BUFFER: 0x8893,
-						NEAREST: 0x2600,
-						LINEAR: 0x2601,
-						NEAREST_MIPMAP_NEAREST: 0x2700,
-						LINEAR_MIPMAP_NEAREST: 0x2701,
-						NEAREST_MIPMAP_LINEAR: 0x2702,
-						LINEAR_MIPMAP_LINEAR: 0x2703,
-						CLAMP_TO_EDGE: 33071,
-						MIRRORED_REPEAT: 33648,
-						REPEAT: 10497
+	var WEBGL_CONSTANTS = {
+		POINTS: 0x0000,
+		LINES: 0x0001,
+		LINE_LOOP: 0x0002,
+		LINE_STRIP: 0x0003,
+		TRIANGLES: 0x0004,
+		TRIANGLE_STRIP: 0x0005,
+		TRIANGLE_FAN: 0x0006,
+		UNSIGNED_BYTE: 0x1401,
+		UNSIGNED_SHORT: 0x1403,
+		FLOAT: 0x1406,
+		UNSIGNED_INT: 0x1405,
+		ARRAY_BUFFER: 0x8892,
+		ELEMENT_ARRAY_BUFFER: 0x8893,
+		NEAREST: 0x2600,
+		LINEAR: 0x2601,
+		NEAREST_MIPMAP_NEAREST: 0x2700,
+		LINEAR_MIPMAP_NEAREST: 0x2701,
+		NEAREST_MIPMAP_LINEAR: 0x2702,
+		LINEAR_MIPMAP_LINEAR: 0x2703,
+		CLAMP_TO_EDGE: 33071,
+		MIRRORED_REPEAT: 33648,
+		REPEAT: 10497
+	};
+	var THREE_TO_WEBGL = {};
+	THREE_TO_WEBGL[THREE.NearestFilter] = WEBGL_CONSTANTS.NEAREST;
+	THREE_TO_WEBGL[THREE.NearestMipmapNearestFilter] = WEBGL_CONSTANTS.NEAREST_MIPMAP_NEAREST;
+	THREE_TO_WEBGL[THREE.NearestMipmapLinearFilter] = WEBGL_CONSTANTS.NEAREST_MIPMAP_LINEAR;
+	THREE_TO_WEBGL[THREE.LinearFilter] = WEBGL_CONSTANTS.LINEAR;
+	THREE_TO_WEBGL[THREE.LinearMipmapNearestFilter] = WEBGL_CONSTANTS.LINEAR_MIPMAP_NEAREST;
+	THREE_TO_WEBGL[THREE.LinearMipmapLinearFilter] = WEBGL_CONSTANTS.LINEAR_MIPMAP_LINEAR;
+	THREE_TO_WEBGL[THREE.ClampToEdgeWrapping] = WEBGL_CONSTANTS.CLAMP_TO_EDGE;
+	THREE_TO_WEBGL[THREE.RepeatWrapping] = WEBGL_CONSTANTS.REPEAT;
+	THREE_TO_WEBGL[THREE.MirroredRepeatWrapping] = WEBGL_CONSTANTS.MIRRORED_REPEAT;
+	var PATH_PROPERTIES = {
+		scale: 'scale',
+		position: 'translation',
+		quaternion: 'rotation',
+		morphTargetInfluences: 'weights'
+	}; // GLB constants
+	// https://github.com/KhronosGroup/glTF/blob/master/specification/2.0/README.md#glb-file-format-specification
+
+	var GLB_HEADER_BYTES = 12;
+	var GLB_HEADER_MAGIC = 0x46546C67;
+	var GLB_VERSION = 2;
+	var GLB_CHUNK_PREFIX_BYTES = 8;
+	var GLB_CHUNK_TYPE_JSON = 0x4E4F534A;
+	var GLB_CHUNK_TYPE_BIN = 0x004E4942; //------------------------------------------------------------------------------
+	// Utility functions
+	//------------------------------------------------------------------------------
+
+	/**
+ * Compare two arrays
+ * @param  {Array} array1 Array 1 to compare
+ * @param  {Array} array2 Array 2 to compare
+ * @return {Boolean}        Returns true if both arrays are equal
+ */
+
+	function equalArray(array1, array2) {
+
+		return array1.length === array2.length && array1.every(function (element, index) {
+
+			return element === array2[index];
+		});
+	}
+	/**
+ * Converts a string to an ArrayBuffer.
+ * @param  {string} text
+ * @return {ArrayBuffer}
+ */
+
+	function stringToArrayBuffer(text) {
+
+		if (window.TextEncoder !== undefined) {
+
+			return new TextEncoder().encode(text).buffer;
+		}
+
+		var array = new Uint8Array(new ArrayBuffer(text.length));
+
+		for (var i = 0, il = text.length; i < il; i++) {
+
+			var value = text.charCodeAt(i); // Replacing multi-byte character with space(0x20).
+
+			array[i] = value > 0xFF ? 0x20 : value;
+		}
+
+		return array.buffer;
+	}
+	/**
+ * Is identity matrix
+ *
+ * @param {Matrix4} matrix
+ * @returns {Boolean} Returns true, if parameter is identity matrix
+ */
+
+	function isIdentityMatrix(matrix) {
+
+		return equalArray(matrix.elements, [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]);
+	}
+	/**
+ * Get the min and max vectors from the given attribute
+ * @param  {BufferAttribute} attribute Attribute to find the min/max in range from start to start + count
+ * @param  {Integer} start
+ * @param  {Integer} count
+ * @return {Object} Object containing the `min` and `max` values (As an array of attribute.itemSize components)
+ */
+
+	function getMinMax(attribute, start, count) {
+
+		var output = {
+			min: new Array(attribute.itemSize).fill(Number.POSITIVE_INFINITY),
+			max: new Array(attribute.itemSize).fill(Number.NEGATIVE_INFINITY)
+		};
+
+		for (var i = start; i < start + count; i++) {
+
+			for (var a = 0; a < attribute.itemSize; a++) {
+
+				var value = void 0;
+
+				if (attribute.itemSize > 4) {
+
+					// no support for interleaved data for itemSize > 4
+					value = attribute.array[i * attribute.itemSize + a];
+				} else {
+
+					if (a === 0) value = attribute.getX(i);else if (a === 1) value = attribute.getY(i);else if (a === 2) value = attribute.getZ(i);else if (a === 3) value = attribute.getW(i);
+				}
+
+				output.min[a] = Math.min(output.min[a], value);
+				output.max[a] = Math.max(output.max[a], value);
+			}
+		}
+
+		return output;
+	}
+	/**
+ * Get the required size + padding for a buffer, rounded to the next 4-byte boundary.
+ * https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#data-alignment
+ *
+ * @param {Integer} bufferSize The size the original buffer.
+ * @returns {Integer} new buffer size with required padding.
+ *
+ */
+
+	function getPaddedBufferSize(bufferSize) {
+
+		return Math.ceil(bufferSize / 4) * 4;
+	}
+	/**
+ * Returns a buffer aligned to 4-byte boundary.
+ *
+ * @param {ArrayBuffer} arrayBuffer Buffer to pad
+ * @param {Integer} paddingByte (Optional)
+ * @returns {ArrayBuffer} The same buffer if it's already aligned to 4-byte boundary or a new buffer
+ */
+
+	function getPaddedArrayBuffer(arrayBuffer) {
+		var paddingByte = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
+
+
+		var paddedLength = getPaddedBufferSize(arrayBuffer.byteLength);
+
+		if (paddedLength !== arrayBuffer.byteLength) {
+
+			var array = new Uint8Array(paddedLength);
+			array.set(new Uint8Array(arrayBuffer));
+
+			if (paddingByte !== 0) {
+
+				for (var i = arrayBuffer.byteLength; i < paddedLength; i++) {
+
+					array[i] = paddingByte;
+				}
+			}
+
+			return array.buffer;
+		}
+
+		return arrayBuffer;
+	}
+
+	var cachedCanvas = null;
+	/**
+ * Writer
+ */
+
+	var GLTFWriter = function () {
+		function GLTFWriter() {
+			_classCallCheck(this, GLTFWriter);
+
+			this.plugins = [];
+			this.options = {};
+			this.pending = [];
+			this.buffers = [];
+			this.byteOffset = 0;
+			this.buffers = [];
+			this.nodeMap = new Map();
+			this.skins = [];
+			this.extensionsUsed = {};
+			this.uids = new Map();
+			this.uid = 0;
+			this.json = {
+				asset: {
+					version: '2.0',
+					generator: 'THREE.GLTFExporter'
+				}
 			};
-			var THREE_TO_WEBGL = {};
-			THREE_TO_WEBGL[THREE.NearestFilter] = WEBGL_CONSTANTS.NEAREST;
-			THREE_TO_WEBGL[THREE.NearestMipmapNearestFilter] = WEBGL_CONSTANTS.NEAREST_MIPMAP_NEAREST;
-			THREE_TO_WEBGL[THREE.NearestMipmapLinearFilter] = WEBGL_CONSTANTS.NEAREST_MIPMAP_LINEAR;
-			THREE_TO_WEBGL[THREE.LinearFilter] = WEBGL_CONSTANTS.LINEAR;
-			THREE_TO_WEBGL[THREE.LinearMipmapNearestFilter] = WEBGL_CONSTANTS.LINEAR_MIPMAP_NEAREST;
-			THREE_TO_WEBGL[THREE.LinearMipmapLinearFilter] = WEBGL_CONSTANTS.LINEAR_MIPMAP_LINEAR;
-			THREE_TO_WEBGL[THREE.ClampToEdgeWrapping] = WEBGL_CONSTANTS.CLAMP_TO_EDGE;
-			THREE_TO_WEBGL[THREE.RepeatWrapping] = WEBGL_CONSTANTS.REPEAT;
-			THREE_TO_WEBGL[THREE.MirroredRepeatWrapping] = WEBGL_CONSTANTS.MIRRORED_REPEAT;
-			var PATH_PROPERTIES = {
-						scale: 'scale',
-						position: 'translation',
-						quaternion: 'rotation',
-						morphTargetInfluences: 'weights'
-			}; // GLB constants
-			// https://github.com/KhronosGroup/glTF/blob/master/specification/2.0/README.md#glb-file-format-specification
+			this.cache = {
+				meshes: new Map(),
+				attributes: new Map(),
+				attributesNormalized: new Map(),
+				materials: new Map(),
+				textures: new Map(),
+				images: new Map()
+			};
+		}
 
-			var GLB_HEADER_BYTES = 12;
-			var GLB_HEADER_MAGIC = 0x46546C67;
-			var GLB_VERSION = 2;
-			var GLB_CHUNK_PREFIX_BYTES = 8;
-			var GLB_CHUNK_TYPE_JSON = 0x4E4F534A;
-			var GLB_CHUNK_TYPE_BIN = 0x004E4942; //------------------------------------------------------------------------------
-			// Utility functions
-			//------------------------------------------------------------------------------
+		_createClass(GLTFWriter, [{
+			key: 'setPlugins',
+			value: function setPlugins(plugins) {
 
-			/**
-   * Compare two arrays
-   * @param  {Array} array1 Array 1 to compare
-   * @param  {Array} array2 Array 2 to compare
-   * @return {Boolean}        Returns true if both arrays are equal
-   */
-
-			function equalArray(array1, array2) {
-
-						return array1.length === array2.length && array1.every(function (element, index) {
-
-									return element === array2[index];
-						});
+				this.plugins = plugins;
 			}
 			/**
-   * Converts a string to an ArrayBuffer.
-   * @param  {string} text
-   * @return {ArrayBuffer}
-   */
+    * Parse scenes and generate GLTF output
+    * @param  {Scene or [THREE.Scenes]} input   THREE.Scene or Array of THREE.Scenes
+    * @param  {Function} onDone  Callback on completed
+    * @param  {Object} options options
+    */
 
-			function stringToArrayBuffer(text) {
+		}, {
+			key: 'write',
+			value: function write(input, onDone, options) {
 
-						if (window.TextEncoder !== undefined) {
+				this.options = Object.assign({}, {
+					// default options
+					binary: false,
+					trs: false,
+					onlyVisible: true,
+					truncateDrawRange: true,
+					embedImages: true,
+					maxTextureSize: Infinity,
+					animations: [],
+					includeCustomExtensions: false
+				}, options);
 
-									return new TextEncoder().encode(text).buffer;
-						}
+				if (this.options.animations.length > 0) {
 
-						var array = new Uint8Array(new ArrayBuffer(text.length));
+					// Only TRS properties, and not matrices, may be targeted by animation.
+					this.options.trs = true;
+				}
 
-						for (var i = 0, il = text.length; i < il; i++) {
+				this.processInput(input);
+				var writer = this;
+				Promise.all(this.pending).then(function () {
 
-									var value = text.charCodeAt(i); // Replacing multi-byte character with space(0x20).
+					var buffers = writer.buffers;
+					var json = writer.json;
+					var options = writer.options;
+					var extensionsUsed = writer.extensionsUsed; // Merge buffers.
 
-									array[i] = value > 0xFF ? 0x20 : value;
-						}
+					var blob = new Blob(buffers, {
+						type: 'application/octet-stream'
+					}); // Declare extensions.
 
-						return array.buffer;
-			}
-			/**
-   * Is identity matrix
-   *
-   * @param {Matrix4} matrix
-   * @returns {Boolean} Returns true, if parameter is identity matrix
-   */
+					var extensionsUsedList = Object.keys(extensionsUsed);
+					if (extensionsUsedList.length > 0) json.extensionsUsed = extensionsUsedList; // Update bytelength of the single buffer.
 
-			function isIdentityMatrix(matrix) {
+					if (json.buffers && json.buffers.length > 0) json.buffers[0].byteLength = blob.size;
 
-						return equalArray(matrix.elements, [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]);
-			}
-			/**
-   * Get the min and max vectors from the given attribute
-   * @param  {BufferAttribute} attribute Attribute to find the min/max in range from start to start + count
-   * @param  {Integer} start
-   * @param  {Integer} count
-   * @return {Object} Object containing the `min` and `max` values (As an array of attribute.itemSize components)
-   */
+					if (options.binary === true) {
 
-			function getMinMax(attribute, start, count) {
+						// https://github.com/KhronosGroup/glTF/blob/master/specification/2.0/README.md#glb-file-format-specification
+						var reader = new window.FileReader();
+						reader.readAsArrayBuffer(blob);
 
-						var output = {
-									min: new Array(attribute.itemSize).fill(Number.POSITIVE_INFINITY),
-									max: new Array(attribute.itemSize).fill(Number.NEGATIVE_INFINITY)
+						reader.onloadend = function () {
+
+							// Binary chunk.
+							var binaryChunk = getPaddedArrayBuffer(reader.result);
+							var binaryChunkPrefix = new DataView(new ArrayBuffer(GLB_CHUNK_PREFIX_BYTES));
+							binaryChunkPrefix.setUint32(0, binaryChunk.byteLength, true);
+							binaryChunkPrefix.setUint32(4, GLB_CHUNK_TYPE_BIN, true); // JSON chunk.
+
+							var jsonChunk = getPaddedArrayBuffer(stringToArrayBuffer(JSON.stringify(json)), 0x20);
+							var jsonChunkPrefix = new DataView(new ArrayBuffer(GLB_CHUNK_PREFIX_BYTES));
+							jsonChunkPrefix.setUint32(0, jsonChunk.byteLength, true);
+							jsonChunkPrefix.setUint32(4, GLB_CHUNK_TYPE_JSON, true); // GLB header.
+
+							var header = new ArrayBuffer(GLB_HEADER_BYTES);
+							var headerView = new DataView(header);
+							headerView.setUint32(0, GLB_HEADER_MAGIC, true);
+							headerView.setUint32(4, GLB_VERSION, true);
+							var totalByteLength = GLB_HEADER_BYTES + jsonChunkPrefix.byteLength + jsonChunk.byteLength + binaryChunkPrefix.byteLength + binaryChunk.byteLength;
+							headerView.setUint32(8, totalByteLength, true);
+							var glbBlob = new Blob([header, jsonChunkPrefix, jsonChunk, binaryChunkPrefix, binaryChunk], {
+								type: 'application/octet-stream'
+							});
+							var glbReader = new window.FileReader();
+							glbReader.readAsArrayBuffer(glbBlob);
+
+							glbReader.onloadend = function () {
+
+								onDone(glbReader.result);
+							};
 						};
+					} else {
 
-						for (var i = start; i < start + count; i++) {
+						if (json.buffers && json.buffers.length > 0) {
 
-									for (var a = 0; a < attribute.itemSize; a++) {
+							var _reader = new window.FileReader();
+							_reader.readAsDataURL(blob);
 
-												var value = void 0;
+							_reader.onloadend = function () {
 
-												if (attribute.itemSize > 4) {
+								var base64data = _reader.result;
+								json.buffers[0].uri = base64data;
+								onDone(json);
+							};
+						} else {
 
-															// no support for interleaved data for itemSize > 4
-															value = attribute.array[i * attribute.itemSize + a];
-												} else {
-
-															if (a === 0) value = attribute.getX(i);else if (a === 1) value = attribute.getY(i);else if (a === 2) value = attribute.getZ(i);else if (a === 3) value = attribute.getW(i);
-												}
-
-												output.min[a] = Math.min(output.min[a], value);
-												output.max[a] = Math.max(output.max[a], value);
-									}
+							onDone(json);
 						}
-
-						return output;
+					}
+				});
 			}
 			/**
-   * Get the required size + padding for a buffer, rounded to the next 4-byte boundary.
-   * https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#data-alignment
-   *
-   * @param {Integer} bufferSize The size the original buffer.
-   * @returns {Integer} new buffer size with required padding.
-   *
-   */
+    * Serializes a userData.
+    *
+    * @param {THREE.Object3D|THREE.Material} object
+    * @param {Object} objectDef
+    */
 
-			function getPaddedBufferSize(bufferSize) {
+		}, {
+			key: 'serializeUserData',
+			value: function serializeUserData(object, objectDef) {
 
-						return Math.ceil(bufferSize / 4) * 4;
+				if (Object.keys(object.userData).length === 0) return;
+				var options = this.options;
+				var extensionsUsed = this.extensionsUsed;
+
+				try {
+
+					var json = JSON.parse(JSON.stringify(object.userData));
+
+					if (options.includeCustomExtensions && json.gltfExtensions) {
+
+						if (objectDef.extensions === undefined) objectDef.extensions = {};
+
+						for (var extensionName in json.gltfExtensions) {
+
+							objectDef.extensions[extensionName] = json.gltfExtensions[extensionName];
+							extensionsUsed[extensionName] = true;
+						}
+
+						delete json.gltfExtensions;
+					}
+
+					if (Object.keys(json).length > 0) objectDef.extras = json;
+				} catch (error) {
+
+					console.warn('THREE.GLTFExporter: userData of \'' + object.name + '\' ' + 'won\'t be serialized because of JSON.stringify error - ' + error.message);
+				}
 			}
 			/**
-   * Returns a buffer aligned to 4-byte boundary.
-   *
-   * @param {ArrayBuffer} arrayBuffer Buffer to pad
-   * @param {Integer} paddingByte (Optional)
-   * @returns {ArrayBuffer} The same buffer if it's already aligned to 4-byte boundary or a new buffer
-   */
+    * Assign and return a temporal unique id for an object
+    * especially which doesn't have .uuid
+    * @param  {Object} object
+    * @return {Integer}
+    */
 
-			function getPaddedArrayBuffer(arrayBuffer) {
-						var paddingByte = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
+		}, {
+			key: 'getUID',
+			value: function getUID(object) {
 
+				if (!this.uids.has(object)) this.uids.set(object, this.uid++);
+				return this.uids.get(object);
+			}
+			/**
+    * Checks if normal attribute values are normalized.
+    *
+    * @param {BufferAttribute} normal
+    * @returns {Boolean}
+    */
 
-						var paddedLength = getPaddedBufferSize(arrayBuffer.byteLength);
+		}, {
+			key: 'isNormalizedNormalAttribute',
+			value: function isNormalizedNormalAttribute(normal) {
 
-						if (paddedLength !== arrayBuffer.byteLength) {
+				var cache = this.cache;
+				if (cache.attributesNormalized.has(normal)) return false;
+				var v = new THREE.Vector3();
 
-									var array = new Uint8Array(paddedLength);
-									array.set(new Uint8Array(arrayBuffer));
+				for (var i = 0, il = normal.count; i < il; i++) {
 
-									if (paddingByte !== 0) {
+					// 0.0005 is from glTF-validator
+					if (Math.abs(v.fromBufferAttribute(normal, i).length() - 1.0) > 0.0005) return false;
+				}
 
-												for (var i = arrayBuffer.byteLength; i < paddedLength; i++) {
+				return true;
+			}
+			/**
+    * Creates normalized normal buffer attribute.
+    *
+    * @param {BufferAttribute} normal
+    * @returns {BufferAttribute}
+    *
+    */
 
-															array[i] = paddingByte;
-												}
-									}
+		}, {
+			key: 'createNormalizedNormalAttribute',
+			value: function createNormalizedNormalAttribute(normal) {
 
-									return array.buffer;
+				var cache = this.cache;
+				if (cache.attributesNormalized.has(normal)) return cache.attributesNormalized.get(normal);
+				var attribute = normal.clone();
+				var v = new THREE.Vector3();
+
+				for (var i = 0, il = attribute.count; i < il; i++) {
+
+					v.fromBufferAttribute(attribute, i);
+
+					if (v.x === 0 && v.y === 0 && v.z === 0) {
+
+						// if values can't be normalized set (1, 0, 0)
+						v.setX(1.0);
+					} else {
+
+						v.normalize();
+					}
+
+					attribute.setXYZ(i, v.x, v.y, v.z);
+				}
+
+				cache.attributesNormalized.set(normal, attribute);
+				return attribute;
+			}
+			/**
+    * Applies a texture transform, if present, to the map definition. Requires
+    * the KHR_texture_transform extension.
+    *
+    * @param {Object} mapDef
+    * @param {THREE.Texture} texture
+    */
+
+		}, {
+			key: 'applyTextureTransform',
+			value: function applyTextureTransform(mapDef, texture) {
+
+				var didTransform = false;
+				var transformDef = {};
+
+				if (texture.offset.x !== 0 || texture.offset.y !== 0) {
+
+					transformDef.offset = texture.offset.toArray();
+					didTransform = true;
+				}
+
+				if (texture.rotation !== 0) {
+
+					transformDef.rotation = texture.rotation;
+					didTransform = true;
+				}
+
+				if (texture.repeat.x !== 1 || texture.repeat.y !== 1) {
+
+					transformDef.scale = texture.repeat.toArray();
+					didTransform = true;
+				}
+
+				if (didTransform) {
+
+					mapDef.extensions = mapDef.extensions || {};
+					mapDef.extensions['KHR_texture_transform'] = transformDef;
+					this.extensionsUsed['KHR_texture_transform'] = true;
+				}
+			}
+			/**
+    * Process a buffer to append to the default one.
+    * @param  {ArrayBuffer} buffer
+    * @return {Integer}
+    */
+
+		}, {
+			key: 'processBuffer',
+			value: function processBuffer(buffer) {
+
+				var json = this.json;
+				var buffers = this.buffers;
+				if (!json.buffers) json.buffers = [{
+					byteLength: 0
+				}]; // All buffers are merged before export.
+
+				buffers.push(buffer);
+				return 0;
+			}
+			/**
+    * Process and generate a BufferView
+    * @param  {BufferAttribute} attribute
+    * @param  {number} componentType
+    * @param  {number} start
+    * @param  {number} count
+    * @param  {number} target (Optional) Target usage of the BufferView
+    * @return {Object}
+    */
+
+		}, {
+			key: 'processBufferView',
+			value: function processBufferView(attribute, componentType, start, count, target) {
+
+				var json = this.json;
+				if (!json.bufferViews) json.bufferViews = []; // Create a new dataview and dump the attribute's array into it
+
+				var componentSize = void 0;
+
+				if (componentType === WEBGL_CONSTANTS.UNSIGNED_BYTE) {
+
+					componentSize = 1;
+				} else if (componentType === WEBGL_CONSTANTS.UNSIGNED_SHORT) {
+
+					componentSize = 2;
+				} else {
+
+					componentSize = 4;
+				}
+
+				var byteLength = getPaddedBufferSize(count * attribute.itemSize * componentSize);
+				var dataView = new DataView(new ArrayBuffer(byteLength));
+				var offset = 0;
+
+				for (var i = start; i < start + count; i++) {
+
+					for (var a = 0; a < attribute.itemSize; a++) {
+
+						var value = void 0;
+
+						if (attribute.itemSize > 4) {
+
+							// no support for interleaved data for itemSize > 4
+							value = attribute.array[i * attribute.itemSize + a];
+						} else {
+
+							if (a === 0) value = attribute.getX(i);else if (a === 1) value = attribute.getY(i);else if (a === 2) value = attribute.getZ(i);else if (a === 3) value = attribute.getW(i);
 						}
 
-						return arrayBuffer;
+						if (componentType === WEBGL_CONSTANTS.FLOAT) {
+
+							dataView.setFloat32(offset, value, true);
+						} else if (componentType === WEBGL_CONSTANTS.UNSIGNED_INT) {
+
+							dataView.setUint32(offset, value, true);
+						} else if (componentType === WEBGL_CONSTANTS.UNSIGNED_SHORT) {
+
+							dataView.setUint16(offset, value, true);
+						} else if (componentType === WEBGL_CONSTANTS.UNSIGNED_BYTE) {
+
+							dataView.setUint8(offset, value);
+						}
+
+						offset += componentSize;
+					}
+				}
+
+				var bufferViewDef = {
+					buffer: this.processBuffer(dataView.buffer),
+					byteOffset: this.byteOffset,
+					byteLength: byteLength
+				};
+				if (target !== undefined) bufferViewDef.target = target;
+
+				if (target === WEBGL_CONSTANTS.ARRAY_BUFFER) {
+
+					// Only define byteStride for vertex attributes.
+					bufferViewDef.byteStride = attribute.itemSize * componentSize;
+				}
+
+				this.byteOffset += byteLength;
+				json.bufferViews.push(bufferViewDef); // @TODO Merge bufferViews where possible.
+
+				var output = {
+					id: json.bufferViews.length - 1,
+					byteLength: 0
+				};
+				return output;
+			}
+			/**
+    * Process and generate a BufferView from an image Blob.
+    * @param {Blob} blob
+    * @return {Promise<Integer>}
+    */
+
+		}, {
+			key: 'processBufferViewImage',
+			value: function processBufferViewImage(blob) {
+
+				var writer = this;
+				var json = writer.json;
+				if (!json.bufferViews) json.bufferViews = [];
+				return new Promise(function (resolve) {
+
+					var reader = new window.FileReader();
+					reader.readAsArrayBuffer(blob);
+
+					reader.onloadend = function () {
+
+						var buffer = getPaddedArrayBuffer(reader.result);
+						var bufferViewDef = {
+							buffer: writer.processBuffer(buffer),
+							byteOffset: writer.byteOffset,
+							byteLength: buffer.byteLength
+						};
+						writer.byteOffset += buffer.byteLength;
+						resolve(json.bufferViews.push(bufferViewDef) - 1);
+					};
+				});
+			}
+			/**
+    * Process attribute to generate an accessor
+    * @param  {BufferAttribute} attribute Attribute to process
+    * @param  {THREE.BufferGeometry} geometry (Optional) Geometry used for truncated draw range
+    * @param  {Integer} start (Optional)
+    * @param  {Integer} count (Optional)
+    * @return {Integer|null} Index of the processed accessor on the "accessors" array
+    */
+
+		}, {
+			key: 'processAccessor',
+			value: function processAccessor(attribute, geometry, start, count) {
+
+				var options = this.options;
+				var json = this.json;
+				var types = {
+					1: 'SCALAR',
+					2: 'VEC2',
+					3: 'VEC3',
+					4: 'VEC4',
+					16: 'MAT4'
+				};
+				var componentType = void 0; // Detect the component type of the attribute array (float, uint or ushort)
+
+				if (attribute.array.constructor === Float32Array) {
+
+					componentType = WEBGL_CONSTANTS.FLOAT;
+				} else if (attribute.array.constructor === Uint32Array) {
+
+					componentType = WEBGL_CONSTANTS.UNSIGNED_INT;
+				} else if (attribute.array.constructor === Uint16Array) {
+
+					componentType = WEBGL_CONSTANTS.UNSIGNED_SHORT;
+				} else if (attribute.array.constructor === Uint8Array) {
+
+					componentType = WEBGL_CONSTANTS.UNSIGNED_BYTE;
+				} else {
+
+					throw new Error('THREE.GLTFExporter: Unsupported bufferAttribute component type.');
+				}
+
+				if (start === undefined) start = 0;
+				if (count === undefined) count = attribute.count; // @TODO Indexed buffer geometry with drawRange not supported yet
+
+				if (options.truncateDrawRange && geometry !== undefined && geometry.index === null) {
+
+					var end = start + count;
+					var end2 = geometry.drawRange.count === Infinity ? attribute.count : geometry.drawRange.start + geometry.drawRange.count;
+					start = Math.max(start, geometry.drawRange.start);
+					count = Math.min(end, end2) - start;
+					if (count < 0) count = 0;
+				} // Skip creating an accessor if the attribute doesn't have data to export
+
+
+				if (count === 0) return null;
+				var minMax = getMinMax(attribute, start, count);
+				var bufferViewTarget = void 0; // If geometry isn't provided, don't infer the target usage of the bufferView. For
+				// animation samplers, target must not be set.
+
+				if (geometry !== undefined) {
+
+					bufferViewTarget = attribute === geometry.index ? WEBGL_CONSTANTS.ELEMENT_ARRAY_BUFFER : WEBGL_CONSTANTS.ARRAY_BUFFER;
+				}
+
+				var bufferView = this.processBufferView(attribute, componentType, start, count, bufferViewTarget);
+				var accessorDef = {
+					bufferView: bufferView.id,
+					byteOffset: bufferView.byteOffset,
+					componentType: componentType,
+					count: count,
+					max: minMax.max,
+					min: minMax.min,
+					type: types[attribute.itemSize]
+				};
+				if (attribute.normalized === true) accessorDef.normalized = true;
+				if (!json.accessors) json.accessors = [];
+				return json.accessors.push(accessorDef) - 1;
+			}
+			/**
+    * Process image
+    * @param  {Image} image to process
+    * @param  {Integer} format of the image (e.g. THREE.RGBFormat, THREE.RGBAFormat etc)
+    * @param  {Boolean} flipY before writing out the image
+    * @return {Integer}     Index of the processed texture in the "images" array
+    */
+
+		}, {
+			key: 'processImage',
+			value: function processImage(image, format, flipY) {
+
+				var writer = this;
+				var cache = writer.cache;
+				var json = writer.json;
+				var options = writer.options;
+				var pending = writer.pending;
+				if (!cache.images.has(image)) cache.images.set(image, {});
+				var cachedImages = cache.images.get(image);
+				var mimeType = format === THREE.RGBAFormat ? 'image/png' : 'image/jpeg';
+				var key = mimeType + ':flipY/' + flipY.toString();
+				if (cachedImages[key] !== undefined) return cachedImages[key];
+				if (!json.images) json.images = [];
+				var imageDef = {
+					mimeType: mimeType
+				};
+
+				if (options.embedImages) {
+
+					var canvas = cachedCanvas = cachedCanvas || document.createElement('canvas');
+					canvas.width = Math.min(image.width, options.maxTextureSize);
+					canvas.height = Math.min(image.height, options.maxTextureSize);
+					var ctx = canvas.getContext('2d');
+
+					if (flipY === true) {
+
+						ctx.translate(0, canvas.height);
+						ctx.scale(1, -1);
+					}
+
+					if (typeof HTMLImageElement !== 'undefined' && image instanceof HTMLImageElement || typeof HTMLCanvasElement !== 'undefined' && image instanceof HTMLCanvasElement || typeof OffscreenCanvas !== 'undefined' && image instanceof OffscreenCanvas || typeof ImageBitmap !== 'undefined' && image instanceof ImageBitmap) {
+
+						ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
+					} else {
+
+						if (format !== THREE.RGBAFormat && format !== THREE.RGBFormat) {
+
+							console.error('GLTFExporter: Only RGB and RGBA formats are supported.');
+						}
+
+						if (image.width > options.maxTextureSize || image.height > options.maxTextureSize) {
+
+							console.warn('GLTFExporter: Image size is bigger than maxTextureSize', image);
+						}
+
+						var data = new Uint8ClampedArray(image.height * image.width * 4);
+
+						if (format === THREE.RGBAFormat) {
+
+							for (var i = 0; i < data.length; i += 4) {
+
+								data[i + 0] = image.data[i + 0];
+								data[i + 1] = image.data[i + 1];
+								data[i + 2] = image.data[i + 2];
+								data[i + 3] = image.data[i + 3];
+							}
+						} else {
+
+							for (var _i = 0, j = 0; _i < data.length; _i += 4, j += 3) {
+
+								data[_i + 0] = image.data[j + 0];
+								data[_i + 1] = image.data[j + 1];
+								data[_i + 2] = image.data[j + 2];
+								data[_i + 3] = 255;
+							}
+						}
+
+						ctx.putImageData(new ImageData(data, image.width, image.height), 0, 0);
+					}
+
+					if (options.binary === true) {
+
+						pending.push(new Promise(function (resolve) {
+
+							canvas.toBlob(function (blob) {
+
+								writer.processBufferViewImage(blob).then(function (bufferViewIndex) {
+
+									imageDef.bufferView = bufferViewIndex;
+									resolve();
+								});
+							}, mimeType);
+						}));
+					} else {
+
+						imageDef.uri = canvas.toDataURL(mimeType);
+					}
+				} else {
+
+					imageDef.uri = image.src;
+				}
+
+				var index = json.images.push(imageDef) - 1;
+				cachedImages[key] = index;
+				return index;
+			}
+			/**
+    * Process sampler
+    * @param  {Texture} map Texture to process
+    * @return {Integer}     Index of the processed texture in the "samplers" array
+    */
+
+		}, {
+			key: 'processSampler',
+			value: function processSampler(map) {
+
+				var json = this.json;
+				if (!json.samplers) json.samplers = [];
+				var samplerDef = {
+					magFilter: THREE_TO_WEBGL[map.magFilter],
+					minFilter: THREE_TO_WEBGL[map.minFilter],
+					wrapS: THREE_TO_WEBGL[map.wrapS],
+					wrapT: THREE_TO_WEBGL[map.wrapT]
+				};
+				return json.samplers.push(samplerDef) - 1;
+			}
+			/**
+    * Process texture
+    * @param  {Texture} map Map to process
+    * @return {Integer} Index of the processed texture in the "textures" array
+    */
+
+		}, {
+			key: 'processTexture',
+			value: function processTexture(map) {
+
+				var cache = this.cache;
+				var json = this.json;
+				if (cache.textures.has(map)) return cache.textures.get(map);
+				if (!json.textures) json.textures = [];
+				var textureDef = {
+					sampler: this.processSampler(map),
+					source: this.processImage(map.image, map.format, map.flipY)
+				};
+				if (map.name) textureDef.name = map.name;
+
+				this._invokeAll(function (ext) {
+
+					ext.writeTexture && ext.writeTexture(map, textureDef);
+				});
+
+				var index = json.textures.push(textureDef) - 1;
+				cache.textures.set(map, index);
+				return index;
+			}
+			/**
+    * Process material
+    * @param  {THREE.Material} material Material to process
+    * @return {Integer|null} Index of the processed material in the "materials" array
+    */
+
+		}, {
+			key: 'processMaterial',
+			value: function processMaterial(material) {
+
+				var cache = this.cache;
+				var json = this.json;
+				if (cache.materials.has(material)) return cache.materials.get(material);
+
+				if (material.isShaderMaterial) {
+
+					console.warn('GLTFExporter: THREE.ShaderMaterial not supported.');
+					return null;
+				}
+
+				if (!json.materials) json.materials = []; // @QUESTION Should we avoid including any attribute that has the default value?
+
+				var materialDef = {
+					pbrMetallicRoughness: {}
+				};
+
+				if (material.isMeshStandardMaterial !== true && material.isMeshBasicMaterial !== true) {
+
+					console.warn('GLTFExporter: Use MeshStandardMaterial or MeshBasicMaterial for best results.');
+				} // pbrMetallicRoughness.baseColorFactor
+
+
+				var color = material.color.toArray().concat([material.opacity]);
+
+				if (!equalArray(color, [1, 1, 1, 1])) {
+
+					materialDef.pbrMetallicRoughness.baseColorFactor = color;
+				}
+
+				if (material.isMeshStandardMaterial) {
+
+					materialDef.pbrMetallicRoughness.metallicFactor = material.metalness;
+					materialDef.pbrMetallicRoughness.roughnessFactor = material.roughness;
+				} else {
+
+					materialDef.pbrMetallicRoughness.metallicFactor = 0.5;
+					materialDef.pbrMetallicRoughness.roughnessFactor = 0.5;
+				} // pbrMetallicRoughness.metallicRoughnessTexture
+
+
+				if (material.metalnessMap || material.roughnessMap) {
+
+					if (material.metalnessMap === material.roughnessMap) {
+
+						var metalRoughMapDef = {
+							index: this.processTexture(material.metalnessMap)
+						};
+						this.applyTextureTransform(metalRoughMapDef, material.metalnessMap);
+						materialDef.pbrMetallicRoughness.metallicRoughnessTexture = metalRoughMapDef;
+					} else {
+
+						console.warn('THREE.GLTFExporter: Ignoring metalnessMap and roughnessMap because they are not the same Texture.');
+					}
+				} // pbrMetallicRoughness.baseColorTexture or pbrSpecularGlossiness diffuseTexture
+
+
+				if (material.map) {
+
+					var baseColorMapDef = {
+						index: this.processTexture(material.map)
+					};
+					this.applyTextureTransform(baseColorMapDef, material.map);
+					materialDef.pbrMetallicRoughness.baseColorTexture = baseColorMapDef;
+				}
+
+				if (material.emissive) {
+
+					// note: emissive components are limited to stay within the 0 - 1 range to accommodate glTF spec. see #21849 and #22000.
+					var emissive = material.emissive.clone().multiplyScalar(material.emissiveIntensity);
+					var maxEmissiveComponent = Math.max(emissive.r, emissive.g, emissive.b);
+
+					if (maxEmissiveComponent > 1) {
+
+						emissive.multiplyScalar(1 / maxEmissiveComponent);
+						console.warn('THREE.GLTFExporter: Some emissive components exceed 1; emissive has been limited');
+					}
+
+					if (maxEmissiveComponent > 0) {
+
+						materialDef.emissiveFactor = emissive.toArray();
+					} // emissiveTexture
+
+
+					if (material.emissiveMap) {
+
+						var emissiveMapDef = {
+							index: this.processTexture(material.emissiveMap)
+						};
+						this.applyTextureTransform(emissiveMapDef, material.emissiveMap);
+						materialDef.emissiveTexture = emissiveMapDef;
+					}
+				} // normalTexture
+
+
+				if (material.normalMap) {
+
+					var normalMapDef = {
+						index: this.processTexture(material.normalMap)
+					};
+
+					if (material.normalScale && material.normalScale.x !== 1) {
+
+						// glTF normal scale is univariate. Ignore `y`, which may be flipped.
+						// Context: https://github.com/mrdoob/three.js/issues/11438#issuecomment-507003995
+						normalMapDef.scale = material.normalScale.x;
+					}
+
+					this.applyTextureTransform(normalMapDef, material.normalMap);
+					materialDef.normalTexture = normalMapDef;
+				} // occlusionTexture
+
+
+				if (material.aoMap) {
+
+					var occlusionMapDef = {
+						index: this.processTexture(material.aoMap),
+						texCoord: 1
+					};
+
+					if (material.aoMapIntensity !== 1.0) {
+
+						occlusionMapDef.strength = material.aoMapIntensity;
+					}
+
+					this.applyTextureTransform(occlusionMapDef, material.aoMap);
+					materialDef.occlusionTexture = occlusionMapDef;
+				} // alphaMode
+
+
+				if (material.transparent) {
+
+					materialDef.alphaMode = 'BLEND';
+				} else {
+
+					if (material.alphaTest > 0.0) {
+
+						materialDef.alphaMode = 'MASK';
+						materialDef.alphaCutoff = material.alphaTest;
+					}
+				} // doubleSided
+
+
+				if (material.side === THREE.DoubleSide) materialDef.doubleSided = true;
+				if (material.name !== '') materialDef.name = material.name;
+				this.serializeUserData(material, materialDef);
+
+				this._invokeAll(function (ext) {
+
+					ext.writeMaterial && ext.writeMaterial(material, materialDef);
+				});
+
+				var index = json.materials.push(materialDef) - 1;
+				cache.materials.set(material, index);
+				return index;
+			}
+			/**
+    * Process mesh
+    * @param  {THREE.Mesh} mesh Mesh to process
+    * @return {Integer|null} Index of the processed mesh in the "meshes" array
+    */
+
+		}, {
+			key: 'processMesh',
+			value: function processMesh(mesh) {
+
+				var cache = this.cache;
+				var json = this.json;
+				var meshCacheKeyParts = [mesh.geometry.uuid];
+
+				if (Array.isArray(mesh.material)) {
+
+					for (var i = 0, l = mesh.material.length; i < l; i++) {
+
+						meshCacheKeyParts.push(mesh.material[i].uuid);
+					}
+				} else {
+
+					meshCacheKeyParts.push(mesh.material.uuid);
+				}
+
+				var meshCacheKey = meshCacheKeyParts.join(':');
+				if (cache.meshes.has(meshCacheKey)) return cache.meshes.get(meshCacheKey);
+				var geometry = mesh.geometry;
+				var mode = void 0; // Use the correct mode
+
+				if (mesh.isLineSegments) {
+
+					mode = WEBGL_CONSTANTS.LINES;
+				} else if (mesh.isLineLoop) {
+
+					mode = WEBGL_CONSTANTS.LINE_LOOP;
+				} else if (mesh.isLine) {
+
+					mode = WEBGL_CONSTANTS.LINE_STRIP;
+				} else if (mesh.isPoints) {
+
+					mode = WEBGL_CONSTANTS.POINTS;
+				} else {
+
+					mode = mesh.material.wireframe ? WEBGL_CONSTANTS.LINES : WEBGL_CONSTANTS.TRIANGLES;
+				}
+
+				if (geometry.isBufferGeometry !== true) {
+
+					throw new Error('THREE.GLTFExporter: Geometry is not of type THREE.BufferGeometry.');
+				}
+
+				var meshDef = {};
+				var attributes = {};
+				var primitives = [];
+				var targets = []; // Conversion between attributes names in threejs and gltf spec
+
+				var nameConversion = {
+					uv: 'TEXCOORD_0',
+					uv2: 'TEXCOORD_1',
+					color: 'COLOR_0',
+					skinWeight: 'WEIGHTS_0',
+					skinIndex: 'JOINTS_0'
+				};
+				var originalNormal = geometry.getAttribute('normal');
+
+				if (originalNormal !== undefined && !this.isNormalizedNormalAttribute(originalNormal)) {
+
+					console.warn('THREE.GLTFExporter: Creating normalized normal attribute from the non-normalized one.');
+					geometry.setAttribute('normal', this.createNormalizedNormalAttribute(originalNormal));
+				} // @QUESTION Detect if .vertexColors = true?
+				// For every attribute create an accessor
+
+
+				var modifiedAttribute = null;
+
+				for (var attributeName in geometry.attributes) {
+
+					// Ignore morph target attributes, which are exported later.
+					if (attributeName.substr(0, 5) === 'morph') continue;
+					var attribute = geometry.attributes[attributeName];
+					attributeName = nameConversion[attributeName] || attributeName.toUpperCase(); // Prefix all geometry attributes except the ones specifically
+					// listed in the spec; non-spec attributes are considered custom.
+
+					var validVertexAttributes = /^(POSITION|NORMAL|TANGENT|TEXCOORD_\d+|COLOR_\d+|JOINTS_\d+|WEIGHTS_\d+)$/;
+					if (!validVertexAttributes.test(attributeName)) attributeName = '_' + attributeName;
+
+					if (cache.attributes.has(this.getUID(attribute))) {
+
+						attributes[attributeName] = cache.attributes.get(this.getUID(attribute));
+						continue;
+					} // JOINTS_0 must be UNSIGNED_BYTE or UNSIGNED_SHORT.
+
+
+					modifiedAttribute = null;
+					var array = attribute.array;
+
+					if (attributeName === 'JOINTS_0' && !(array instanceof Uint16Array) && !(array instanceof Uint8Array)) {
+
+						console.warn('GLTFExporter: Attribute "skinIndex" converted to type UNSIGNED_SHORT.');
+						modifiedAttribute = new THREE.BufferAttribute(new Uint16Array(array), attribute.itemSize, attribute.normalized);
+					}
+
+					var accessor = this.processAccessor(modifiedAttribute || attribute, geometry);
+
+					if (accessor !== null) {
+
+						attributes[attributeName] = accessor;
+						cache.attributes.set(this.getUID(attribute), accessor);
+					}
+				}
+
+				if (originalNormal !== undefined) geometry.setAttribute('normal', originalNormal); // Skip if no exportable attributes found
+
+				if (Object.keys(attributes).length === 0) return null; // Morph targets
+
+				if (mesh.morphTargetInfluences !== undefined && mesh.morphTargetInfluences.length > 0) {
+
+					var weights = [];
+					var targetNames = [];
+					var reverseDictionary = {};
+
+					if (mesh.morphTargetDictionary !== undefined) {
+
+						for (var key in mesh.morphTargetDictionary) {
+
+							reverseDictionary[mesh.morphTargetDictionary[key]] = key;
+						}
+					}
+
+					for (var _i2 = 0; _i2 < mesh.morphTargetInfluences.length; ++_i2) {
+
+						var target = {};
+						var warned = false;
+
+						for (var _attributeName in geometry.morphAttributes) {
+
+							// glTF 2.0 morph supports only POSITION/NORMAL/TANGENT.
+							// Three.js doesn't support TANGENT yet.
+							if (_attributeName !== 'position' && _attributeName !== 'normal') {
+
+								if (!warned) {
+
+									console.warn('GLTFExporter: Only POSITION and NORMAL morph are supported.');
+									warned = true;
+								}
+
+								continue;
+							}
+
+							var _attribute = geometry.morphAttributes[_attributeName][_i2];
+							var gltfAttributeName = _attributeName.toUpperCase(); // Three.js morph attribute has absolute values while the one of glTF has relative values.
+							//
+							// glTF 2.0 Specification:
+							// https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#morph-targets
+
+							var baseAttribute = geometry.attributes[_attributeName];
+
+							if (cache.attributes.has(this.getUID(_attribute))) {
+
+								target[gltfAttributeName] = cache.attributes.get(this.getUID(_attribute));
+								continue;
+							} // Clones attribute not to override
+
+
+							var relativeAttribute = _attribute.clone();
+
+							if (!geometry.morphTargetsRelative) {
+
+								for (var j = 0, jl = _attribute.count; j < jl; j++) {
+
+									relativeAttribute.setXYZ(j, _attribute.getX(j) - baseAttribute.getX(j), _attribute.getY(j) - baseAttribute.getY(j), _attribute.getZ(j) - baseAttribute.getZ(j));
+								}
+							}
+
+							target[gltfAttributeName] = this.processAccessor(relativeAttribute, geometry);
+							cache.attributes.set(this.getUID(baseAttribute), target[gltfAttributeName]);
+						}
+
+						targets.push(target);
+						weights.push(mesh.morphTargetInfluences[_i2]);
+						if (mesh.morphTargetDictionary !== undefined) targetNames.push(reverseDictionary[_i2]);
+					}
+
+					meshDef.weights = weights;
+
+					if (targetNames.length > 0) {
+
+						meshDef.extras = {};
+						meshDef.extras.targetNames = targetNames;
+					}
+				}
+
+				var isMultiMaterial = Array.isArray(mesh.material);
+				if (isMultiMaterial && geometry.groups.length === 0) return null;
+				var materials = isMultiMaterial ? mesh.material : [mesh.material];
+				var groups = isMultiMaterial ? geometry.groups : [{
+					materialIndex: 0,
+					start: undefined,
+					count: undefined
+				}];
+
+				for (var _i3 = 0, il = groups.length; _i3 < il; _i3++) {
+
+					var primitive = {
+						mode: mode,
+						attributes: attributes
+					};
+					this.serializeUserData(geometry, primitive);
+					if (targets.length > 0) primitive.targets = targets;
+
+					if (geometry.index !== null) {
+
+						var cacheKey = this.getUID(geometry.index);
+
+						if (groups[_i3].start !== undefined || groups[_i3].count !== undefined) {
+
+							cacheKey += ':' + groups[_i3].start + ':' + groups[_i3].count;
+						}
+
+						if (cache.attributes.has(cacheKey)) {
+
+							primitive.indices = cache.attributes.get(cacheKey);
+						} else {
+
+							primitive.indices = this.processAccessor(geometry.index, geometry, groups[_i3].start, groups[_i3].count);
+							cache.attributes.set(cacheKey, primitive.indices);
+						}
+
+						if (primitive.indices === null) delete primitive.indices;
+					}
+
+					var material = this.processMaterial(materials[groups[_i3].materialIndex]);
+					if (material !== null) primitive.material = material;
+					primitives.push(primitive);
+				}
+
+				meshDef.primitives = primitives;
+				if (!json.meshes) json.meshes = [];
+
+				this._invokeAll(function (ext) {
+
+					ext.writeMesh && ext.writeMesh(mesh, meshDef);
+				});
+
+				var index = json.meshes.push(meshDef) - 1;
+				cache.meshes.set(meshCacheKey, index);
+				return index;
+			}
+			/**
+    * Process camera
+    * @param  {THREE.Camera} camera Camera to process
+    * @return {Integer}      Index of the processed mesh in the "camera" array
+    */
+
+		}, {
+			key: 'processCamera',
+			value: function processCamera(camera) {
+
+				var json = this.json;
+				if (!json.cameras) json.cameras = [];
+				var isOrtho = camera.isOrthographicCamera;
+				var cameraDef = {
+					type: isOrtho ? 'orthographic' : 'perspective'
+				};
+
+				if (isOrtho) {
+
+					cameraDef.orthographic = {
+						xmag: camera.right * 2,
+						ymag: camera.top * 2,
+						zfar: camera.far <= 0 ? 0.001 : camera.far,
+						znear: camera.near < 0 ? 0 : camera.near
+					};
+				} else {
+
+					cameraDef.perspective = {
+						aspectRatio: camera.aspect,
+						yfov: THREE.MathUtils.degToRad(camera.fov),
+						zfar: camera.far <= 0 ? 0.001 : camera.far,
+						znear: camera.near < 0 ? 0 : camera.near
+					};
+				} // Question: Is saving "type" as name intentional?
+
+
+				if (camera.name !== '') cameraDef.name = camera.type;
+				return json.cameras.push(cameraDef) - 1;
+			}
+			/**
+    * Creates glTF animation entry from AnimationClip object.
+    *
+    * Status:
+    * - Only properties listed in PATH_PROPERTIES may be animated.
+    *
+    * @param {THREE.AnimationClip} clip
+    * @param {THREE.Object3D} root
+    * @return {number|null}
+    */
+
+		}, {
+			key: 'processAnimation',
+			value: function processAnimation(clip, root) {
+
+				var json = this.json;
+				var nodeMap = this.nodeMap;
+				if (!json.animations) json.animations = [];
+				clip = GLTFExporter.Utils.mergeMorphTargetTracks(clip.clone(), root);
+				var tracks = clip.tracks;
+				var channels = [];
+				var samplers = [];
+
+				for (var i = 0; i < tracks.length; ++i) {
+
+					var track = tracks[i];
+					var trackBinding = THREE.PropertyBinding.parseTrackName(track.name);
+					var trackNode = THREE.PropertyBinding.findNode(root, trackBinding.nodeName);
+					var trackProperty = PATH_PROPERTIES[trackBinding.propertyName];
+
+					if (trackBinding.objectName === 'bones') {
+
+						if (trackNode.isSkinnedMesh === true) {
+
+							trackNode = trackNode.skeleton.getBoneByName(trackBinding.objectIndex);
+						} else {
+
+							trackNode = undefined;
+						}
+					}
+
+					if (!trackNode || !trackProperty) {
+
+						console.warn('THREE.GLTFExporter: Could not export animation track "%s".', track.name);
+						return null;
+					}
+
+					var inputItemSize = 1;
+					var outputItemSize = track.values.length / track.times.length;
+
+					if (trackProperty === PATH_PROPERTIES.morphTargetInfluences) {
+
+						outputItemSize /= trackNode.morphTargetInfluences.length;
+					}
+
+					var interpolation = void 0; // @TODO export CubicInterpolant(InterpolateSmooth) as CUBICSPLINE
+					// Detecting glTF cubic spline interpolant by checking factory method's special property
+					// GLTFCubicSplineInterpolant is a custom interpolant and track doesn't return
+					// valid value from .getInterpolation().
+
+					if (track.createInterpolant.isInterpolantFactoryMethodGLTFCubicSpline === true) {
+
+						interpolation = 'CUBICSPLINE'; // itemSize of CUBICSPLINE keyframe is 9
+						// (VEC3 * 3: inTangent, splineVertex, and outTangent)
+						// but needs to be stored as VEC3 so dividing by 3 here.
+
+						outputItemSize /= 3;
+					} else if (track.getInterpolation() === THREE.InterpolateDiscrete) {
+
+						interpolation = 'STEP';
+					} else {
+
+						interpolation = 'LINEAR';
+					}
+
+					samplers.push({
+						input: this.processAccessor(new THREE.BufferAttribute(track.times, inputItemSize)),
+						output: this.processAccessor(new THREE.BufferAttribute(track.values, outputItemSize)),
+						interpolation: interpolation
+					});
+					channels.push({
+						sampler: samplers.length - 1,
+						target: {
+							node: nodeMap.get(trackNode),
+							path: trackProperty
+						}
+					});
+				}
+
+				json.animations.push({
+					name: clip.name || 'clip_' + json.animations.length,
+					samplers: samplers,
+					channels: channels
+				});
+				return json.animations.length - 1;
+			}
+			/**
+    * @param {THREE.Object3D} object
+    * @return {number|null}
+    */
+
+		}, {
+			key: 'processSkin',
+			value: function processSkin(object) {
+
+				var json = this.json;
+				var nodeMap = this.nodeMap;
+				var node = json.nodes[nodeMap.get(object)];
+				var skeleton = object.skeleton;
+				if (skeleton === undefined) return null;
+				var rootJoint = object.skeleton.bones[0];
+				if (rootJoint === undefined) return null;
+				var joints = [];
+				var inverseBindMatrices = new Float32Array(skeleton.bones.length * 16);
+				var temporaryBoneInverse = new THREE.Matrix4();
+
+				for (var i = 0; i < skeleton.bones.length; ++i) {
+
+					joints.push(nodeMap.get(skeleton.bones[i]));
+					temporaryBoneInverse.copy(skeleton.boneInverses[i]);
+					temporaryBoneInverse.multiply(object.bindMatrix).toArray(inverseBindMatrices, i * 16);
+				}
+
+				if (json.skins === undefined) json.skins = [];
+				json.skins.push({
+					inverseBindMatrices: this.processAccessor(new THREE.BufferAttribute(inverseBindMatrices, 16)),
+					joints: joints,
+					skeleton: nodeMap.get(rootJoint)
+				});
+				var skinIndex = node.skin = json.skins.length - 1;
+				return skinIndex;
+			}
+			/**
+    * Process Object3D node
+    * @param  {THREE.Object3D} node Object3D to processNode
+    * @return {Integer} Index of the node in the nodes list
+    */
+
+		}, {
+			key: 'processNode',
+			value: function processNode(object) {
+
+				var json = this.json;
+				var options = this.options;
+				var nodeMap = this.nodeMap;
+				if (!json.nodes) json.nodes = [];
+				var nodeDef = {};
+
+				if (options.trs) {
+
+					var rotation = object.quaternion.toArray();
+					var position = object.position.toArray();
+					var scale = object.scale.toArray();
+
+					if (!equalArray(rotation, [0, 0, 0, 1])) {
+
+						nodeDef.rotation = rotation;
+					}
+
+					if (!equalArray(position, [0, 0, 0])) {
+
+						nodeDef.translation = position;
+					}
+
+					if (!equalArray(scale, [1, 1, 1])) {
+
+						nodeDef.scale = scale;
+					}
+				} else {
+
+					if (object.matrixAutoUpdate) {
+
+						object.updateMatrix();
+					}
+
+					if (isIdentityMatrix(object.matrix) === false) {
+
+						nodeDef.matrix = object.matrix.elements;
+					}
+				} // We don't export empty strings name because it represents no-name in Three.js.
+
+
+				if (object.name !== '') nodeDef.name = String(object.name);
+				this.serializeUserData(object, nodeDef);
+
+				if (object.isMesh || object.isLine || object.isPoints) {
+
+					var meshIndex = this.processMesh(object);
+					if (meshIndex !== null) nodeDef.mesh = meshIndex;
+				} else if (object.isCamera) {
+
+					nodeDef.camera = this.processCamera(object);
+				}
+
+				if (object.isSkinnedMesh) this.skins.push(object);
+
+				if (object.children.length > 0) {
+
+					var children = [];
+
+					for (var i = 0, l = object.children.length; i < l; i++) {
+
+						var child = object.children[i];
+
+						if (child.visible || options.onlyVisible === false) {
+
+							var _nodeIndex = this.processNode(child);
+							if (_nodeIndex !== null) children.push(_nodeIndex);
+						}
+					}
+
+					if (children.length > 0) nodeDef.children = children;
+				}
+
+				this._invokeAll(function (ext) {
+
+					ext.writeNode && ext.writeNode(object, nodeDef);
+				});
+
+				var nodeIndex = json.nodes.push(nodeDef) - 1;
+				nodeMap.set(object, nodeIndex);
+				return nodeIndex;
+			}
+			/**
+    * Process THREE.Scene
+    * @param  {Scene} node THREE.Scene to process
+    */
+
+		}, {
+			key: 'processScene',
+			value: function processScene(scene) {
+
+				var json = this.json;
+				var options = this.options;
+
+				if (!json.scenes) {
+
+					json.scenes = [];
+					json.scene = 0;
+				}
+
+				var sceneDef = {};
+				if (scene.name !== '') sceneDef.name = scene.name;
+				json.scenes.push(sceneDef);
+				var nodes = [];
+
+				for (var i = 0, l = scene.children.length; i < l; i++) {
+
+					var child = scene.children[i];
+
+					if (child.visible || options.onlyVisible === false) {
+
+						var nodeIndex = this.processNode(child);
+						if (nodeIndex !== null) nodes.push(nodeIndex);
+					}
+				}
+
+				if (nodes.length > 0) sceneDef.nodes = nodes;
+				this.serializeUserData(scene, sceneDef);
+			}
+			/**
+    * Creates a THREE.Scene to hold a list of objects and parse it
+    * @param  {Array} objects List of objects to process
+    */
+
+		}, {
+			key: 'processObjects',
+			value: function processObjects(objects) {
+
+				var scene = new THREE.Scene();
+				scene.name = 'AuxScene';
+
+				for (var i = 0; i < objects.length; i++) {
+
+					// We push directly to children instead of calling `add` to prevent
+					// modify the .parent and break its original scene and hierarchy
+					scene.children.push(objects[i]);
+				}
+
+				this.processScene(scene);
+			}
+			/**
+    * @param {THREE.Object3D|Array<THREE.Object3D>} input
+    */
+
+		}, {
+			key: 'processInput',
+			value: function processInput(input) {
+
+				var options = this.options;
+				input = input instanceof Array ? input : [input];
+
+				this._invokeAll(function (ext) {
+
+					ext.beforeParse && ext.beforeParse(input);
+				});
+
+				var objectsWithoutScene = [];
+
+				for (var i = 0; i < input.length; i++) {
+
+					if (input[i] instanceof THREE.Scene) {
+
+						this.processScene(input[i]);
+					} else {
+
+						objectsWithoutScene.push(input[i]);
+					}
+				}
+
+				if (objectsWithoutScene.length > 0) this.processObjects(objectsWithoutScene);
+
+				for (var _i4 = 0; _i4 < this.skins.length; ++_i4) {
+
+					this.processSkin(this.skins[_i4]);
+				}
+
+				for (var _i5 = 0; _i5 < options.animations.length; ++_i5) {
+
+					this.processAnimation(options.animations[_i5], input[0]);
+				}
+
+				this._invokeAll(function (ext) {
+
+					ext.afterParse && ext.afterParse(input);
+				});
+			}
+		}, {
+			key: '_invokeAll',
+			value: function _invokeAll(func) {
+
+				for (var i = 0, il = this.plugins.length; i < il; i++) {
+
+					func(this.plugins[i]);
+				}
+			}
+		}]);
+
+		return GLTFWriter;
+	}();
+	/**
+ * Punctual Lights Extension
+ *
+ * Specification: https://github.com/KhronosGroup/glTF/tree/master/extensions/2.0/Khronos/KHR_lights_punctual
+ */
+
+	var GLTFLightExtension = function () {
+		function GLTFLightExtension(writer) {
+			_classCallCheck(this, GLTFLightExtension);
+
+			this.writer = writer;
+			this.name = 'KHR_lights_punctual';
+		}
+
+		_createClass(GLTFLightExtension, [{
+			key: 'writeNode',
+			value: function writeNode(light, nodeDef) {
+
+				if (!light.isLight) return;
+
+				if (!light.isDirectionalLight && !light.isPointLight && !light.isSpotLight) {
+
+					console.warn('THREE.GLTFExporter: Only directional, point, and spot lights are supported.', light);
+					return;
+				}
+
+				var writer = this.writer;
+				var json = writer.json;
+				var extensionsUsed = writer.extensionsUsed;
+				var lightDef = {};
+				if (light.name) lightDef.name = light.name;
+				lightDef.color = light.color.toArray();
+				lightDef.intensity = light.intensity;
+
+				if (light.isDirectionalLight) {
+
+					lightDef.type = 'directional';
+				} else if (light.isPointLight) {
+
+					lightDef.type = 'point';
+					if (light.distance > 0) lightDef.range = light.distance;
+				} else if (light.isSpotLight) {
+
+					lightDef.type = 'spot';
+					if (light.distance > 0) lightDef.range = light.distance;
+					lightDef.spot = {};
+					lightDef.spot.innerConeAngle = (light.penumbra - 1.0) * light.angle * -1.0;
+					lightDef.spot.outerConeAngle = light.angle;
+				}
+
+				if (light.decay !== undefined && light.decay !== 2) {
+
+					console.warn('THREE.GLTFExporter: Light decay may be lost. glTF is physically-based, ' + 'and expects light.decay=2.');
+				}
+
+				if (light.target && (light.target.parent !== light || light.target.position.x !== 0 || light.target.position.y !== 0 || light.target.position.z !== -1)) {
+
+					console.warn('THREE.GLTFExporter: Light direction may be lost. For best results, ' + 'make light.target a child of the light with position 0,0,-1.');
+				}
+
+				if (!extensionsUsed[this.name]) {
+
+					json.extensions = json.extensions || {};
+					json.extensions[this.name] = {
+						lights: []
+					};
+					extensionsUsed[this.name] = true;
+				}
+
+				var lights = json.extensions[this.name].lights;
+				lights.push(lightDef);
+				nodeDef.extensions = nodeDef.extensions || {};
+				nodeDef.extensions[this.name] = {
+					light: lights.length - 1
+				};
+			}
+		}]);
+
+		return GLTFLightExtension;
+	}();
+	/**
+ * Unlit Materials Extension
+ *
+ * Specification: https://github.com/KhronosGroup/glTF/tree/master/extensions/2.0/Khronos/KHR_materials_unlit
+ */
+
+	var GLTFMaterialsUnlitExtension = function () {
+		function GLTFMaterialsUnlitExtension(writer) {
+			_classCallCheck(this, GLTFMaterialsUnlitExtension);
+
+			this.writer = writer;
+			this.name = 'KHR_materials_unlit';
+		}
+
+		_createClass(GLTFMaterialsUnlitExtension, [{
+			key: 'writeMaterial',
+			value: function writeMaterial(material, materialDef) {
+
+				if (!material.isMeshBasicMaterial) return;
+				var writer = this.writer;
+				var extensionsUsed = writer.extensionsUsed;
+				materialDef.extensions = materialDef.extensions || {};
+				materialDef.extensions[this.name] = {};
+				extensionsUsed[this.name] = true;
+				materialDef.pbrMetallicRoughness.metallicFactor = 0.0;
+				materialDef.pbrMetallicRoughness.roughnessFactor = 0.9;
+			}
+		}]);
+
+		return GLTFMaterialsUnlitExtension;
+	}();
+	/**
+ * Specular-Glossiness Extension
+ *
+ * Specification: https://github.com/KhronosGroup/glTF/tree/master/extensions/2.0/Khronos/KHR_materials_pbrSpecularGlossiness
+ */
+
+	var GLTFMaterialsPBRSpecularGlossiness = function () {
+		function GLTFMaterialsPBRSpecularGlossiness(writer) {
+			_classCallCheck(this, GLTFMaterialsPBRSpecularGlossiness);
+
+			this.writer = writer;
+			this.name = 'KHR_materials_pbrSpecularGlossiness';
+		}
+
+		_createClass(GLTFMaterialsPBRSpecularGlossiness, [{
+			key: 'writeMaterial',
+			value: function writeMaterial(material, materialDef) {
+
+				if (!material.isGLTFSpecularGlossinessMaterial) return;
+				var writer = this.writer;
+				var extensionsUsed = writer.extensionsUsed;
+				var extensionDef = {};
+
+				if (materialDef.pbrMetallicRoughness.baseColorFactor) {
+
+					extensionDef.diffuseFactor = materialDef.pbrMetallicRoughness.baseColorFactor;
+				}
+
+				var specularFactor = [1, 1, 1];
+				material.specular.toArray(specularFactor, 0);
+				extensionDef.specularFactor = specularFactor;
+				extensionDef.glossinessFactor = material.glossiness;
+
+				if (materialDef.pbrMetallicRoughness.baseColorTexture) {
+
+					extensionDef.diffuseTexture = materialDef.pbrMetallicRoughness.baseColorTexture;
+				}
+
+				if (material.specularMap) {
+
+					var specularMapDef = {
+						index: writer.processTexture(material.specularMap)
+					};
+					writer.applyTextureTransform(specularMapDef, material.specularMap);
+					extensionDef.specularGlossinessTexture = specularMapDef;
+				}
+
+				materialDef.extensions = materialDef.extensions || {};
+				materialDef.extensions[this.name] = extensionDef;
+				extensionsUsed[this.name] = true;
+			}
+		}]);
+
+		return GLTFMaterialsPBRSpecularGlossiness;
+	}();
+	/**
+ * Transmission Materials Extension
+ *
+ * Specification: https://github.com/KhronosGroup/glTF/tree/master/extensions/2.0/Khronos/KHR_materials_transmission
+ */
+
+	var GLTFMaterialsTransmissionExtension = function () {
+		function GLTFMaterialsTransmissionExtension(writer) {
+			_classCallCheck(this, GLTFMaterialsTransmissionExtension);
+
+			this.writer = writer;
+			this.name = 'KHR_materials_transmission';
+		}
+
+		_createClass(GLTFMaterialsTransmissionExtension, [{
+			key: 'writeMaterial',
+			value: function writeMaterial(material, materialDef) {
+
+				if (!material.isMeshPhysicalMaterial || material.transmission === 0) return;
+				var writer = this.writer;
+				var extensionsUsed = writer.extensionsUsed;
+				var extensionDef = {};
+				extensionDef.transmissionFactor = material.transmission;
+
+				if (material.transmissionMap) {
+
+					var transmissionMapDef = {
+						index: writer.processTexture(material.transmissionMap)
+					};
+					writer.applyTextureTransform(transmissionMapDef, material.transmissionMap);
+					extensionDef.transmissionTexture = transmissionMapDef;
+				}
+
+				materialDef.extensions = materialDef.extensions || {};
+				materialDef.extensions[this.name] = extensionDef;
+				extensionsUsed[this.name] = true;
+			}
+		}]);
+
+		return GLTFMaterialsTransmissionExtension;
+	}();
+	/**
+ * Materials Volume Extension
+ *
+ * Specification: https://github.com/KhronosGroup/glTF/tree/master/extensions/2.0/Khronos/KHR_materials_volume
+ */
+
+	var GLTFMaterialsVolumeExtension = function () {
+		function GLTFMaterialsVolumeExtension(writer) {
+			_classCallCheck(this, GLTFMaterialsVolumeExtension);
+
+			this.writer = writer;
+			this.name = 'KHR_materials_volume';
+		}
+
+		_createClass(GLTFMaterialsVolumeExtension, [{
+			key: 'writeMaterial',
+			value: function writeMaterial(material, materialDef) {
+
+				if (!material.isMeshPhysicalMaterial || material.thickness === 0) return;
+				var writer = this.writer;
+				var extensionsUsed = writer.extensionsUsed;
+				var extensionDef = {};
+				extensionDef.thicknessFactor = material.thickness;
+
+				if (material.thicknessMap) {
+
+					var thicknessMapDef = {
+						index: writer.processTexture(material.thicknessMap)
+					};
+					writer.applyTextureTransform(thicknessMapDef, material.thicknessMap);
+					extensionDef.thicknessTexture = thicknessMapDef;
+				}
+
+				extensionDef.attenuationDistance = material.attenuationDistance;
+				extensionDef.attenuationColor = material.attenuationTint.toArray();
+				materialDef.extensions = materialDef.extensions || {};
+				materialDef.extensions[this.name] = extensionDef;
+				extensionsUsed[this.name] = true;
+			}
+		}]);
+
+		return GLTFMaterialsVolumeExtension;
+	}();
+	/**
+ * Static utility functions
+ */
+
+	GLTFExporter.Utils = {
+		insertKeyframe: function insertKeyframe(track, time) {
+
+			var tolerance = 0.001; // 1ms
+
+			var valueSize = track.getValueSize();
+			var times = new track.TimeBufferType(track.times.length + 1);
+			var values = new track.ValueBufferType(track.values.length + valueSize);
+			var interpolant = track.createInterpolant(new track.ValueBufferType(valueSize));
+			var index = void 0;
+
+			if (track.times.length === 0) {
+
+				times[0] = time;
+
+				for (var i = 0; i < valueSize; i++) {
+
+					values[i] = 0;
+				}
+
+				index = 0;
+			} else if (time < track.times[0]) {
+
+				if (Math.abs(track.times[0] - time) < tolerance) return 0;
+				times[0] = time;
+				times.set(track.times, 1);
+				values.set(interpolant.evaluate(time), 0);
+				values.set(track.values, valueSize);
+				index = 0;
+			} else if (time > track.times[track.times.length - 1]) {
+
+				if (Math.abs(track.times[track.times.length - 1] - time) < tolerance) {
+
+					return track.times.length - 1;
+				}
+
+				times[times.length - 1] = time;
+				times.set(track.times, 0);
+				values.set(track.values, 0);
+				values.set(interpolant.evaluate(time), track.values.length);
+				index = times.length - 1;
+			} else {
+
+				for (var _i6 = 0; _i6 < track.times.length; _i6++) {
+
+					if (Math.abs(track.times[_i6] - time) < tolerance) return _i6;
+
+					if (track.times[_i6] < time && track.times[_i6 + 1] > time) {
+
+						times.set(track.times.slice(0, _i6 + 1), 0);
+						times[_i6 + 1] = time;
+						times.set(track.times.slice(_i6 + 1), _i6 + 2);
+						values.set(track.values.slice(0, (_i6 + 1) * valueSize), 0);
+						values.set(interpolant.evaluate(time), (_i6 + 1) * valueSize);
+						values.set(track.values.slice((_i6 + 1) * valueSize), (_i6 + 2) * valueSize);
+						index = _i6 + 1;
+						break;
+					}
+				}
 			}
 
-			var cachedCanvas = null;
-			/**
-   * Writer
-   */
+			track.times = times;
+			track.values = values;
+			return index;
+		},
+		mergeMorphTargetTracks: function mergeMorphTargetTracks(clip, root) {
 
-			var GLTFWriter = function () {
-						function GLTFWriter() {
-									_classCallCheck(this, GLTFWriter);
+			var tracks = [];
+			var mergedTracks = {};
+			var sourceTracks = clip.tracks;
 
-									this.plugins = [];
-									this.options = {};
-									this.pending = [];
-									this.buffers = [];
-									this.byteOffset = 0;
-									this.buffers = [];
-									this.nodeMap = new Map();
-									this.skins = [];
-									this.extensionsUsed = {};
-									this.uids = new Map();
-									this.uid = 0;
-									this.json = {
-												asset: {
-															version: '2.0',
-															generator: 'THREE.GLTFExporter'
-												}
-									};
-									this.cache = {
-												meshes: new Map(),
-												attributes: new Map(),
-												attributesNormalized: new Map(),
-												materials: new Map(),
-												textures: new Map(),
-												images: new Map()
-									};
-						}
+			for (var i = 0; i < sourceTracks.length; ++i) {
 
-						_createClass(GLTFWriter, [{
-									key: 'setPlugins',
-									value: function setPlugins(plugins) {
+				var sourceTrack = sourceTracks[i];
+				var sourceTrackBinding = THREE.PropertyBinding.parseTrackName(sourceTrack.name);
+				var sourceTrackNode = THREE.PropertyBinding.findNode(root, sourceTrackBinding.nodeName);
 
-												this.plugins = plugins;
-									}
-									/**
-          * Parse scenes and generate GLTF output
-          * @param  {Scene or [THREE.Scenes]} input   THREE.Scene or Array of THREE.Scenes
-          * @param  {Function} onDone  Callback on completed
-          * @param  {Object} options options
-          */
+				if (sourceTrackBinding.propertyName !== 'morphTargetInfluences' || sourceTrackBinding.propertyIndex === undefined) {
 
-						}, {
-									key: 'write',
-									value: function write(input, onDone, options) {
+					// Tracks that don't affect morph targets, or that affect all morph targets together, can be left as-is.
+					tracks.push(sourceTrack);
+					continue;
+				}
 
-												this.options = Object.assign({}, {
-															// default options
-															binary: false,
-															trs: false,
-															onlyVisible: true,
-															truncateDrawRange: true,
-															embedImages: true,
-															maxTextureSize: Infinity,
-															animations: [],
-															includeCustomExtensions: false
-												}, options);
+				if (sourceTrack.createInterpolant !== sourceTrack.InterpolantFactoryMethodDiscrete && sourceTrack.createInterpolant !== sourceTrack.InterpolantFactoryMethodLinear) {
 
-												if (this.options.animations.length > 0) {
+					if (sourceTrack.createInterpolant.isInterpolantFactoryMethodGLTFCubicSpline) {
 
-															// Only TRS properties, and not matrices, may be targeted by animation.
-															this.options.trs = true;
-												}
+						// This should never happen, because glTF morph target animations
+						// affect all targets already.
+						throw new Error('THREE.GLTFExporter: Cannot merge tracks with glTF CUBICSPLINE interpolation.');
+					}
 
-												this.processInput(input);
-												var writer = this;
-												Promise.all(this.pending).then(function () {
+					console.warn('THREE.GLTFExporter: Morph target interpolation mode not yet supported. Using LINEAR instead.');
+					sourceTrack = sourceTrack.clone();
+					sourceTrack.setInterpolation(THREE.InterpolateLinear);
+				}
 
-															var buffers = writer.buffers;
-															var json = writer.json;
-															var options = writer.options;
-															var extensionsUsed = writer.extensionsUsed; // Merge buffers.
+				var targetCount = sourceTrackNode.morphTargetInfluences.length;
+				var targetIndex = sourceTrackNode.morphTargetDictionary[sourceTrackBinding.propertyIndex];
 
-															var blob = new Blob(buffers, {
-																		type: 'application/octet-stream'
-															}); // Declare extensions.
+				if (targetIndex === undefined) {
 
-															var extensionsUsedList = Object.keys(extensionsUsed);
-															if (extensionsUsedList.length > 0) json.extensionsUsed = extensionsUsedList; // Update bytelength of the single buffer.
+					throw new Error('THREE.GLTFExporter: Morph target name not found: ' + sourceTrackBinding.propertyIndex);
+				}
 
-															if (json.buffers && json.buffers.length > 0) json.buffers[0].byteLength = blob.size;
+				var mergedTrack = void 0; // If this is the first time we've seen this object, create a new
+				// track to store merged keyframe data for each morph target.
 
-															if (options.binary === true) {
+				if (mergedTracks[sourceTrackNode.uuid] === undefined) {
 
-																		// https://github.com/KhronosGroup/glTF/blob/master/specification/2.0/README.md#glb-file-format-specification
-																		var reader = new window.FileReader();
-																		reader.readAsArrayBuffer(blob);
+					mergedTrack = sourceTrack.clone();
+					var values = new mergedTrack.ValueBufferType(targetCount * mergedTrack.times.length);
 
-																		reader.onloadend = function () {
+					for (var j = 0; j < mergedTrack.times.length; j++) {
 
-																					// Binary chunk.
-																					var binaryChunk = getPaddedArrayBuffer(reader.result);
-																					var binaryChunkPrefix = new DataView(new ArrayBuffer(GLB_CHUNK_PREFIX_BYTES));
-																					binaryChunkPrefix.setUint32(0, binaryChunk.byteLength, true);
-																					binaryChunkPrefix.setUint32(4, GLB_CHUNK_TYPE_BIN, true); // JSON chunk.
+						values[j * targetCount + targetIndex] = mergedTrack.values[j];
+					} // We need to take into consideration the intended target node
+					// of our original un-merged morphTarget animation.
 
-																					var jsonChunk = getPaddedArrayBuffer(stringToArrayBuffer(JSON.stringify(json)), 0x20);
-																					var jsonChunkPrefix = new DataView(new ArrayBuffer(GLB_CHUNK_PREFIX_BYTES));
-																					jsonChunkPrefix.setUint32(0, jsonChunk.byteLength, true);
-																					jsonChunkPrefix.setUint32(4, GLB_CHUNK_TYPE_JSON, true); // GLB header.
 
-																					var header = new ArrayBuffer(GLB_HEADER_BYTES);
-																					var headerView = new DataView(header);
-																					headerView.setUint32(0, GLB_HEADER_MAGIC, true);
-																					headerView.setUint32(4, GLB_VERSION, true);
-																					var totalByteLength = GLB_HEADER_BYTES + jsonChunkPrefix.byteLength + jsonChunk.byteLength + binaryChunkPrefix.byteLength + binaryChunk.byteLength;
-																					headerView.setUint32(8, totalByteLength, true);
-																					var glbBlob = new Blob([header, jsonChunkPrefix, jsonChunk, binaryChunkPrefix, binaryChunk], {
-																								type: 'application/octet-stream'
-																					});
-																					var glbReader = new window.FileReader();
-																					glbReader.readAsArrayBuffer(glbBlob);
+					mergedTrack.name = (sourceTrackBinding.nodeName || '') + '.morphTargetInfluences';
+					mergedTrack.values = values;
+					mergedTracks[sourceTrackNode.uuid] = mergedTrack;
+					tracks.push(mergedTrack);
+					continue;
+				}
 
-																					glbReader.onloadend = function () {
+				var sourceInterpolant = sourceTrack.createInterpolant(new sourceTrack.ValueBufferType(1));
+				mergedTrack = mergedTracks[sourceTrackNode.uuid]; // For every existing keyframe of the merged track, write a (possibly
+				// interpolated) value from the source track.
 
-																								onDone(glbReader.result);
-																					};
-																		};
-															} else {
+				for (var _j = 0; _j < mergedTrack.times.length; _j++) {
 
-																		if (json.buffers && json.buffers.length > 0) {
+					mergedTrack.values[_j * targetCount + targetIndex] = sourceInterpolant.evaluate(mergedTrack.times[_j]);
+				} // For every existing keyframe of the source track, write a (possibly
+				// new) keyframe to the merged track. Values from the previous loop may
+				// be written again, but keyframes are de-duplicated.
 
-																					var _reader = new window.FileReader();
-																					_reader.readAsDataURL(blob);
 
-																					_reader.onloadend = function () {
+				for (var _j2 = 0; _j2 < sourceTrack.times.length; _j2++) {
 
-																								var base64data = _reader.result;
-																								json.buffers[0].uri = base64data;
-																								onDone(json);
-																					};
-																		} else {
+					var keyframeIndex = this.insertKeyframe(mergedTrack, sourceTrack.times[_j2]);
+					mergedTrack.values[keyframeIndex * targetCount + targetIndex] = sourceTrack.values[_j2];
+				}
+			}
 
-																					onDone(json);
-																		}
-															}
-												});
-									}
-									/**
-          * Serializes a userData.
-          *
-          * @param {THREE.Object3D|THREE.Material} object
-          * @param {Object} objectDef
-          */
+			clip.tracks = tracks;
+			return clip;
+		}
+	};
 
-						}, {
-									key: 'serializeUserData',
-									value: function serializeUserData(object, objectDef) {
-
-												if (Object.keys(object.userData).length === 0) return;
-												var options = this.options;
-												var extensionsUsed = this.extensionsUsed;
-
-												try {
-
-															var json = JSON.parse(JSON.stringify(object.userData));
-
-															if (options.includeCustomExtensions && json.gltfExtensions) {
-
-																		if (objectDef.extensions === undefined) objectDef.extensions = {};
-
-																		for (var extensionName in json.gltfExtensions) {
-
-																					objectDef.extensions[extensionName] = json.gltfExtensions[extensionName];
-																					extensionsUsed[extensionName] = true;
-																		}
-
-																		delete json.gltfExtensions;
-															}
-
-															if (Object.keys(json).length > 0) objectDef.extras = json;
-												} catch (error) {
-
-															console.warn('THREE.GLTFExporter: userData of \'' + object.name + '\' ' + 'won\'t be serialized because of JSON.stringify error - ' + error.message);
-												}
-									}
-									/**
-          * Assign and return a temporal unique id for an object
-          * especially which doesn't have .uuid
-          * @param  {Object} object
-          * @return {Integer}
-          */
-
-						}, {
-									key: 'getUID',
-									value: function getUID(object) {
-
-												if (!this.uids.has(object)) this.uids.set(object, this.uid++);
-												return this.uids.get(object);
-									}
-									/**
-          * Checks if normal attribute values are normalized.
-          *
-          * @param {BufferAttribute} normal
-          * @returns {Boolean}
-          */
-
-						}, {
-									key: 'isNormalizedNormalAttribute',
-									value: function isNormalizedNormalAttribute(normal) {
-
-												var cache = this.cache;
-												if (cache.attributesNormalized.has(normal)) return false;
-												var v = new THREE.Vector3();
-
-												for (var i = 0, il = normal.count; i < il; i++) {
-
-															// 0.0005 is from glTF-validator
-															if (Math.abs(v.fromBufferAttribute(normal, i).length() - 1.0) > 0.0005) return false;
-												}
-
-												return true;
-									}
-									/**
-          * Creates normalized normal buffer attribute.
-          *
-          * @param {BufferAttribute} normal
-          * @returns {BufferAttribute}
-          *
-          */
-
-						}, {
-									key: 'createNormalizedNormalAttribute',
-									value: function createNormalizedNormalAttribute(normal) {
-
-												var cache = this.cache;
-												if (cache.attributesNormalized.has(normal)) return cache.attributesNormalized.get(normal);
-												var attribute = normal.clone();
-												var v = new THREE.Vector3();
-
-												for (var i = 0, il = attribute.count; i < il; i++) {
-
-															v.fromBufferAttribute(attribute, i);
-
-															if (v.x === 0 && v.y === 0 && v.z === 0) {
-
-																		// if values can't be normalized set (1, 0, 0)
-																		v.setX(1.0);
-															} else {
-
-																		v.normalize();
-															}
-
-															attribute.setXYZ(i, v.x, v.y, v.z);
-												}
-
-												cache.attributesNormalized.set(normal, attribute);
-												return attribute;
-									}
-									/**
-          * Applies a texture transform, if present, to the map definition. Requires
-          * the KHR_texture_transform extension.
-          *
-          * @param {Object} mapDef
-          * @param {THREE.Texture} texture
-          */
-
-						}, {
-									key: 'applyTextureTransform',
-									value: function applyTextureTransform(mapDef, texture) {
-
-												var didTransform = false;
-												var transformDef = {};
-
-												if (texture.offset.x !== 0 || texture.offset.y !== 0) {
-
-															transformDef.offset = texture.offset.toArray();
-															didTransform = true;
-												}
-
-												if (texture.rotation !== 0) {
-
-															transformDef.rotation = texture.rotation;
-															didTransform = true;
-												}
-
-												if (texture.repeat.x !== 1 || texture.repeat.y !== 1) {
-
-															transformDef.scale = texture.repeat.toArray();
-															didTransform = true;
-												}
-
-												if (didTransform) {
-
-															mapDef.extensions = mapDef.extensions || {};
-															mapDef.extensions['KHR_texture_transform'] = transformDef;
-															this.extensionsUsed['KHR_texture_transform'] = true;
-												}
-									}
-									/**
-          * Process a buffer to append to the default one.
-          * @param  {ArrayBuffer} buffer
-          * @return {Integer}
-          */
-
-						}, {
-									key: 'processBuffer',
-									value: function processBuffer(buffer) {
-
-												var json = this.json;
-												var buffers = this.buffers;
-												if (!json.buffers) json.buffers = [{
-															byteLength: 0
-												}]; // All buffers are merged before export.
-
-												buffers.push(buffer);
-												return 0;
-									}
-									/**
-          * Process and generate a BufferView
-          * @param  {BufferAttribute} attribute
-          * @param  {number} componentType
-          * @param  {number} start
-          * @param  {number} count
-          * @param  {number} target (Optional) Target usage of the BufferView
-          * @return {Object}
-          */
-
-						}, {
-									key: 'processBufferView',
-									value: function processBufferView(attribute, componentType, start, count, target) {
-
-												var json = this.json;
-												if (!json.bufferViews) json.bufferViews = []; // Create a new dataview and dump the attribute's array into it
-
-												var componentSize = void 0;
-
-												if (componentType === WEBGL_CONSTANTS.UNSIGNED_BYTE) {
-
-															componentSize = 1;
-												} else if (componentType === WEBGL_CONSTANTS.UNSIGNED_SHORT) {
-
-															componentSize = 2;
-												} else {
-
-															componentSize = 4;
-												}
-
-												var byteLength = getPaddedBufferSize(count * attribute.itemSize * componentSize);
-												var dataView = new DataView(new ArrayBuffer(byteLength));
-												var offset = 0;
-
-												for (var i = start; i < start + count; i++) {
-
-															for (var a = 0; a < attribute.itemSize; a++) {
-
-																		var value = void 0;
-
-																		if (attribute.itemSize > 4) {
-
-																					// no support for interleaved data for itemSize > 4
-																					value = attribute.array[i * attribute.itemSize + a];
-																		} else {
-
-																					if (a === 0) value = attribute.getX(i);else if (a === 1) value = attribute.getY(i);else if (a === 2) value = attribute.getZ(i);else if (a === 3) value = attribute.getW(i);
-																		}
-
-																		if (componentType === WEBGL_CONSTANTS.FLOAT) {
-
-																					dataView.setFloat32(offset, value, true);
-																		} else if (componentType === WEBGL_CONSTANTS.UNSIGNED_INT) {
-
-																					dataView.setUint32(offset, value, true);
-																		} else if (componentType === WEBGL_CONSTANTS.UNSIGNED_SHORT) {
-
-																					dataView.setUint16(offset, value, true);
-																		} else if (componentType === WEBGL_CONSTANTS.UNSIGNED_BYTE) {
-
-																					dataView.setUint8(offset, value);
-																		}
-
-																		offset += componentSize;
-															}
-												}
-
-												var bufferViewDef = {
-															buffer: this.processBuffer(dataView.buffer),
-															byteOffset: this.byteOffset,
-															byteLength: byteLength
-												};
-												if (target !== undefined) bufferViewDef.target = target;
-
-												if (target === WEBGL_CONSTANTS.ARRAY_BUFFER) {
-
-															// Only define byteStride for vertex attributes.
-															bufferViewDef.byteStride = attribute.itemSize * componentSize;
-												}
-
-												this.byteOffset += byteLength;
-												json.bufferViews.push(bufferViewDef); // @TODO Merge bufferViews where possible.
-
-												var output = {
-															id: json.bufferViews.length - 1,
-															byteLength: 0
-												};
-												return output;
-									}
-									/**
-          * Process and generate a BufferView from an image Blob.
-          * @param {Blob} blob
-          * @return {Promise<Integer>}
-          */
-
-						}, {
-									key: 'processBufferViewImage',
-									value: function processBufferViewImage(blob) {
-
-												var writer = this;
-												var json = writer.json;
-												if (!json.bufferViews) json.bufferViews = [];
-												return new Promise(function (resolve) {
-
-															var reader = new window.FileReader();
-															reader.readAsArrayBuffer(blob);
-
-															reader.onloadend = function () {
-
-																		var buffer = getPaddedArrayBuffer(reader.result);
-																		var bufferViewDef = {
-																					buffer: writer.processBuffer(buffer),
-																					byteOffset: writer.byteOffset,
-																					byteLength: buffer.byteLength
-																		};
-																		writer.byteOffset += buffer.byteLength;
-																		resolve(json.bufferViews.push(bufferViewDef) - 1);
-															};
-												});
-									}
-									/**
-          * Process attribute to generate an accessor
-          * @param  {BufferAttribute} attribute Attribute to process
-          * @param  {THREE.BufferGeometry} geometry (Optional) Geometry used for truncated draw range
-          * @param  {Integer} start (Optional)
-          * @param  {Integer} count (Optional)
-          * @return {Integer|null} Index of the processed accessor on the "accessors" array
-          */
-
-						}, {
-									key: 'processAccessor',
-									value: function processAccessor(attribute, geometry, start, count) {
-
-												var options = this.options;
-												var json = this.json;
-												var types = {
-															1: 'SCALAR',
-															2: 'VEC2',
-															3: 'VEC3',
-															4: 'VEC4',
-															16: 'MAT4'
-												};
-												var componentType = void 0; // Detect the component type of the attribute array (float, uint or ushort)
-
-												if (attribute.array.constructor === Float32Array) {
-
-															componentType = WEBGL_CONSTANTS.FLOAT;
-												} else if (attribute.array.constructor === Uint32Array) {
-
-															componentType = WEBGL_CONSTANTS.UNSIGNED_INT;
-												} else if (attribute.array.constructor === Uint16Array) {
-
-															componentType = WEBGL_CONSTANTS.UNSIGNED_SHORT;
-												} else if (attribute.array.constructor === Uint8Array) {
-
-															componentType = WEBGL_CONSTANTS.UNSIGNED_BYTE;
-												} else {
-
-															throw new Error('THREE.GLTFExporter: Unsupported bufferAttribute component type.');
-												}
-
-												if (start === undefined) start = 0;
-												if (count === undefined) count = attribute.count; // @TODO Indexed buffer geometry with drawRange not supported yet
-
-												if (options.truncateDrawRange && geometry !== undefined && geometry.index === null) {
-
-															var end = start + count;
-															var end2 = geometry.drawRange.count === Infinity ? attribute.count : geometry.drawRange.start + geometry.drawRange.count;
-															start = Math.max(start, geometry.drawRange.start);
-															count = Math.min(end, end2) - start;
-															if (count < 0) count = 0;
-												} // Skip creating an accessor if the attribute doesn't have data to export
-
-
-												if (count === 0) return null;
-												var minMax = getMinMax(attribute, start, count);
-												var bufferViewTarget = void 0; // If geometry isn't provided, don't infer the target usage of the bufferView. For
-												// animation samplers, target must not be set.
-
-												if (geometry !== undefined) {
-
-															bufferViewTarget = attribute === geometry.index ? WEBGL_CONSTANTS.ELEMENT_ARRAY_BUFFER : WEBGL_CONSTANTS.ARRAY_BUFFER;
-												}
-
-												var bufferView = this.processBufferView(attribute, componentType, start, count, bufferViewTarget);
-												var accessorDef = {
-															bufferView: bufferView.id,
-															byteOffset: bufferView.byteOffset,
-															componentType: componentType,
-															count: count,
-															max: minMax.max,
-															min: minMax.min,
-															type: types[attribute.itemSize]
-												};
-												if (attribute.normalized === true) accessorDef.normalized = true;
-												if (!json.accessors) json.accessors = [];
-												return json.accessors.push(accessorDef) - 1;
-									}
-									/**
-          * Process image
-          * @param  {Image} image to process
-          * @param  {Integer} format of the image (e.g. THREE.RGBFormat, THREE.RGBAFormat etc)
-          * @param  {Boolean} flipY before writing out the image
-          * @return {Integer}     Index of the processed texture in the "images" array
-          */
-
-						}, {
-									key: 'processImage',
-									value: function processImage(image, format, flipY) {
-
-												var writer = this;
-												var cache = writer.cache;
-												var json = writer.json;
-												var options = writer.options;
-												var pending = writer.pending;
-												if (!cache.images.has(image)) cache.images.set(image, {});
-												var cachedImages = cache.images.get(image);
-												var mimeType = format === THREE.RGBAFormat ? 'image/png' : 'image/jpeg';
-												var key = mimeType + ':flipY/' + flipY.toString();
-												if (cachedImages[key] !== undefined) return cachedImages[key];
-												if (!json.images) json.images = [];
-												var imageDef = {
-															mimeType: mimeType
-												};
-
-												if (options.embedImages) {
-
-															var canvas = cachedCanvas = cachedCanvas || document.createElement('canvas');
-															canvas.width = Math.min(image.width, options.maxTextureSize);
-															canvas.height = Math.min(image.height, options.maxTextureSize);
-															var ctx = canvas.getContext('2d');
-
-															if (flipY === true) {
-
-																		ctx.translate(0, canvas.height);
-																		ctx.scale(1, -1);
-															}
-
-															if (typeof HTMLImageElement !== 'undefined' && image instanceof HTMLImageElement || typeof HTMLCanvasElement !== 'undefined' && image instanceof HTMLCanvasElement || typeof OffscreenCanvas !== 'undefined' && image instanceof OffscreenCanvas || typeof ImageBitmap !== 'undefined' && image instanceof ImageBitmap) {
-
-																		ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
-															} else {
-
-																		if (format !== THREE.RGBAFormat && format !== THREE.RGBFormat) {
-
-																					console.error('GLTFExporter: Only RGB and RGBA formats are supported.');
-																		}
-
-																		if (image.width > options.maxTextureSize || image.height > options.maxTextureSize) {
-
-																					console.warn('GLTFExporter: Image size is bigger than maxTextureSize', image);
-																		}
-
-																		var data = new Uint8ClampedArray(image.height * image.width * 4);
-
-																		if (format === THREE.RGBAFormat) {
-
-																					for (var i = 0; i < data.length; i += 4) {
-
-																								data[i + 0] = image.data[i + 0];
-																								data[i + 1] = image.data[i + 1];
-																								data[i + 2] = image.data[i + 2];
-																								data[i + 3] = image.data[i + 3];
-																					}
-																		} else {
-
-																					for (var _i = 0, j = 0; _i < data.length; _i += 4, j += 3) {
-
-																								data[_i + 0] = image.data[j + 0];
-																								data[_i + 1] = image.data[j + 1];
-																								data[_i + 2] = image.data[j + 2];
-																								data[_i + 3] = 255;
-																					}
-																		}
-
-																		ctx.putImageData(new ImageData(data, image.width, image.height), 0, 0);
-															}
-
-															if (options.binary === true) {
-
-																		pending.push(new Promise(function (resolve) {
-
-																					canvas.toBlob(function (blob) {
-
-																								writer.processBufferViewImage(blob).then(function (bufferViewIndex) {
-
-																											imageDef.bufferView = bufferViewIndex;
-																											resolve();
-																								});
-																					}, mimeType);
-																		}));
-															} else {
-
-																		imageDef.uri = canvas.toDataURL(mimeType);
-															}
-												} else {
-
-															imageDef.uri = image.src;
-												}
-
-												var index = json.images.push(imageDef) - 1;
-												cachedImages[key] = index;
-												return index;
-									}
-									/**
-          * Process sampler
-          * @param  {Texture} map Texture to process
-          * @return {Integer}     Index of the processed texture in the "samplers" array
-          */
-
-						}, {
-									key: 'processSampler',
-									value: function processSampler(map) {
-
-												var json = this.json;
-												if (!json.samplers) json.samplers = [];
-												var samplerDef = {
-															magFilter: THREE_TO_WEBGL[map.magFilter],
-															minFilter: THREE_TO_WEBGL[map.minFilter],
-															wrapS: THREE_TO_WEBGL[map.wrapS],
-															wrapT: THREE_TO_WEBGL[map.wrapT]
-												};
-												return json.samplers.push(samplerDef) - 1;
-									}
-									/**
-          * Process texture
-          * @param  {Texture} map Map to process
-          * @return {Integer} Index of the processed texture in the "textures" array
-          */
-
-						}, {
-									key: 'processTexture',
-									value: function processTexture(map) {
-
-												var cache = this.cache;
-												var json = this.json;
-												if (cache.textures.has(map)) return cache.textures.get(map);
-												if (!json.textures) json.textures = [];
-												var textureDef = {
-															sampler: this.processSampler(map),
-															source: this.processImage(map.image, map.format, map.flipY)
-												};
-												if (map.name) textureDef.name = map.name;
-
-												this._invokeAll(function (ext) {
-
-															ext.writeTexture && ext.writeTexture(map, textureDef);
-												});
-
-												var index = json.textures.push(textureDef) - 1;
-												cache.textures.set(map, index);
-												return index;
-									}
-									/**
-          * Process material
-          * @param  {THREE.Material} material Material to process
-          * @return {Integer|null} Index of the processed material in the "materials" array
-          */
-
-						}, {
-									key: 'processMaterial',
-									value: function processMaterial(material) {
-
-												var cache = this.cache;
-												var json = this.json;
-												if (cache.materials.has(material)) return cache.materials.get(material);
-
-												if (material.isShaderMaterial) {
-
-															console.warn('GLTFExporter: THREE.ShaderMaterial not supported.');
-															return null;
-												}
-
-												if (!json.materials) json.materials = []; // @QUESTION Should we avoid including any attribute that has the default value?
-
-												var materialDef = {
-															pbrMetallicRoughness: {}
-												};
-
-												if (material.isMeshStandardMaterial !== true && material.isMeshBasicMaterial !== true) {
-
-															console.warn('GLTFExporter: Use MeshStandardMaterial or MeshBasicMaterial for best results.');
-												} // pbrMetallicRoughness.baseColorFactor
-
-
-												var color = material.color.toArray().concat([material.opacity]);
-
-												if (!equalArray(color, [1, 1, 1, 1])) {
-
-															materialDef.pbrMetallicRoughness.baseColorFactor = color;
-												}
-
-												if (material.isMeshStandardMaterial) {
-
-															materialDef.pbrMetallicRoughness.metallicFactor = material.metalness;
-															materialDef.pbrMetallicRoughness.roughnessFactor = material.roughness;
-												} else {
-
-															materialDef.pbrMetallicRoughness.metallicFactor = 0.5;
-															materialDef.pbrMetallicRoughness.roughnessFactor = 0.5;
-												} // pbrMetallicRoughness.metallicRoughnessTexture
-
-
-												if (material.metalnessMap || material.roughnessMap) {
-
-															if (material.metalnessMap === material.roughnessMap) {
-
-																		var metalRoughMapDef = {
-																					index: this.processTexture(material.metalnessMap)
-																		};
-																		this.applyTextureTransform(metalRoughMapDef, material.metalnessMap);
-																		materialDef.pbrMetallicRoughness.metallicRoughnessTexture = metalRoughMapDef;
-															} else {
-
-																		console.warn('THREE.GLTFExporter: Ignoring metalnessMap and roughnessMap because they are not the same Texture.');
-															}
-												} // pbrMetallicRoughness.baseColorTexture or pbrSpecularGlossiness diffuseTexture
-
-
-												if (material.map) {
-
-															var baseColorMapDef = {
-																		index: this.processTexture(material.map)
-															};
-															this.applyTextureTransform(baseColorMapDef, material.map);
-															materialDef.pbrMetallicRoughness.baseColorTexture = baseColorMapDef;
-												}
-
-												if (material.emissive) {
-
-															// note: emissive components are limited to stay within the 0 - 1 range to accommodate glTF spec. see #21849 and #22000.
-															var emissive = material.emissive.clone().multiplyScalar(material.emissiveIntensity);
-															var maxEmissiveComponent = Math.max(emissive.r, emissive.g, emissive.b);
-
-															if (maxEmissiveComponent > 1) {
-
-																		emissive.multiplyScalar(1 / maxEmissiveComponent);
-																		console.warn('THREE.GLTFExporter: Some emissive components exceed 1; emissive has been limited');
-															}
-
-															if (maxEmissiveComponent > 0) {
-
-																		materialDef.emissiveFactor = emissive.toArray();
-															} // emissiveTexture
-
-
-															if (material.emissiveMap) {
-
-																		var emissiveMapDef = {
-																					index: this.processTexture(material.emissiveMap)
-																		};
-																		this.applyTextureTransform(emissiveMapDef, material.emissiveMap);
-																		materialDef.emissiveTexture = emissiveMapDef;
-															}
-												} // normalTexture
-
-
-												if (material.normalMap) {
-
-															var normalMapDef = {
-																		index: this.processTexture(material.normalMap)
-															};
-
-															if (material.normalScale && material.normalScale.x !== 1) {
-
-																		// glTF normal scale is univariate. Ignore `y`, which may be flipped.
-																		// Context: https://github.com/mrdoob/three.js/issues/11438#issuecomment-507003995
-																		normalMapDef.scale = material.normalScale.x;
-															}
-
-															this.applyTextureTransform(normalMapDef, material.normalMap);
-															materialDef.normalTexture = normalMapDef;
-												} // occlusionTexture
-
-
-												if (material.aoMap) {
-
-															var occlusionMapDef = {
-																		index: this.processTexture(material.aoMap),
-																		texCoord: 1
-															};
-
-															if (material.aoMapIntensity !== 1.0) {
-
-																		occlusionMapDef.strength = material.aoMapIntensity;
-															}
-
-															this.applyTextureTransform(occlusionMapDef, material.aoMap);
-															materialDef.occlusionTexture = occlusionMapDef;
-												} // alphaMode
-
-
-												if (material.transparent) {
-
-															materialDef.alphaMode = 'BLEND';
-												} else {
-
-															if (material.alphaTest > 0.0) {
-
-																		materialDef.alphaMode = 'MASK';
-																		materialDef.alphaCutoff = material.alphaTest;
-															}
-												} // doubleSided
-
-
-												if (material.side === THREE.DoubleSide) materialDef.doubleSided = true;
-												if (material.name !== '') materialDef.name = material.name;
-												this.serializeUserData(material, materialDef);
-
-												this._invokeAll(function (ext) {
-
-															ext.writeMaterial && ext.writeMaterial(material, materialDef);
-												});
-
-												var index = json.materials.push(materialDef) - 1;
-												cache.materials.set(material, index);
-												return index;
-									}
-									/**
-          * Process mesh
-          * @param  {THREE.Mesh} mesh Mesh to process
-          * @return {Integer|null} Index of the processed mesh in the "meshes" array
-          */
-
-						}, {
-									key: 'processMesh',
-									value: function processMesh(mesh) {
-
-												var cache = this.cache;
-												var json = this.json;
-												var meshCacheKeyParts = [mesh.geometry.uuid];
-
-												if (Array.isArray(mesh.material)) {
-
-															for (var i = 0, l = mesh.material.length; i < l; i++) {
-
-																		meshCacheKeyParts.push(mesh.material[i].uuid);
-															}
-												} else {
-
-															meshCacheKeyParts.push(mesh.material.uuid);
-												}
-
-												var meshCacheKey = meshCacheKeyParts.join(':');
-												if (cache.meshes.has(meshCacheKey)) return cache.meshes.get(meshCacheKey);
-												var geometry = mesh.geometry;
-												var mode = void 0; // Use the correct mode
-
-												if (mesh.isLineSegments) {
-
-															mode = WEBGL_CONSTANTS.LINES;
-												} else if (mesh.isLineLoop) {
-
-															mode = WEBGL_CONSTANTS.LINE_LOOP;
-												} else if (mesh.isLine) {
-
-															mode = WEBGL_CONSTANTS.LINE_STRIP;
-												} else if (mesh.isPoints) {
-
-															mode = WEBGL_CONSTANTS.POINTS;
-												} else {
-
-															mode = mesh.material.wireframe ? WEBGL_CONSTANTS.LINES : WEBGL_CONSTANTS.TRIANGLES;
-												}
-
-												if (geometry.isBufferGeometry !== true) {
-
-															throw new Error('THREE.GLTFExporter: Geometry is not of type THREE.BufferGeometry.');
-												}
-
-												var meshDef = {};
-												var attributes = {};
-												var primitives = [];
-												var targets = []; // Conversion between attributes names in threejs and gltf spec
-
-												var nameConversion = {
-															uv: 'TEXCOORD_0',
-															uv2: 'TEXCOORD_1',
-															color: 'COLOR_0',
-															skinWeight: 'WEIGHTS_0',
-															skinIndex: 'JOINTS_0'
-												};
-												var originalNormal = geometry.getAttribute('normal');
-
-												if (originalNormal !== undefined && !this.isNormalizedNormalAttribute(originalNormal)) {
-
-															console.warn('THREE.GLTFExporter: Creating normalized normal attribute from the non-normalized one.');
-															geometry.setAttribute('normal', this.createNormalizedNormalAttribute(originalNormal));
-												} // @QUESTION Detect if .vertexColors = true?
-												// For every attribute create an accessor
-
-
-												var modifiedAttribute = null;
-
-												for (var attributeName in geometry.attributes) {
-
-															// Ignore morph target attributes, which are exported later.
-															if (attributeName.substr(0, 5) === 'morph') continue;
-															var attribute = geometry.attributes[attributeName];
-															attributeName = nameConversion[attributeName] || attributeName.toUpperCase(); // Prefix all geometry attributes except the ones specifically
-															// listed in the spec; non-spec attributes are considered custom.
-
-															var validVertexAttributes = /^(POSITION|NORMAL|TANGENT|TEXCOORD_\d+|COLOR_\d+|JOINTS_\d+|WEIGHTS_\d+)$/;
-															if (!validVertexAttributes.test(attributeName)) attributeName = '_' + attributeName;
-
-															if (cache.attributes.has(this.getUID(attribute))) {
-
-																		attributes[attributeName] = cache.attributes.get(this.getUID(attribute));
-																		continue;
-															} // JOINTS_0 must be UNSIGNED_BYTE or UNSIGNED_SHORT.
-
-
-															modifiedAttribute = null;
-															var array = attribute.array;
-
-															if (attributeName === 'JOINTS_0' && !(array instanceof Uint16Array) && !(array instanceof Uint8Array)) {
-
-																		console.warn('GLTFExporter: Attribute "skinIndex" converted to type UNSIGNED_SHORT.');
-																		modifiedAttribute = new THREE.BufferAttribute(new Uint16Array(array), attribute.itemSize, attribute.normalized);
-															}
-
-															var accessor = this.processAccessor(modifiedAttribute || attribute, geometry);
-
-															if (accessor !== null) {
-
-																		attributes[attributeName] = accessor;
-																		cache.attributes.set(this.getUID(attribute), accessor);
-															}
-												}
-
-												if (originalNormal !== undefined) geometry.setAttribute('normal', originalNormal); // Skip if no exportable attributes found
-
-												if (Object.keys(attributes).length === 0) return null; // Morph targets
-
-												if (mesh.morphTargetInfluences !== undefined && mesh.morphTargetInfluences.length > 0) {
-
-															var weights = [];
-															var targetNames = [];
-															var reverseDictionary = {};
-
-															if (mesh.morphTargetDictionary !== undefined) {
-
-																		for (var key in mesh.morphTargetDictionary) {
-
-																					reverseDictionary[mesh.morphTargetDictionary[key]] = key;
-																		}
-															}
-
-															for (var _i2 = 0; _i2 < mesh.morphTargetInfluences.length; ++_i2) {
-
-																		var target = {};
-																		var warned = false;
-
-																		for (var _attributeName in geometry.morphAttributes) {
-
-																					// glTF 2.0 morph supports only POSITION/NORMAL/TANGENT.
-																					// Three.js doesn't support TANGENT yet.
-																					if (_attributeName !== 'position' && _attributeName !== 'normal') {
-
-																								if (!warned) {
-
-																											console.warn('GLTFExporter: Only POSITION and NORMAL morph are supported.');
-																											warned = true;
-																								}
-
-																								continue;
-																					}
-
-																					var _attribute = geometry.morphAttributes[_attributeName][_i2];
-																					var gltfAttributeName = _attributeName.toUpperCase(); // Three.js morph attribute has absolute values while the one of glTF has relative values.
-																					//
-																					// glTF 2.0 Specification:
-																					// https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#morph-targets
-
-																					var baseAttribute = geometry.attributes[_attributeName];
-
-																					if (cache.attributes.has(this.getUID(_attribute))) {
-
-																								target[gltfAttributeName] = cache.attributes.get(this.getUID(_attribute));
-																								continue;
-																					} // Clones attribute not to override
-
-
-																					var relativeAttribute = _attribute.clone();
-
-																					if (!geometry.morphTargetsRelative) {
-
-																								for (var j = 0, jl = _attribute.count; j < jl; j++) {
-
-																											relativeAttribute.setXYZ(j, _attribute.getX(j) - baseAttribute.getX(j), _attribute.getY(j) - baseAttribute.getY(j), _attribute.getZ(j) - baseAttribute.getZ(j));
-																								}
-																					}
-
-																					target[gltfAttributeName] = this.processAccessor(relativeAttribute, geometry);
-																					cache.attributes.set(this.getUID(baseAttribute), target[gltfAttributeName]);
-																		}
-
-																		targets.push(target);
-																		weights.push(mesh.morphTargetInfluences[_i2]);
-																		if (mesh.morphTargetDictionary !== undefined) targetNames.push(reverseDictionary[_i2]);
-															}
-
-															meshDef.weights = weights;
-
-															if (targetNames.length > 0) {
-
-																		meshDef.extras = {};
-																		meshDef.extras.targetNames = targetNames;
-															}
-												}
-
-												var isMultiMaterial = Array.isArray(mesh.material);
-												if (isMultiMaterial && geometry.groups.length === 0) return null;
-												var materials = isMultiMaterial ? mesh.material : [mesh.material];
-												var groups = isMultiMaterial ? geometry.groups : [{
-															materialIndex: 0,
-															start: undefined,
-															count: undefined
-												}];
-
-												for (var _i3 = 0, il = groups.length; _i3 < il; _i3++) {
-
-															var primitive = {
-																		mode: mode,
-																		attributes: attributes
-															};
-															this.serializeUserData(geometry, primitive);
-															if (targets.length > 0) primitive.targets = targets;
-
-															if (geometry.index !== null) {
-
-																		var cacheKey = this.getUID(geometry.index);
-
-																		if (groups[_i3].start !== undefined || groups[_i3].count !== undefined) {
-
-																					cacheKey += ':' + groups[_i3].start + ':' + groups[_i3].count;
-																		}
-
-																		if (cache.attributes.has(cacheKey)) {
-
-																					primitive.indices = cache.attributes.get(cacheKey);
-																		} else {
-
-																					primitive.indices = this.processAccessor(geometry.index, geometry, groups[_i3].start, groups[_i3].count);
-																					cache.attributes.set(cacheKey, primitive.indices);
-																		}
-
-																		if (primitive.indices === null) delete primitive.indices;
-															}
-
-															var material = this.processMaterial(materials[groups[_i3].materialIndex]);
-															if (material !== null) primitive.material = material;
-															primitives.push(primitive);
-												}
-
-												meshDef.primitives = primitives;
-												if (!json.meshes) json.meshes = [];
-
-												this._invokeAll(function (ext) {
-
-															ext.writeMesh && ext.writeMesh(mesh, meshDef);
-												});
-
-												var index = json.meshes.push(meshDef) - 1;
-												cache.meshes.set(meshCacheKey, index);
-												return index;
-									}
-									/**
-          * Process camera
-          * @param  {THREE.Camera} camera Camera to process
-          * @return {Integer}      Index of the processed mesh in the "camera" array
-          */
-
-						}, {
-									key: 'processCamera',
-									value: function processCamera(camera) {
-
-												var json = this.json;
-												if (!json.cameras) json.cameras = [];
-												var isOrtho = camera.isOrthographicCamera;
-												var cameraDef = {
-															type: isOrtho ? 'orthographic' : 'perspective'
-												};
-
-												if (isOrtho) {
-
-															cameraDef.orthographic = {
-																		xmag: camera.right * 2,
-																		ymag: camera.top * 2,
-																		zfar: camera.far <= 0 ? 0.001 : camera.far,
-																		znear: camera.near < 0 ? 0 : camera.near
-															};
-												} else {
-
-															cameraDef.perspective = {
-																		aspectRatio: camera.aspect,
-																		yfov: THREE.MathUtils.degToRad(camera.fov),
-																		zfar: camera.far <= 0 ? 0.001 : camera.far,
-																		znear: camera.near < 0 ? 0 : camera.near
-															};
-												} // Question: Is saving "type" as name intentional?
-
-
-												if (camera.name !== '') cameraDef.name = camera.type;
-												return json.cameras.push(cameraDef) - 1;
-									}
-									/**
-          * Creates glTF animation entry from AnimationClip object.
-          *
-          * Status:
-          * - Only properties listed in PATH_PROPERTIES may be animated.
-          *
-          * @param {THREE.AnimationClip} clip
-          * @param {THREE.Object3D} root
-          * @return {number|null}
-          */
-
-						}, {
-									key: 'processAnimation',
-									value: function processAnimation(clip, root) {
-
-												var json = this.json;
-												var nodeMap = this.nodeMap;
-												if (!json.animations) json.animations = [];
-												clip = GLTFExporter.Utils.mergeMorphTargetTracks(clip.clone(), root);
-												var tracks = clip.tracks;
-												var channels = [];
-												var samplers = [];
-
-												for (var i = 0; i < tracks.length; ++i) {
-
-															var track = tracks[i];
-															var trackBinding = THREE.PropertyBinding.parseTrackName(track.name);
-															var trackNode = THREE.PropertyBinding.findNode(root, trackBinding.nodeName);
-															var trackProperty = PATH_PROPERTIES[trackBinding.propertyName];
-
-															if (trackBinding.objectName === 'bones') {
-
-																		if (trackNode.isSkinnedMesh === true) {
-
-																					trackNode = trackNode.skeleton.getBoneByName(trackBinding.objectIndex);
-																		} else {
-
-																					trackNode = undefined;
-																		}
-															}
-
-															if (!trackNode || !trackProperty) {
-
-																		console.warn('THREE.GLTFExporter: Could not export animation track "%s".', track.name);
-																		return null;
-															}
-
-															var inputItemSize = 1;
-															var outputItemSize = track.values.length / track.times.length;
-
-															if (trackProperty === PATH_PROPERTIES.morphTargetInfluences) {
-
-																		outputItemSize /= trackNode.morphTargetInfluences.length;
-															}
-
-															var interpolation = void 0; // @TODO export CubicInterpolant(InterpolateSmooth) as CUBICSPLINE
-															// Detecting glTF cubic spline interpolant by checking factory method's special property
-															// GLTFCubicSplineInterpolant is a custom interpolant and track doesn't return
-															// valid value from .getInterpolation().
-
-															if (track.createInterpolant.isInterpolantFactoryMethodGLTFCubicSpline === true) {
-
-																		interpolation = 'CUBICSPLINE'; // itemSize of CUBICSPLINE keyframe is 9
-																		// (VEC3 * 3: inTangent, splineVertex, and outTangent)
-																		// but needs to be stored as VEC3 so dividing by 3 here.
-
-																		outputItemSize /= 3;
-															} else if (track.getInterpolation() === THREE.InterpolateDiscrete) {
-
-																		interpolation = 'STEP';
-															} else {
-
-																		interpolation = 'LINEAR';
-															}
-
-															samplers.push({
-																		input: this.processAccessor(new THREE.BufferAttribute(track.times, inputItemSize)),
-																		output: this.processAccessor(new THREE.BufferAttribute(track.values, outputItemSize)),
-																		interpolation: interpolation
-															});
-															channels.push({
-																		sampler: samplers.length - 1,
-																		target: {
-																					node: nodeMap.get(trackNode),
-																					path: trackProperty
-																		}
-															});
-												}
-
-												json.animations.push({
-															name: clip.name || 'clip_' + json.animations.length,
-															samplers: samplers,
-															channels: channels
-												});
-												return json.animations.length - 1;
-									}
-									/**
-          * @param {THREE.Object3D} object
-          * @return {number|null}
-          */
-
-						}, {
-									key: 'processSkin',
-									value: function processSkin(object) {
-
-												var json = this.json;
-												var nodeMap = this.nodeMap;
-												var node = json.nodes[nodeMap.get(object)];
-												var skeleton = object.skeleton;
-												if (skeleton === undefined) return null;
-												var rootJoint = object.skeleton.bones[0];
-												if (rootJoint === undefined) return null;
-												var joints = [];
-												var inverseBindMatrices = new Float32Array(skeleton.bones.length * 16);
-												var temporaryBoneInverse = new THREE.Matrix4();
-
-												for (var i = 0; i < skeleton.bones.length; ++i) {
-
-															joints.push(nodeMap.get(skeleton.bones[i]));
-															temporaryBoneInverse.copy(skeleton.boneInverses[i]);
-															temporaryBoneInverse.multiply(object.bindMatrix).toArray(inverseBindMatrices, i * 16);
-												}
-
-												if (json.skins === undefined) json.skins = [];
-												json.skins.push({
-															inverseBindMatrices: this.processAccessor(new THREE.BufferAttribute(inverseBindMatrices, 16)),
-															joints: joints,
-															skeleton: nodeMap.get(rootJoint)
-												});
-												var skinIndex = node.skin = json.skins.length - 1;
-												return skinIndex;
-									}
-									/**
-          * Process Object3D node
-          * @param  {THREE.Object3D} node Object3D to processNode
-          * @return {Integer} Index of the node in the nodes list
-          */
-
-						}, {
-									key: 'processNode',
-									value: function processNode(object) {
-
-												var json = this.json;
-												var options = this.options;
-												var nodeMap = this.nodeMap;
-												if (!json.nodes) json.nodes = [];
-												var nodeDef = {};
-
-												if (options.trs) {
-
-															var rotation = object.quaternion.toArray();
-															var position = object.position.toArray();
-															var scale = object.scale.toArray();
-
-															if (!equalArray(rotation, [0, 0, 0, 1])) {
-
-																		nodeDef.rotation = rotation;
-															}
-
-															if (!equalArray(position, [0, 0, 0])) {
-
-																		nodeDef.translation = position;
-															}
-
-															if (!equalArray(scale, [1, 1, 1])) {
-
-																		nodeDef.scale = scale;
-															}
-												} else {
-
-															if (object.matrixAutoUpdate) {
-
-																		object.updateMatrix();
-															}
-
-															if (isIdentityMatrix(object.matrix) === false) {
-
-																		nodeDef.matrix = object.matrix.elements;
-															}
-												} // We don't export empty strings name because it represents no-name in Three.js.
-
-
-												if (object.name !== '') nodeDef.name = String(object.name);
-												this.serializeUserData(object, nodeDef);
-
-												if (object.isMesh || object.isLine || object.isPoints) {
-
-															var meshIndex = this.processMesh(object);
-															if (meshIndex !== null) nodeDef.mesh = meshIndex;
-												} else if (object.isCamera) {
-
-															nodeDef.camera = this.processCamera(object);
-												}
-
-												if (object.isSkinnedMesh) this.skins.push(object);
-
-												if (object.children.length > 0) {
-
-															var children = [];
-
-															for (var i = 0, l = object.children.length; i < l; i++) {
-
-																		var child = object.children[i];
-
-																		if (child.visible || options.onlyVisible === false) {
-
-																					var _nodeIndex = this.processNode(child);
-																					if (_nodeIndex !== null) children.push(_nodeIndex);
-																		}
-															}
-
-															if (children.length > 0) nodeDef.children = children;
-												}
-
-												this._invokeAll(function (ext) {
-
-															ext.writeNode && ext.writeNode(object, nodeDef);
-												});
-
-												var nodeIndex = json.nodes.push(nodeDef) - 1;
-												nodeMap.set(object, nodeIndex);
-												return nodeIndex;
-									}
-									/**
-          * Process THREE.Scene
-          * @param  {Scene} node THREE.Scene to process
-          */
-
-						}, {
-									key: 'processScene',
-									value: function processScene(scene) {
-
-												var json = this.json;
-												var options = this.options;
-
-												if (!json.scenes) {
-
-															json.scenes = [];
-															json.scene = 0;
-												}
-
-												var sceneDef = {};
-												if (scene.name !== '') sceneDef.name = scene.name;
-												json.scenes.push(sceneDef);
-												var nodes = [];
-
-												for (var i = 0, l = scene.children.length; i < l; i++) {
-
-															var child = scene.children[i];
-
-															if (child.visible || options.onlyVisible === false) {
-
-																		var nodeIndex = this.processNode(child);
-																		if (nodeIndex !== null) nodes.push(nodeIndex);
-															}
-												}
-
-												if (nodes.length > 0) sceneDef.nodes = nodes;
-												this.serializeUserData(scene, sceneDef);
-									}
-									/**
-          * Creates a THREE.Scene to hold a list of objects and parse it
-          * @param  {Array} objects List of objects to process
-          */
-
-						}, {
-									key: 'processObjects',
-									value: function processObjects(objects) {
-
-												var scene = new THREE.Scene();
-												scene.name = 'AuxScene';
-
-												for (var i = 0; i < objects.length; i++) {
-
-															// We push directly to children instead of calling `add` to prevent
-															// modify the .parent and break its original scene and hierarchy
-															scene.children.push(objects[i]);
-												}
-
-												this.processScene(scene);
-									}
-									/**
-          * @param {THREE.Object3D|Array<THREE.Object3D>} input
-          */
-
-						}, {
-									key: 'processInput',
-									value: function processInput(input) {
-
-												var options = this.options;
-												input = input instanceof Array ? input : [input];
-
-												this._invokeAll(function (ext) {
-
-															ext.beforeParse && ext.beforeParse(input);
-												});
-
-												var objectsWithoutScene = [];
-
-												for (var i = 0; i < input.length; i++) {
-
-															if (input[i] instanceof THREE.Scene) {
-
-																		this.processScene(input[i]);
-															} else {
-
-																		objectsWithoutScene.push(input[i]);
-															}
-												}
-
-												if (objectsWithoutScene.length > 0) this.processObjects(objectsWithoutScene);
-
-												for (var _i4 = 0; _i4 < this.skins.length; ++_i4) {
-
-															this.processSkin(this.skins[_i4]);
-												}
-
-												for (var _i5 = 0; _i5 < options.animations.length; ++_i5) {
-
-															this.processAnimation(options.animations[_i5], input[0]);
-												}
-
-												this._invokeAll(function (ext) {
-
-															ext.afterParse && ext.afterParse(input);
-												});
-									}
-						}, {
-									key: '_invokeAll',
-									value: function _invokeAll(func) {
-
-												for (var i = 0, il = this.plugins.length; i < il; i++) {
-
-															func(this.plugins[i]);
-												}
-									}
-						}]);
-
-						return GLTFWriter;
-			}();
-			/**
-   * Punctual Lights Extension
-   *
-   * Specification: https://github.com/KhronosGroup/glTF/tree/master/extensions/2.0/Khronos/KHR_lights_punctual
-   */
-
-			var GLTFLightExtension = function () {
-						function GLTFLightExtension(writer) {
-									_classCallCheck(this, GLTFLightExtension);
-
-									this.writer = writer;
-									this.name = 'KHR_lights_punctual';
-						}
-
-						_createClass(GLTFLightExtension, [{
-									key: 'writeNode',
-									value: function writeNode(light, nodeDef) {
-
-												if (!light.isLight) return;
-
-												if (!light.isDirectionalLight && !light.isPointLight && !light.isSpotLight) {
-
-															console.warn('THREE.GLTFExporter: Only directional, point, and spot lights are supported.', light);
-															return;
-												}
-
-												var writer = this.writer;
-												var json = writer.json;
-												var extensionsUsed = writer.extensionsUsed;
-												var lightDef = {};
-												if (light.name) lightDef.name = light.name;
-												lightDef.color = light.color.toArray();
-												lightDef.intensity = light.intensity;
-
-												if (light.isDirectionalLight) {
-
-															lightDef.type = 'directional';
-												} else if (light.isPointLight) {
-
-															lightDef.type = 'point';
-															if (light.distance > 0) lightDef.range = light.distance;
-												} else if (light.isSpotLight) {
-
-															lightDef.type = 'spot';
-															if (light.distance > 0) lightDef.range = light.distance;
-															lightDef.spot = {};
-															lightDef.spot.innerConeAngle = (light.penumbra - 1.0) * light.angle * -1.0;
-															lightDef.spot.outerConeAngle = light.angle;
-												}
-
-												if (light.decay !== undefined && light.decay !== 2) {
-
-															console.warn('THREE.GLTFExporter: Light decay may be lost. glTF is physically-based, ' + 'and expects light.decay=2.');
-												}
-
-												if (light.target && (light.target.parent !== light || light.target.position.x !== 0 || light.target.position.y !== 0 || light.target.position.z !== -1)) {
-
-															console.warn('THREE.GLTFExporter: Light direction may be lost. For best results, ' + 'make light.target a child of the light with position 0,0,-1.');
-												}
-
-												if (!extensionsUsed[this.name]) {
-
-															json.extensions = json.extensions || {};
-															json.extensions[this.name] = {
-																		lights: []
-															};
-															extensionsUsed[this.name] = true;
-												}
-
-												var lights = json.extensions[this.name].lights;
-												lights.push(lightDef);
-												nodeDef.extensions = nodeDef.extensions || {};
-												nodeDef.extensions[this.name] = {
-															light: lights.length - 1
-												};
-									}
-						}]);
-
-						return GLTFLightExtension;
-			}();
-			/**
-   * Unlit Materials Extension
-   *
-   * Specification: https://github.com/KhronosGroup/glTF/tree/master/extensions/2.0/Khronos/KHR_materials_unlit
-   */
-
-			var GLTFMaterialsUnlitExtension = function () {
-						function GLTFMaterialsUnlitExtension(writer) {
-									_classCallCheck(this, GLTFMaterialsUnlitExtension);
-
-									this.writer = writer;
-									this.name = 'KHR_materials_unlit';
-						}
-
-						_createClass(GLTFMaterialsUnlitExtension, [{
-									key: 'writeMaterial',
-									value: function writeMaterial(material, materialDef) {
-
-												if (!material.isMeshBasicMaterial) return;
-												var writer = this.writer;
-												var extensionsUsed = writer.extensionsUsed;
-												materialDef.extensions = materialDef.extensions || {};
-												materialDef.extensions[this.name] = {};
-												extensionsUsed[this.name] = true;
-												materialDef.pbrMetallicRoughness.metallicFactor = 0.0;
-												materialDef.pbrMetallicRoughness.roughnessFactor = 0.9;
-									}
-						}]);
-
-						return GLTFMaterialsUnlitExtension;
-			}();
-			/**
-   * Specular-Glossiness Extension
-   *
-   * Specification: https://github.com/KhronosGroup/glTF/tree/master/extensions/2.0/Khronos/KHR_materials_pbrSpecularGlossiness
-   */
-
-			var GLTFMaterialsPBRSpecularGlossiness = function () {
-						function GLTFMaterialsPBRSpecularGlossiness(writer) {
-									_classCallCheck(this, GLTFMaterialsPBRSpecularGlossiness);
-
-									this.writer = writer;
-									this.name = 'KHR_materials_pbrSpecularGlossiness';
-						}
-
-						_createClass(GLTFMaterialsPBRSpecularGlossiness, [{
-									key: 'writeMaterial',
-									value: function writeMaterial(material, materialDef) {
-
-												if (!material.isGLTFSpecularGlossinessMaterial) return;
-												var writer = this.writer;
-												var extensionsUsed = writer.extensionsUsed;
-												var extensionDef = {};
-
-												if (materialDef.pbrMetallicRoughness.baseColorFactor) {
-
-															extensionDef.diffuseFactor = materialDef.pbrMetallicRoughness.baseColorFactor;
-												}
-
-												var specularFactor = [1, 1, 1];
-												material.specular.toArray(specularFactor, 0);
-												extensionDef.specularFactor = specularFactor;
-												extensionDef.glossinessFactor = material.glossiness;
-
-												if (materialDef.pbrMetallicRoughness.baseColorTexture) {
-
-															extensionDef.diffuseTexture = materialDef.pbrMetallicRoughness.baseColorTexture;
-												}
-
-												if (material.specularMap) {
-
-															var specularMapDef = {
-																		index: writer.processTexture(material.specularMap)
-															};
-															writer.applyTextureTransform(specularMapDef, material.specularMap);
-															extensionDef.specularGlossinessTexture = specularMapDef;
-												}
-
-												materialDef.extensions = materialDef.extensions || {};
-												materialDef.extensions[this.name] = extensionDef;
-												extensionsUsed[this.name] = true;
-									}
-						}]);
-
-						return GLTFMaterialsPBRSpecularGlossiness;
-			}();
-			/**
-   * Transmission Materials Extension
-   *
-   * Specification: https://github.com/KhronosGroup/glTF/tree/master/extensions/2.0/Khronos/KHR_materials_transmission
-   */
-
-			var GLTFMaterialsTransmissionExtension = function () {
-						function GLTFMaterialsTransmissionExtension(writer) {
-									_classCallCheck(this, GLTFMaterialsTransmissionExtension);
-
-									this.writer = writer;
-									this.name = 'KHR_materials_transmission';
-						}
-
-						_createClass(GLTFMaterialsTransmissionExtension, [{
-									key: 'writeMaterial',
-									value: function writeMaterial(material, materialDef) {
-
-												if (!material.isMeshPhysicalMaterial || material.transmission === 0) return;
-												var writer = this.writer;
-												var extensionsUsed = writer.extensionsUsed;
-												var extensionDef = {};
-												extensionDef.transmissionFactor = material.transmission;
-
-												if (material.transmissionMap) {
-
-															var transmissionMapDef = {
-																		index: writer.processTexture(material.transmissionMap)
-															};
-															writer.applyTextureTransform(transmissionMapDef, material.transmissionMap);
-															extensionDef.transmissionTexture = transmissionMapDef;
-												}
-
-												materialDef.extensions = materialDef.extensions || {};
-												materialDef.extensions[this.name] = extensionDef;
-												extensionsUsed[this.name] = true;
-									}
-						}]);
-
-						return GLTFMaterialsTransmissionExtension;
-			}();
-			/**
-   * Materials Volume Extension
-   *
-   * Specification: https://github.com/KhronosGroup/glTF/tree/master/extensions/2.0/Khronos/KHR_materials_volume
-   */
-
-			var GLTFMaterialsVolumeExtension = function () {
-						function GLTFMaterialsVolumeExtension(writer) {
-									_classCallCheck(this, GLTFMaterialsVolumeExtension);
-
-									this.writer = writer;
-									this.name = 'KHR_materials_volume';
-						}
-
-						_createClass(GLTFMaterialsVolumeExtension, [{
-									key: 'writeMaterial',
-									value: function writeMaterial(material, materialDef) {
-
-												if (!material.isMeshPhysicalMaterial || material.thickness === 0) return;
-												var writer = this.writer;
-												var extensionsUsed = writer.extensionsUsed;
-												var extensionDef = {};
-												extensionDef.thicknessFactor = material.thickness;
-
-												if (material.thicknessMap) {
-
-															var thicknessMapDef = {
-																		index: writer.processTexture(material.thicknessMap)
-															};
-															writer.applyTextureTransform(thicknessMapDef, material.thicknessMap);
-															extensionDef.thicknessTexture = thicknessMapDef;
-												}
-
-												extensionDef.attenuationDistance = material.attenuationDistance;
-												extensionDef.attenuationColor = material.attenuationTint.toArray();
-												materialDef.extensions = materialDef.extensions || {};
-												materialDef.extensions[this.name] = extensionDef;
-												extensionsUsed[this.name] = true;
-									}
-						}]);
-
-						return GLTFMaterialsVolumeExtension;
-			}();
-			/**
-   * Static utility functions
-   */
-
-			GLTFExporter.Utils = {
-						insertKeyframe: function insertKeyframe(track, time) {
-
-									var tolerance = 0.001; // 1ms
-
-									var valueSize = track.getValueSize();
-									var times = new track.TimeBufferType(track.times.length + 1);
-									var values = new track.ValueBufferType(track.values.length + valueSize);
-									var interpolant = track.createInterpolant(new track.ValueBufferType(valueSize));
-									var index = void 0;
-
-									if (track.times.length === 0) {
-
-												times[0] = time;
-
-												for (var i = 0; i < valueSize; i++) {
-
-															values[i] = 0;
-												}
-
-												index = 0;
-									} else if (time < track.times[0]) {
-
-												if (Math.abs(track.times[0] - time) < tolerance) return 0;
-												times[0] = time;
-												times.set(track.times, 1);
-												values.set(interpolant.evaluate(time), 0);
-												values.set(track.values, valueSize);
-												index = 0;
-									} else if (time > track.times[track.times.length - 1]) {
-
-												if (Math.abs(track.times[track.times.length - 1] - time) < tolerance) {
-
-															return track.times.length - 1;
-												}
-
-												times[times.length - 1] = time;
-												times.set(track.times, 0);
-												values.set(track.values, 0);
-												values.set(interpolant.evaluate(time), track.values.length);
-												index = times.length - 1;
-									} else {
-
-												for (var _i6 = 0; _i6 < track.times.length; _i6++) {
-
-															if (Math.abs(track.times[_i6] - time) < tolerance) return _i6;
-
-															if (track.times[_i6] < time && track.times[_i6 + 1] > time) {
-
-																		times.set(track.times.slice(0, _i6 + 1), 0);
-																		times[_i6 + 1] = time;
-																		times.set(track.times.slice(_i6 + 1), _i6 + 2);
-																		values.set(track.values.slice(0, (_i6 + 1) * valueSize), 0);
-																		values.set(interpolant.evaluate(time), (_i6 + 1) * valueSize);
-																		values.set(track.values.slice((_i6 + 1) * valueSize), (_i6 + 2) * valueSize);
-																		index = _i6 + 1;
-																		break;
-															}
-												}
-									}
-
-									track.times = times;
-									track.values = values;
-									return index;
-						},
-						mergeMorphTargetTracks: function mergeMorphTargetTracks(clip, root) {
-
-									var tracks = [];
-									var mergedTracks = {};
-									var sourceTracks = clip.tracks;
-
-									for (var i = 0; i < sourceTracks.length; ++i) {
-
-												var sourceTrack = sourceTracks[i];
-												var sourceTrackBinding = THREE.PropertyBinding.parseTrackName(sourceTrack.name);
-												var sourceTrackNode = THREE.PropertyBinding.findNode(root, sourceTrackBinding.nodeName);
-
-												if (sourceTrackBinding.propertyName !== 'morphTargetInfluences' || sourceTrackBinding.propertyIndex === undefined) {
-
-															// Tracks that don't affect morph targets, or that affect all morph targets together, can be left as-is.
-															tracks.push(sourceTrack);
-															continue;
-												}
-
-												if (sourceTrack.createInterpolant !== sourceTrack.InterpolantFactoryMethodDiscrete && sourceTrack.createInterpolant !== sourceTrack.InterpolantFactoryMethodLinear) {
-
-															if (sourceTrack.createInterpolant.isInterpolantFactoryMethodGLTFCubicSpline) {
-
-																		// This should never happen, because glTF morph target animations
-																		// affect all targets already.
-																		throw new Error('THREE.GLTFExporter: Cannot merge tracks with glTF CUBICSPLINE interpolation.');
-															}
-
-															console.warn('THREE.GLTFExporter: Morph target interpolation mode not yet supported. Using LINEAR instead.');
-															sourceTrack = sourceTrack.clone();
-															sourceTrack.setInterpolation(THREE.InterpolateLinear);
-												}
-
-												var targetCount = sourceTrackNode.morphTargetInfluences.length;
-												var targetIndex = sourceTrackNode.morphTargetDictionary[sourceTrackBinding.propertyIndex];
-
-												if (targetIndex === undefined) {
-
-															throw new Error('THREE.GLTFExporter: Morph target name not found: ' + sourceTrackBinding.propertyIndex);
-												}
-
-												var mergedTrack = void 0; // If this is the first time we've seen this object, create a new
-												// track to store merged keyframe data for each morph target.
-
-												if (mergedTracks[sourceTrackNode.uuid] === undefined) {
-
-															mergedTrack = sourceTrack.clone();
-															var values = new mergedTrack.ValueBufferType(targetCount * mergedTrack.times.length);
-
-															for (var j = 0; j < mergedTrack.times.length; j++) {
-
-																		values[j * targetCount + targetIndex] = mergedTrack.values[j];
-															} // We need to take into consideration the intended target node
-															// of our original un-merged morphTarget animation.
-
-
-															mergedTrack.name = (sourceTrackBinding.nodeName || '') + '.morphTargetInfluences';
-															mergedTrack.values = values;
-															mergedTracks[sourceTrackNode.uuid] = mergedTrack;
-															tracks.push(mergedTrack);
-															continue;
-												}
-
-												var sourceInterpolant = sourceTrack.createInterpolant(new sourceTrack.ValueBufferType(1));
-												mergedTrack = mergedTracks[sourceTrackNode.uuid]; // For every existing keyframe of the merged track, write a (possibly
-												// interpolated) value from the source track.
-
-												for (var _j = 0; _j < mergedTrack.times.length; _j++) {
-
-															mergedTrack.values[_j * targetCount + targetIndex] = sourceInterpolant.evaluate(mergedTrack.times[_j]);
-												} // For every existing keyframe of the source track, write a (possibly
-												// new) keyframe to the merged track. Values from the previous loop may
-												// be written again, but keyframes are de-duplicated.
-
-
-												for (var _j2 = 0; _j2 < sourceTrack.times.length; _j2++) {
-
-															var keyframeIndex = this.insertKeyframe(mergedTrack, sourceTrack.times[_j2]);
-															mergedTrack.values[keyframeIndex * targetCount + targetIndex] = sourceTrack.values[_j2];
-												}
-									}
-
-									clip.tracks = tracks;
-									return clip;
-						}
-			};
-
-			THREE.GLTFExporter = GLTFExporter;
+	THREE.GLTFExporter = GLTFExporter;
 })();
 
 /***/ }),
-/* 138 */
+/* 139 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26590,12 +26611,12 @@ ga('create', 'UA-80530812-1', 'auto');
 ga('send', 'pageview');
 
 /***/ }),
-/* 139 */
+/* 140 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (global, factory) {
     if (true) {
-        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [module, __webpack_require__(251)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [module, __webpack_require__(252)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
 				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
 				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
@@ -26827,7 +26848,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 });
 
 /***/ }),
-/* 140 */
+/* 141 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -26835,7 +26856,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__emotion_unitless__ = __webpack_require__(110);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__emotion_hash__ = __webpack_require__(107);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__emotion_stylis__ = __webpack_require__(109);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_stylis_rule_sheet__ = __webpack_require__(254);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_stylis_rule_sheet__ = __webpack_require__(255);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_stylis_rule_sheet___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_stylis_rule_sheet__);
 
 
@@ -27359,7 +27380,7 @@ function createEmotion(context, options) {
 
 
 /***/ }),
-/* 141 */
+/* 142 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28292,10 +28313,10 @@ module.exports = factory;
 
 
 /***/ }),
-/* 142 */
+/* 143 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(143)();
+exports = module.exports = __webpack_require__(144)();
 // imports
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap);", ""]);
 
@@ -28306,7 +28327,7 @@ exports.push([module.i, "body.aframe-inspector-opened,\n.toggle-edit {\n  font-f
 
 
 /***/ }),
-/* 143 */
+/* 144 */
 /***/ (function(module, exports) {
 
 /*
@@ -28362,7 +28383,7 @@ module.exports = function() {
 
 
 /***/ }),
-/* 144 */
+/* 145 */
 /***/ (function(module, exports) {
 
 var DOCUMENT_NODE_TYPE = 9;
@@ -28401,10 +28422,10 @@ module.exports = closest;
 
 
 /***/ }),
-/* 145 */
+/* 146 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var closest = __webpack_require__(144);
+var closest = __webpack_require__(145);
 
 /**
  * Delegates event to a selector.
@@ -28485,7 +28506,7 @@ module.exports = delegate;
 
 
 /***/ }),
-/* 146 */
+/* 147 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28496,7 +28517,7 @@ var _interopRequireDefault = __webpack_require__(106);
 exports.__esModule = true;
 exports.default = addClass;
 
-var _hasClass = _interopRequireDefault(__webpack_require__(147));
+var _hasClass = _interopRequireDefault(__webpack_require__(148));
 
 function addClass(element, className) {
   if (element.classList) element.classList.add(className);else if (!(0, _hasClass.default)(element, className)) if (typeof element.className === 'string') element.className = element.className + ' ' + className;else element.setAttribute('class', (element.className && element.className.baseVal || '') + ' ' + className);
@@ -28505,7 +28526,7 @@ function addClass(element, className) {
 module.exports = exports["default"];
 
 /***/ }),
-/* 147 */
+/* 148 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28521,7 +28542,7 @@ function hasClass(element, className) {
 module.exports = exports["default"];
 
 /***/ }),
-/* 148 */
+/* 149 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28536,11 +28557,11 @@ module.exports = function removeClass(element, className) {
 };
 
 /***/ }),
-/* 149 */
+/* 150 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(global) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_create_emotion__ = __webpack_require__(140);
+/* WEBPACK VAR INJECTION */(function(global) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_create_emotion__ = __webpack_require__(141);
 /* unused harmony export flush */
 /* unused harmony export hydrate */
 /* unused harmony export cx */
@@ -28572,7 +28593,7 @@ var _createEmotion = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0_create_em
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(56)))
 
 /***/ }),
-/* 150 */
+/* 151 */
 /***/ (function(module, exports) {
 
 // Copyright Joyent, Inc. and other Node contributors.
@@ -28880,7 +28901,7 @@ function isUndefined(arg) {
 
 
 /***/ }),
-/* 151 */
+/* 152 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28915,7 +28936,7 @@ function camelize(string) {
 module.exports = camelize;
 
 /***/ }),
-/* 152 */
+/* 153 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28930,7 +28951,7 @@ module.exports = camelize;
 
 
 
-var camelize = __webpack_require__(151);
+var camelize = __webpack_require__(152);
 
 var msPattern = /^-ms-/;
 
@@ -28958,7 +28979,7 @@ function camelizeStyleName(string) {
 module.exports = camelizeStyleName;
 
 /***/ }),
-/* 153 */
+/* 154 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28973,7 +28994,7 @@ module.exports = camelizeStyleName;
  * 
  */
 
-var isTextNode = __webpack_require__(161);
+var isTextNode = __webpack_require__(162);
 
 /*eslint-disable no-bitwise */
 
@@ -29001,7 +29022,7 @@ function containsNode(outerNode, innerNode) {
 module.exports = containsNode;
 
 /***/ }),
-/* 154 */
+/* 155 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29131,7 +29152,7 @@ function createArrayFromMixed(obj) {
 module.exports = createArrayFromMixed;
 
 /***/ }),
-/* 155 */
+/* 156 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29150,8 +29171,8 @@ module.exports = createArrayFromMixed;
 
 var ExecutionEnvironment = __webpack_require__(8);
 
-var createArrayFromMixed = __webpack_require__(154);
-var getMarkupWrap = __webpack_require__(156);
+var createArrayFromMixed = __webpack_require__(155);
+var getMarkupWrap = __webpack_require__(157);
 var invariant = __webpack_require__(0);
 
 /**
@@ -29218,7 +29239,7 @@ function createNodesFromMarkup(markup, handleScript) {
 module.exports = createNodesFromMarkup;
 
 /***/ }),
-/* 156 */
+/* 157 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29316,7 +29337,7 @@ function getMarkupWrap(nodeName) {
 module.exports = getMarkupWrap;
 
 /***/ }),
-/* 157 */
+/* 158 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29358,7 +29379,7 @@ function getUnboundedScrollPosition(scrollable) {
 module.exports = getUnboundedScrollPosition;
 
 /***/ }),
-/* 158 */
+/* 159 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29394,7 +29415,7 @@ function hyphenate(string) {
 module.exports = hyphenate;
 
 /***/ }),
-/* 159 */
+/* 160 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29409,7 +29430,7 @@ module.exports = hyphenate;
 
 
 
-var hyphenate = __webpack_require__(158);
+var hyphenate = __webpack_require__(159);
 
 var msPattern = /^ms-/;
 
@@ -29436,7 +29457,7 @@ function hyphenateStyleName(string) {
 module.exports = hyphenateStyleName;
 
 /***/ }),
-/* 160 */
+/* 161 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29464,7 +29485,7 @@ function isNode(object) {
 module.exports = isNode;
 
 /***/ }),
-/* 161 */
+/* 162 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29479,7 +29500,7 @@ module.exports = isNode;
  * @typechecks
  */
 
-var isNode = __webpack_require__(160);
+var isNode = __webpack_require__(161);
 
 /**
  * @param {*} object The object to check.
@@ -29492,7 +29513,7 @@ function isTextNode(object) {
 module.exports = isTextNode;
 
 /***/ }),
-/* 162 */
+/* 163 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29525,7 +29546,7 @@ function memoizeStringOnly(callback) {
 module.exports = memoizeStringOnly;
 
 /***/ }),
-/* 163 */
+/* 164 */
 /***/ (function(module, exports) {
 
 /**
@@ -29580,11 +29601,11 @@ exports.fn = function(value) {
 
 
 /***/ }),
-/* 164 */
+/* 165 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var is = __webpack_require__(163);
-var delegate = __webpack_require__(145);
+var is = __webpack_require__(164);
+var delegate = __webpack_require__(146);
 
 /**
  * Validates all params and calls the right
@@ -29681,7 +29702,7 @@ module.exports = listen;
 
 
 /***/ }),
-/* 165 */
+/* 166 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -29726,7 +29747,7 @@ function index (resultFn, isEqual) {
 
 
 /***/ }),
-/* 166 */
+/* 167 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(process) {// Generated by CoffeeScript 1.12.2
@@ -29769,7 +29790,7 @@ function index (resultFn, isEqual) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(39)))
 
 /***/ }),
-/* 167 */
+/* 168 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29867,7 +29888,7 @@ module.exports = checkPropTypes;
 
 
 /***/ }),
-/* 168 */
+/* 169 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29933,7 +29954,7 @@ module.exports = function() {
 
 
 /***/ }),
-/* 169 */
+/* 170 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29949,7 +29970,7 @@ module.exports = function() {
 var assign = __webpack_require__(6);
 
 var ReactPropTypesSecret = __webpack_require__(74);
-var checkPropTypes = __webpack_require__(167);
+var checkPropTypes = __webpack_require__(168);
 
 var printWarning = function() {};
 
@@ -30495,10 +30516,10 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
 
 
 /***/ }),
-/* 170 */
+/* 171 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(global) {var now = __webpack_require__(166)
+/* WEBPACK VAR INJECTION */(function(global) {var now = __webpack_require__(167)
   , root = typeof window === 'undefined' ? global : window
   , vendors = ['moz', 'webkit']
   , suffix = 'AnimationFrame'
@@ -30577,7 +30598,7 @@ module.exports.polyfill = function(object) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(56)))
 
 /***/ }),
-/* 171 */
+/* 172 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30654,7 +30675,7 @@ var ARIADOMPropertyConfig = {
 module.exports = ARIADOMPropertyConfig;
 
 /***/ }),
-/* 172 */
+/* 173 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30681,7 +30702,7 @@ var AutoFocusUtils = {
 module.exports = AutoFocusUtils;
 
 /***/ }),
-/* 173 */
+/* 174 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30697,9 +30718,9 @@ module.exports = AutoFocusUtils;
 
 var EventPropagators = __webpack_require__(26);
 var ExecutionEnvironment = __webpack_require__(8);
-var FallbackCompositionState = __webpack_require__(179);
-var SyntheticCompositionEvent = __webpack_require__(216);
-var SyntheticInputEvent = __webpack_require__(219);
+var FallbackCompositionState = __webpack_require__(180);
+var SyntheticCompositionEvent = __webpack_require__(217);
+var SyntheticInputEvent = __webpack_require__(220);
 
 var END_KEYCODES = [9, 13, 27, 32]; // Tab, Return, Esc, Space
 var START_KEYCODE = 229;
@@ -31068,7 +31089,7 @@ var BeforeInputEventPlugin = {
 module.exports = BeforeInputEventPlugin;
 
 /***/ }),
-/* 174 */
+/* 175 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31086,10 +31107,10 @@ var CSSProperty = __webpack_require__(75);
 var ExecutionEnvironment = __webpack_require__(8);
 var ReactInstrumentation = __webpack_require__(9);
 
-var camelizeStyleName = __webpack_require__(152);
-var dangerousStyleValue = __webpack_require__(225);
-var hyphenateStyleName = __webpack_require__(159);
-var memoizeStringOnly = __webpack_require__(162);
+var camelizeStyleName = __webpack_require__(153);
+var dangerousStyleValue = __webpack_require__(226);
+var hyphenateStyleName = __webpack_require__(160);
+var memoizeStringOnly = __webpack_require__(163);
 var warning = __webpack_require__(4);
 
 var processStyleName = memoizeStringOnly(function (styleName) {
@@ -31286,7 +31307,7 @@ var CSSPropertyOperations = {
 module.exports = CSSPropertyOperations;
 
 /***/ }),
-/* 175 */
+/* 176 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31601,7 +31622,7 @@ var ChangeEventPlugin = {
 module.exports = ChangeEventPlugin;
 
 /***/ }),
-/* 176 */
+/* 177 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31620,7 +31641,7 @@ var _prodInvariant = __webpack_require__(3);
 var DOMLazyTree = __webpack_require__(18);
 var ExecutionEnvironment = __webpack_require__(8);
 
-var createNodesFromMarkup = __webpack_require__(155);
+var createNodesFromMarkup = __webpack_require__(156);
 var emptyFunction = __webpack_require__(10);
 var invariant = __webpack_require__(0);
 
@@ -31650,7 +31671,7 @@ var Danger = {
 module.exports = Danger;
 
 /***/ }),
-/* 177 */
+/* 178 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31679,7 +31700,7 @@ var DefaultEventPluginOrder = ['ResponderEventPlugin', 'SimpleEventPlugin', 'Tap
 module.exports = DefaultEventPluginOrder;
 
 /***/ }),
-/* 178 */
+/* 179 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31780,7 +31801,7 @@ var EnterLeaveEventPlugin = {
 module.exports = EnterLeaveEventPlugin;
 
 /***/ }),
-/* 179 */
+/* 180 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31878,7 +31899,7 @@ PooledClass.addPoolingTo(FallbackCompositionState);
 module.exports = FallbackCompositionState;
 
 /***/ }),
-/* 180 */
+/* 181 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32118,7 +32139,7 @@ var HTMLDOMPropertyConfig = {
 module.exports = HTMLDOMPropertyConfig;
 
 /***/ }),
-/* 181 */
+/* 182 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32275,7 +32296,7 @@ module.exports = ReactChildReconciler;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(39)))
 
 /***/ }),
-/* 182 */
+/* 183 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32290,7 +32311,7 @@ module.exports = ReactChildReconciler;
 
 
 var DOMChildrenOperations = __webpack_require__(40);
-var ReactDOMIDOperations = __webpack_require__(189);
+var ReactDOMIDOperations = __webpack_require__(190);
 
 /**
  * Abstracts away all functionality of the reconciler that requires knowledge of
@@ -32306,7 +32327,7 @@ var ReactComponentBrowserEnvironment = {
 module.exports = ReactComponentBrowserEnvironment;
 
 /***/ }),
-/* 183 */
+/* 184 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -33209,7 +33230,7 @@ var ReactCompositeComponent = {
 module.exports = ReactCompositeComponent;
 
 /***/ }),
-/* 184 */
+/* 185 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -33226,15 +33247,15 @@ module.exports = ReactCompositeComponent;
 
 
 var ReactDOMComponentTree = __webpack_require__(7);
-var ReactDefaultInjection = __webpack_require__(197);
+var ReactDefaultInjection = __webpack_require__(198);
 var ReactMount = __webpack_require__(84);
 var ReactReconciler = __webpack_require__(20);
 var ReactUpdates = __webpack_require__(11);
-var ReactVersion = __webpack_require__(210);
+var ReactVersion = __webpack_require__(211);
 
-var findDOMNode = __webpack_require__(226);
+var findDOMNode = __webpack_require__(227);
 var getHostComponentFromComposite = __webpack_require__(89);
-var renderSubtreeIntoContainer = __webpack_require__(233);
+var renderSubtreeIntoContainer = __webpack_require__(234);
 var warning = __webpack_require__(4);
 
 ReactDefaultInjection.inject();
@@ -33323,7 +33344,7 @@ if (false) {
 module.exports = ReactDOM;
 
 /***/ }),
-/* 185 */
+/* 186 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -33342,8 +33363,8 @@ module.exports = ReactDOM;
 var _prodInvariant = __webpack_require__(3),
     _assign = __webpack_require__(6);
 
-var AutoFocusUtils = __webpack_require__(172);
-var CSSPropertyOperations = __webpack_require__(174);
+var AutoFocusUtils = __webpack_require__(173);
+var CSSPropertyOperations = __webpack_require__(175);
 var DOMLazyTree = __webpack_require__(18);
 var DOMNamespaces = __webpack_require__(41);
 var DOMProperty = __webpack_require__(19);
@@ -33353,13 +33374,13 @@ var EventPluginRegistry = __webpack_require__(42);
 var ReactBrowserEventEmitter = __webpack_require__(32);
 var ReactDOMComponentFlags = __webpack_require__(78);
 var ReactDOMComponentTree = __webpack_require__(7);
-var ReactDOMInput = __webpack_require__(190);
-var ReactDOMOption = __webpack_require__(191);
+var ReactDOMInput = __webpack_require__(191);
+var ReactDOMOption = __webpack_require__(192);
 var ReactDOMSelect = __webpack_require__(79);
-var ReactDOMTextarea = __webpack_require__(194);
+var ReactDOMTextarea = __webpack_require__(195);
 var ReactInstrumentation = __webpack_require__(9);
-var ReactMultiChild = __webpack_require__(203);
-var ReactServerRenderingTransaction = __webpack_require__(208);
+var ReactMultiChild = __webpack_require__(204);
+var ReactServerRenderingTransaction = __webpack_require__(209);
 
 var emptyFunction = __webpack_require__(10);
 var escapeTextContentForBrowser = __webpack_require__(35);
@@ -34340,7 +34361,7 @@ _assign(ReactDOMComponent.prototype, ReactDOMComponent.Mixin, ReactMultiChild.Mi
 module.exports = ReactDOMComponent;
 
 /***/ }),
-/* 186 */
+/* 187 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34376,7 +34397,7 @@ function ReactDOMContainerInfo(topLevelWrapper, node) {
 module.exports = ReactDOMContainerInfo;
 
 /***/ }),
-/* 187 */
+/* 188 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34439,7 +34460,7 @@ _assign(ReactDOMEmptyComponent.prototype, {
 module.exports = ReactDOMEmptyComponent;
 
 /***/ }),
-/* 188 */
+/* 189 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34461,7 +34482,7 @@ var ReactDOMFeatureFlags = {
 module.exports = ReactDOMFeatureFlags;
 
 /***/ }),
-/* 189 */
+/* 190 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34497,7 +34518,7 @@ var ReactDOMIDOperations = {
 module.exports = ReactDOMIDOperations;
 
 /***/ }),
-/* 190 */
+/* 191 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34787,7 +34808,7 @@ function _handleChange(event) {
 module.exports = ReactDOMInput;
 
 /***/ }),
-/* 191 */
+/* 192 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34912,7 +34933,7 @@ var ReactDOMOption = {
 module.exports = ReactDOMOption;
 
 /***/ }),
-/* 192 */
+/* 193 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34928,7 +34949,7 @@ module.exports = ReactDOMOption;
 
 var ExecutionEnvironment = __webpack_require__(8);
 
-var getNodeForCharacterOffset = __webpack_require__(230);
+var getNodeForCharacterOffset = __webpack_require__(231);
 var getTextContentAccessor = __webpack_require__(90);
 
 /**
@@ -35127,7 +35148,7 @@ var ReactDOMSelection = {
 module.exports = ReactDOMSelection;
 
 /***/ }),
-/* 193 */
+/* 194 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35292,7 +35313,7 @@ _assign(ReactDOMTextComponent.prototype, {
 module.exports = ReactDOMTextComponent;
 
 /***/ }),
-/* 194 */
+/* 195 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35455,7 +35476,7 @@ function _handleChange(event) {
 module.exports = ReactDOMTextarea;
 
 /***/ }),
-/* 195 */
+/* 196 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35594,7 +35615,7 @@ module.exports = {
 };
 
 /***/ }),
-/* 196 */
+/* 197 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35665,7 +35686,7 @@ var ReactDefaultBatchingStrategy = {
 module.exports = ReactDefaultBatchingStrategy;
 
 /***/ }),
-/* 197 */
+/* 198 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35679,25 +35700,25 @@ module.exports = ReactDefaultBatchingStrategy;
 
 
 
-var ARIADOMPropertyConfig = __webpack_require__(171);
-var BeforeInputEventPlugin = __webpack_require__(173);
-var ChangeEventPlugin = __webpack_require__(175);
-var DefaultEventPluginOrder = __webpack_require__(177);
-var EnterLeaveEventPlugin = __webpack_require__(178);
-var HTMLDOMPropertyConfig = __webpack_require__(180);
-var ReactComponentBrowserEnvironment = __webpack_require__(182);
-var ReactDOMComponent = __webpack_require__(185);
+var ARIADOMPropertyConfig = __webpack_require__(172);
+var BeforeInputEventPlugin = __webpack_require__(174);
+var ChangeEventPlugin = __webpack_require__(176);
+var DefaultEventPluginOrder = __webpack_require__(178);
+var EnterLeaveEventPlugin = __webpack_require__(179);
+var HTMLDOMPropertyConfig = __webpack_require__(181);
+var ReactComponentBrowserEnvironment = __webpack_require__(183);
+var ReactDOMComponent = __webpack_require__(186);
 var ReactDOMComponentTree = __webpack_require__(7);
-var ReactDOMEmptyComponent = __webpack_require__(187);
-var ReactDOMTreeTraversal = __webpack_require__(195);
-var ReactDOMTextComponent = __webpack_require__(193);
-var ReactDefaultBatchingStrategy = __webpack_require__(196);
-var ReactEventListener = __webpack_require__(200);
-var ReactInjection = __webpack_require__(201);
-var ReactReconcileTransaction = __webpack_require__(206);
-var SVGDOMPropertyConfig = __webpack_require__(211);
-var SelectEventPlugin = __webpack_require__(212);
-var SimpleEventPlugin = __webpack_require__(213);
+var ReactDOMEmptyComponent = __webpack_require__(188);
+var ReactDOMTreeTraversal = __webpack_require__(196);
+var ReactDOMTextComponent = __webpack_require__(194);
+var ReactDefaultBatchingStrategy = __webpack_require__(197);
+var ReactEventListener = __webpack_require__(201);
+var ReactInjection = __webpack_require__(202);
+var ReactReconcileTransaction = __webpack_require__(207);
+var SVGDOMPropertyConfig = __webpack_require__(212);
+var SelectEventPlugin = __webpack_require__(213);
+var SimpleEventPlugin = __webpack_require__(214);
 
 var alreadyInjected = false;
 
@@ -35754,7 +35775,7 @@ module.exports = {
 };
 
 /***/ }),
-/* 198 */
+/* 199 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35777,7 +35798,7 @@ var REACT_ELEMENT_TYPE = typeof Symbol === 'function' && Symbol['for'] && Symbol
 module.exports = REACT_ELEMENT_TYPE;
 
 /***/ }),
-/* 199 */
+/* 200 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35812,7 +35833,7 @@ var ReactEventEmitterMixin = {
 module.exports = ReactEventEmitterMixin;
 
 /***/ }),
-/* 200 */
+/* 201 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35835,7 +35856,7 @@ var ReactDOMComponentTree = __webpack_require__(7);
 var ReactUpdates = __webpack_require__(11);
 
 var getEventTarget = __webpack_require__(52);
-var getUnboundedScrollPosition = __webpack_require__(157);
+var getUnboundedScrollPosition = __webpack_require__(158);
 
 /**
  * Find the deepest React component completely containing the root of the
@@ -35970,7 +35991,7 @@ var ReactEventListener = {
 module.exports = ReactEventListener;
 
 /***/ }),
-/* 201 */
+/* 202 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36007,7 +36028,7 @@ var ReactInjection = {
 module.exports = ReactInjection;
 
 /***/ }),
-/* 202 */
+/* 203 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36021,7 +36042,7 @@ module.exports = ReactInjection;
 
 
 
-var adler32 = __webpack_require__(224);
+var adler32 = __webpack_require__(225);
 
 var TAG_END = /\/?>/;
 var COMMENT_START = /^<\!\-\-/;
@@ -36060,7 +36081,7 @@ var ReactMarkupChecksum = {
 module.exports = ReactMarkupChecksum;
 
 /***/ }),
-/* 203 */
+/* 204 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36082,10 +36103,10 @@ var ReactInstrumentation = __webpack_require__(9);
 
 var ReactCurrentOwner = __webpack_require__(13);
 var ReactReconciler = __webpack_require__(20);
-var ReactChildReconciler = __webpack_require__(181);
+var ReactChildReconciler = __webpack_require__(182);
 
 var emptyFunction = __webpack_require__(10);
-var flattenChildren = __webpack_require__(227);
+var flattenChildren = __webpack_require__(228);
 var invariant = __webpack_require__(0);
 
 /**
@@ -36509,7 +36530,7 @@ var ReactMultiChild = {
 module.exports = ReactMultiChild;
 
 /***/ }),
-/* 204 */
+/* 205 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36605,7 +36626,7 @@ var ReactOwner = {
 module.exports = ReactOwner;
 
 /***/ }),
-/* 205 */
+/* 206 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36625,7 +36646,7 @@ var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
 module.exports = ReactPropTypesSecret;
 
 /***/ }),
-/* 206 */
+/* 207 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36806,7 +36827,7 @@ PooledClass.addPoolingTo(ReactReconcileTransaction);
 module.exports = ReactReconcileTransaction;
 
 /***/ }),
-/* 207 */
+/* 208 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36821,7 +36842,7 @@ module.exports = ReactReconcileTransaction;
 
 
 
-var ReactOwner = __webpack_require__(204);
+var ReactOwner = __webpack_require__(205);
 
 var ReactRef = {};
 
@@ -36898,7 +36919,7 @@ ReactRef.detachRefs = function (instance, element) {
 module.exports = ReactRef;
 
 /***/ }),
-/* 208 */
+/* 209 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36917,7 +36938,7 @@ var _assign = __webpack_require__(6);
 var PooledClass = __webpack_require__(17);
 var Transaction = __webpack_require__(34);
 var ReactInstrumentation = __webpack_require__(9);
-var ReactServerUpdateQueue = __webpack_require__(209);
+var ReactServerUpdateQueue = __webpack_require__(210);
 
 /**
  * Executed within the scope of the `Transaction` instance. Consider these as
@@ -36991,7 +37012,7 @@ PooledClass.addPoolingTo(ReactServerRenderingTransaction);
 module.exports = ReactServerRenderingTransaction;
 
 /***/ }),
-/* 209 */
+/* 210 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37133,7 +37154,7 @@ var ReactServerUpdateQueue = function () {
 module.exports = ReactServerUpdateQueue;
 
 /***/ }),
-/* 210 */
+/* 211 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37150,7 +37171,7 @@ module.exports = ReactServerUpdateQueue;
 module.exports = '15.6.2';
 
 /***/ }),
-/* 211 */
+/* 212 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37455,7 +37476,7 @@ Object.keys(ATTRS).forEach(function (key) {
 module.exports = SVGDOMPropertyConfig;
 
 /***/ }),
-/* 212 */
+/* 213 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37646,7 +37667,7 @@ var SelectEventPlugin = {
 module.exports = SelectEventPlugin;
 
 /***/ }),
-/* 213 */
+/* 214 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37666,17 +37687,17 @@ var _prodInvariant = __webpack_require__(3);
 var EventListener = __webpack_require__(70);
 var EventPropagators = __webpack_require__(26);
 var ReactDOMComponentTree = __webpack_require__(7);
-var SyntheticAnimationEvent = __webpack_require__(214);
-var SyntheticClipboardEvent = __webpack_require__(215);
+var SyntheticAnimationEvent = __webpack_require__(215);
+var SyntheticClipboardEvent = __webpack_require__(216);
 var SyntheticEvent = __webpack_require__(12);
-var SyntheticFocusEvent = __webpack_require__(218);
-var SyntheticKeyboardEvent = __webpack_require__(220);
+var SyntheticFocusEvent = __webpack_require__(219);
+var SyntheticKeyboardEvent = __webpack_require__(221);
 var SyntheticMouseEvent = __webpack_require__(33);
-var SyntheticDragEvent = __webpack_require__(217);
-var SyntheticTouchEvent = __webpack_require__(221);
-var SyntheticTransitionEvent = __webpack_require__(222);
+var SyntheticDragEvent = __webpack_require__(218);
+var SyntheticTouchEvent = __webpack_require__(222);
+var SyntheticTransitionEvent = __webpack_require__(223);
 var SyntheticUIEvent = __webpack_require__(28);
-var SyntheticWheelEvent = __webpack_require__(223);
+var SyntheticWheelEvent = __webpack_require__(224);
 
 var emptyFunction = __webpack_require__(10);
 var getEventCharCode = __webpack_require__(50);
@@ -37875,7 +37896,7 @@ var SimpleEventPlugin = {
 module.exports = SimpleEventPlugin;
 
 /***/ }),
-/* 214 */
+/* 215 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37917,7 +37938,7 @@ SyntheticEvent.augmentClass(SyntheticAnimationEvent, AnimationEventInterface);
 module.exports = SyntheticAnimationEvent;
 
 /***/ }),
-/* 215 */
+/* 216 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37958,7 +37979,7 @@ SyntheticEvent.augmentClass(SyntheticClipboardEvent, ClipboardEventInterface);
 module.exports = SyntheticClipboardEvent;
 
 /***/ }),
-/* 216 */
+/* 217 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37997,7 +38018,7 @@ SyntheticEvent.augmentClass(SyntheticCompositionEvent, CompositionEventInterface
 module.exports = SyntheticCompositionEvent;
 
 /***/ }),
-/* 217 */
+/* 218 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38036,7 +38057,7 @@ SyntheticMouseEvent.augmentClass(SyntheticDragEvent, DragEventInterface);
 module.exports = SyntheticDragEvent;
 
 /***/ }),
-/* 218 */
+/* 219 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38075,7 +38096,7 @@ SyntheticUIEvent.augmentClass(SyntheticFocusEvent, FocusEventInterface);
 module.exports = SyntheticFocusEvent;
 
 /***/ }),
-/* 219 */
+/* 220 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38115,7 +38136,7 @@ SyntheticEvent.augmentClass(SyntheticInputEvent, InputEventInterface);
 module.exports = SyntheticInputEvent;
 
 /***/ }),
-/* 220 */
+/* 221 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38132,7 +38153,7 @@ module.exports = SyntheticInputEvent;
 var SyntheticUIEvent = __webpack_require__(28);
 
 var getEventCharCode = __webpack_require__(50);
-var getEventKey = __webpack_require__(228);
+var getEventKey = __webpack_require__(229);
 var getEventModifierState = __webpack_require__(51);
 
 /**
@@ -38202,7 +38223,7 @@ SyntheticUIEvent.augmentClass(SyntheticKeyboardEvent, KeyboardEventInterface);
 module.exports = SyntheticKeyboardEvent;
 
 /***/ }),
-/* 221 */
+/* 222 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38250,7 +38271,7 @@ SyntheticUIEvent.augmentClass(SyntheticTouchEvent, TouchEventInterface);
 module.exports = SyntheticTouchEvent;
 
 /***/ }),
-/* 222 */
+/* 223 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38292,7 +38313,7 @@ SyntheticEvent.augmentClass(SyntheticTransitionEvent, TransitionEventInterface);
 module.exports = SyntheticTransitionEvent;
 
 /***/ }),
-/* 223 */
+/* 224 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38346,7 +38367,7 @@ SyntheticMouseEvent.augmentClass(SyntheticWheelEvent, WheelEventInterface);
 module.exports = SyntheticWheelEvent;
 
 /***/ }),
-/* 224 */
+/* 225 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38393,7 +38414,7 @@ function adler32(data) {
 module.exports = adler32;
 
 /***/ }),
-/* 225 */
+/* 226 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38475,7 +38496,7 @@ function dangerousStyleValue(name, value, component, isCustomProperty) {
 module.exports = dangerousStyleValue;
 
 /***/ }),
-/* 226 */
+/* 227 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38538,7 +38559,7 @@ function findDOMNode(componentOrElement) {
 module.exports = findDOMNode;
 
 /***/ }),
-/* 227 */
+/* 228 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38618,7 +38639,7 @@ module.exports = flattenChildren;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(39)))
 
 /***/ }),
-/* 228 */
+/* 229 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38733,7 +38754,7 @@ function getEventKey(nativeEvent) {
 module.exports = getEventKey;
 
 /***/ }),
-/* 229 */
+/* 230 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38777,7 +38798,7 @@ function getIteratorFn(maybeIterable) {
 module.exports = getIteratorFn;
 
 /***/ }),
-/* 230 */
+/* 231 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38854,7 +38875,7 @@ function getNodeForCharacterOffset(root, offset) {
 module.exports = getNodeForCharacterOffset;
 
 /***/ }),
-/* 231 */
+/* 232 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38958,7 +38979,7 @@ function getVendorPrefixedEventName(eventName) {
 module.exports = getVendorPrefixedEventName;
 
 /***/ }),
-/* 232 */
+/* 233 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38987,7 +39008,7 @@ function quoteAttributeValueForBrowser(value) {
 module.exports = quoteAttributeValueForBrowser;
 
 /***/ }),
-/* 233 */
+/* 234 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39006,7 +39027,7 @@ var ReactMount = __webpack_require__(84);
 module.exports = ReactMount.renderSubtreeIntoContainer;
 
 /***/ }),
-/* 234 */
+/* 235 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39280,7 +39301,7 @@ AutosizeInput.defaultProps = {
 exports.default = AutosizeInput;
 
 /***/ }),
-/* 235 */
+/* 236 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39291,9 +39312,9 @@ exports.default = void 0;
 
 var PropTypes = _interopRequireWildcard(__webpack_require__(2));
 
-var _addClass = _interopRequireDefault(__webpack_require__(146));
+var _addClass = _interopRequireDefault(__webpack_require__(147));
 
-var _removeClass = _interopRequireDefault(__webpack_require__(148));
+var _removeClass = _interopRequireDefault(__webpack_require__(149));
 
 var _react = _interopRequireDefault(__webpack_require__(1));
 
@@ -39583,7 +39604,7 @@ exports.default = _default;
 module.exports = exports["default"];
 
 /***/ }),
-/* 236 */
+/* 237 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39741,15 +39762,15 @@ exports.default = _default;
 module.exports = exports["default"];
 
 /***/ }),
-/* 237 */
+/* 238 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _CSSTransition = _interopRequireDefault(__webpack_require__(235));
+var _CSSTransition = _interopRequireDefault(__webpack_require__(236));
 
-var _ReplaceTransition = _interopRequireDefault(__webpack_require__(236));
+var _ReplaceTransition = _interopRequireDefault(__webpack_require__(237));
 
 var _TransitionGroup = _interopRequireDefault(__webpack_require__(98));
 
@@ -39765,7 +39786,7 @@ module.exports = {
 };
 
 /***/ }),
-/* 238 */
+/* 239 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39921,7 +39942,7 @@ function getNextChildMapping(nextProps, prevChildMapping, onExited) {
 }
 
 /***/ }),
-/* 239 */
+/* 240 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39983,7 +40004,7 @@ var KeyEscapeUtils = {
 module.exports = KeyEscapeUtils;
 
 /***/ }),
-/* 240 */
+/* 241 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40098,7 +40119,7 @@ var PooledClass = {
 module.exports = PooledClass;
 
 /***/ }),
-/* 241 */
+/* 242 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40112,11 +40133,11 @@ module.exports = PooledClass;
 
 
 
-var PooledClass = __webpack_require__(240);
+var PooledClass = __webpack_require__(241);
 var ReactElement = __webpack_require__(22);
 
 var emptyFunction = __webpack_require__(10);
-var traverseAllChildren = __webpack_require__(250);
+var traverseAllChildren = __webpack_require__(251);
 
 var twoArgumentPooler = PooledClass.twoArgumentPooler;
 var fourArgumentPooler = PooledClass.fourArgumentPooler;
@@ -40292,7 +40313,7 @@ var ReactChildren = {
 module.exports = ReactChildren;
 
 /***/ }),
-/* 242 */
+/* 243 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40464,7 +40485,7 @@ var ReactDOMFactories = {
 module.exports = ReactDOMFactories;
 
 /***/ }),
-/* 243 */
+/* 244 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40486,7 +40507,7 @@ var factory = __webpack_require__(73);
 module.exports = factory(isValidElement);
 
 /***/ }),
-/* 244 */
+/* 245 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40503,7 +40524,7 @@ module.exports = factory(isValidElement);
 module.exports = '15.6.2';
 
 /***/ }),
-/* 245 */
+/* 246 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40524,12 +40545,12 @@ var _require2 = __webpack_require__(22),
     isValidElement = _require2.isValidElement;
 
 var ReactNoopUpdateQueue = __webpack_require__(103);
-var factory = __webpack_require__(141);
+var factory = __webpack_require__(142);
 
 module.exports = factory(Component, isValidElement, ReactNoopUpdateQueue);
 
 /***/ }),
-/* 246 */
+/* 247 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40573,7 +40594,7 @@ function getIteratorFn(maybeIterable) {
 module.exports = getIteratorFn;
 
 /***/ }),
-/* 247 */
+/* 248 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40597,7 +40618,7 @@ function getNextDebugID() {
 module.exports = getNextDebugID;
 
 /***/ }),
-/* 248 */
+/* 249 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40665,7 +40686,7 @@ if (false) {
 module.exports = lowPriorityWarning;
 
 /***/ }),
-/* 249 */
+/* 250 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40706,7 +40727,7 @@ function onlyChild(children) {
 module.exports = onlyChild;
 
 /***/ }),
-/* 250 */
+/* 251 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40725,9 +40746,9 @@ var _prodInvariant = __webpack_require__(29);
 var ReactCurrentOwner = __webpack_require__(13);
 var REACT_ELEMENT_TYPE = __webpack_require__(102);
 
-var getIteratorFn = __webpack_require__(246);
+var getIteratorFn = __webpack_require__(247);
 var invariant = __webpack_require__(0);
-var KeyEscapeUtils = __webpack_require__(239);
+var KeyEscapeUtils = __webpack_require__(240);
 var warning = __webpack_require__(4);
 
 var SEPARATOR = '.';
@@ -40885,7 +40906,7 @@ function traverseAllChildren(children, callback, traverseContext) {
 module.exports = traverseAllChildren;
 
 /***/ }),
-/* 251 */
+/* 252 */
 /***/ (function(module, exports) {
 
 function select(element) {
@@ -40934,7 +40955,7 @@ module.exports = select;
 
 
 /***/ }),
-/* 252 */
+/* 253 */
 /***/ (function(module, exports) {
 
 /*
@@ -41186,16 +41207,16 @@ function updateLink(linkElement, obj) {
 
 
 /***/ }),
-/* 253 */
+/* 254 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(142);
+var content = __webpack_require__(143);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
-var update = __webpack_require__(252)(content, {});
+var update = __webpack_require__(253)(content, {});
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -41212,7 +41233,7 @@ if(false) {
 }
 
 /***/ }),
-/* 254 */
+/* 255 */
 /***/ (function(module, exports, __webpack_require__) {
 
 (function (factory) {
@@ -41266,7 +41287,7 @@ if(false) {
 
 
 /***/ }),
-/* 255 */
+/* 256 */
 /***/ (function(module, exports) {
 
 function E () {
@@ -41338,7 +41359,7 @@ module.exports = E;
 
 
 /***/ }),
-/* 256 */
+/* 257 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(105);

@@ -9,16 +9,12 @@ export default class StreetName extends React.Component {
       streetName: "Street Name",
     };
   }
-// TO DO: Replace this with event listener to update the street name! Please and Thank you
- /* componentDidMount() {
-    Events.on('raycastermouseenter', el => {
-      this.setState({ hoveredEntity: el });
-    });
 
-    Events.on('raycastermouseleave', el => {
-      this.setState({ hoveredEntity: el });
+ componentDidMount() {
+    Events.on('streetloaded', el => {
+      this.setState({ streetName: el.getAttribute('streetmix-loader').name });
     });
-  } */
+  }
 
   render() {
     return (

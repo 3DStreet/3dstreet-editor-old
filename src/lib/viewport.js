@@ -7,6 +7,7 @@ import EditorControls from './EditorControls.js';
 /* eslint-disable no-unused-vars */
 
 import { initRaycaster } from './raycaster';
+import { initStreetNameLoader } from './streetNameLoader';
 
 import { getNumber } from './utils';
 const Events = require('./Events');
@@ -17,6 +18,7 @@ const Events = require('./Events');
 function Viewport(inspector) {
   // Initialize raycaster and picking in differentpmodule.
   const mouseCursor = initRaycaster(inspector);
+  initStreetNameLoader();
   const sceneEl = inspector.sceneEl;
 
   let originalCamera = inspector.cameras.original;
