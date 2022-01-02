@@ -1279,6 +1279,132 @@ module.exports = ReactCurrentOwner;
 "use strict";
 
 
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+function getNumber(value) {
+  return parseFloat(value.toFixed(3));
+}
+
+function getMajorVersion(version) {
+  var major = version.split('.');
+  var clean = false;
+  for (var i = 0; i < major.length; i++) {
+    if (clean) {
+      major[i] = 0;
+    } else if (major[i] !== '0') {
+      clean = true;
+    }
+  }
+  return major.join('.');
+}
+
+function equal(var1, var2) {
+  var keys1;
+  var keys2;
+  var type1 = typeof var1 === 'undefined' ? 'undefined' : _typeof(var1);
+  var type2 = typeof var2 === 'undefined' ? 'undefined' : _typeof(var2);
+  if (type1 !== type2) {
+    return false;
+  }
+  if (type1 !== 'object' || var1 === null || var2 === null) {
+    return var1 === var2;
+  }
+  keys1 = Object.keys(var1);
+  keys2 = Object.keys(var2);
+  if (keys1.length !== keys2.length) {
+    return false;
+  }
+  for (var i = 0; i < keys1.length; i++) {
+    if (!equal(var1[keys1[i]], var2[keys2[i]])) {
+      return false;
+    }
+  }
+  return true;
+}
+
+function getOS() {
+  var userAgent = window.navigator.userAgent;
+  var platform = window.navigator.platform;
+  var macosPlatforms = ['Macintosh', 'MacIntel', 'MacPPC', 'Mac68K'];
+  var windowsPlatforms = ['Win32', 'Win64', 'Windows', 'WinCE'];
+  var iosPlatforms = ['iPhone', 'iPad', 'iPod'];
+  var os = null;
+
+  if (macosPlatforms.indexOf(platform) !== -1) {
+    os = 'macos';
+  } else if (iosPlatforms.indexOf(platform) !== -1) {
+    os = 'ios';
+  } else if (windowsPlatforms.indexOf(platform) !== -1) {
+    os = 'windows';
+  } else if (/Android/.test(userAgent)) {
+    os = 'android';
+  } else if (!os && /Linux/.test(platform)) {
+    os = 'linux';
+  }
+
+  return os;
+}
+
+function injectCSS(url) {
+  var link = document.createElement('link');
+  link.href = url;
+  link.type = 'text/css';
+  link.rel = 'stylesheet';
+  link.media = 'screen,print';
+  link.setAttribute('data-aframe-inspector', 'style');
+  document.head.appendChild(link);
+}
+
+function injectJS(url, onLoad, onError) {
+  var link = document.createElement('script');
+  link.src = url;
+  link.charset = 'utf-8';
+  link.setAttribute('data-aframe-inspector', 'style');
+
+  if (onLoad) {
+    link.addEventListener('load', onLoad);
+  }
+
+  if (onError) {
+    link.addEventListener('error', onError);
+  }
+
+  document.head.appendChild(link);
+}
+
+function saveString(text, filename, mimeType) {
+  saveBlob(new Blob([text], { type: mimeType }), filename);
+}
+
+function saveBlob(blob, filename) {
+  var link = document.createElement('a');
+  link.style.display = 'none';
+  document.body.appendChild(link);
+  link.href = URL.createObjectURL(blob);
+  link.download = filename || 'ascene.html';
+  link.click();
+  // URL.revokeObjectURL(url); breaks Firefox...
+}
+
+module.exports = {
+  equal: equal,
+  getNumber: getNumber,
+  getMajorVersion: getMajorVersion,
+  getOS: getOS,
+  os: getOS(),
+  injectCSS: injectCSS,
+  injectJS: injectJS,
+  saveString: saveString,
+  saveBlob: saveBlob
+};
+
+/***/ }),
+/* 15 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -1296,7 +1422,7 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _utils = __webpack_require__(15);
+var _utils = __webpack_require__(14);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -1888,132 +2014,6 @@ function createEntity(definition, cb) {
 
   return entity;
 }
-
-/***/ }),
-/* 15 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-function getNumber(value) {
-  return parseFloat(value.toFixed(3));
-}
-
-function getMajorVersion(version) {
-  var major = version.split('.');
-  var clean = false;
-  for (var i = 0; i < major.length; i++) {
-    if (clean) {
-      major[i] = 0;
-    } else if (major[i] !== '0') {
-      clean = true;
-    }
-  }
-  return major.join('.');
-}
-
-function equal(var1, var2) {
-  var keys1;
-  var keys2;
-  var type1 = typeof var1 === 'undefined' ? 'undefined' : _typeof(var1);
-  var type2 = typeof var2 === 'undefined' ? 'undefined' : _typeof(var2);
-  if (type1 !== type2) {
-    return false;
-  }
-  if (type1 !== 'object' || var1 === null || var2 === null) {
-    return var1 === var2;
-  }
-  keys1 = Object.keys(var1);
-  keys2 = Object.keys(var2);
-  if (keys1.length !== keys2.length) {
-    return false;
-  }
-  for (var i = 0; i < keys1.length; i++) {
-    if (!equal(var1[keys1[i]], var2[keys2[i]])) {
-      return false;
-    }
-  }
-  return true;
-}
-
-function getOS() {
-  var userAgent = window.navigator.userAgent;
-  var platform = window.navigator.platform;
-  var macosPlatforms = ['Macintosh', 'MacIntel', 'MacPPC', 'Mac68K'];
-  var windowsPlatforms = ['Win32', 'Win64', 'Windows', 'WinCE'];
-  var iosPlatforms = ['iPhone', 'iPad', 'iPod'];
-  var os = null;
-
-  if (macosPlatforms.indexOf(platform) !== -1) {
-    os = 'macos';
-  } else if (iosPlatforms.indexOf(platform) !== -1) {
-    os = 'ios';
-  } else if (windowsPlatforms.indexOf(platform) !== -1) {
-    os = 'windows';
-  } else if (/Android/.test(userAgent)) {
-    os = 'android';
-  } else if (!os && /Linux/.test(platform)) {
-    os = 'linux';
-  }
-
-  return os;
-}
-
-function injectCSS(url) {
-  var link = document.createElement('link');
-  link.href = url;
-  link.type = 'text/css';
-  link.rel = 'stylesheet';
-  link.media = 'screen,print';
-  link.setAttribute('data-aframe-inspector', 'style');
-  document.head.appendChild(link);
-}
-
-function injectJS(url, onLoad, onError) {
-  var link = document.createElement('script');
-  link.src = url;
-  link.charset = 'utf-8';
-  link.setAttribute('data-aframe-inspector', 'style');
-
-  if (onLoad) {
-    link.addEventListener('load', onLoad);
-  }
-
-  if (onError) {
-    link.addEventListener('error', onError);
-  }
-
-  document.head.appendChild(link);
-}
-
-function saveString(text, filename, mimeType) {
-  saveBlob(new Blob([text], { type: mimeType }), filename);
-}
-
-function saveBlob(blob, filename) {
-  var link = document.createElement('a');
-  link.style.display = 'none';
-  document.body.appendChild(link);
-  link.href = URL.createObjectURL(blob);
-  link.download = filename || 'ascene.html';
-  link.click();
-  // URL.revokeObjectURL(url); breaks Firefox...
-}
-
-module.exports = {
-  equal: equal,
-  getNumber: getNumber,
-  getMajorVersion: getMajorVersion,
-  getOS: getOS,
-  os: getOS(),
-  injectCSS: injectCSS,
-  injectJS: injectJS,
-  saveString: saveString,
-  saveBlob: saveBlob
-};
 
 /***/ }),
 /* 16 */
@@ -12466,7 +12466,7 @@ var _Vec2Widget = __webpack_require__(66);
 
 var _Vec2Widget2 = _interopRequireDefault(_Vec2Widget);
 
-var _entity = __webpack_require__(14);
+var _entity = __webpack_require__(15);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -18170,9 +18170,9 @@ var _Main2 = _interopRequireDefault(_Main);
 
 var _cameras = __webpack_require__(132);
 
-var _utils = __webpack_require__(15);
+var _utils = __webpack_require__(14);
 
-var _entity = __webpack_require__(14);
+var _entity = __webpack_require__(15);
 
 var _GLTFExporter = __webpack_require__(138);
 
@@ -19290,7 +19290,7 @@ var _StreetName = __webpack_require__(124);
 
 var _StreetName2 = _interopRequireDefault(_StreetName);
 
-var _utils = __webpack_require__(15);
+var _utils = __webpack_require__(14);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -19726,7 +19726,7 @@ var _Mixins = __webpack_require__(116);
 
 var _Mixins2 = _interopRequireDefault(_Mixins);
 
-var _entity = __webpack_require__(14);
+var _entity = __webpack_require__(15);
 
 var _Events = __webpack_require__(5);
 
@@ -19736,7 +19736,7 @@ var _clipboard = __webpack_require__(69);
 
 var _clipboard2 = _interopRequireDefault(_clipboard);
 
-var _utils = __webpack_require__(15);
+var _utils = __webpack_require__(14);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -19951,7 +19951,7 @@ var _clipboard = __webpack_require__(69);
 
 var _clipboard2 = _interopRequireDefault(_clipboard);
 
-var _entity = __webpack_require__(14);
+var _entity = __webpack_require__(15);
 
 var _Events = __webpack_require__(5);
 
@@ -21164,7 +21164,7 @@ var _classnames = __webpack_require__(16);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
-var _entity = __webpack_require__(14);
+var _entity = __webpack_require__(15);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -21693,7 +21693,7 @@ var _Events = __webpack_require__(5);
 
 var _Events2 = _interopRequireDefault(_Events);
 
-var _utils = __webpack_require__(15);
+var _utils = __webpack_require__(14);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -21860,7 +21860,7 @@ var _reactSelect = __webpack_require__(37);
 
 var _reactSelect2 = _interopRequireDefault(_reactSelect);
 
-var _utils = __webpack_require__(15);
+var _utils = __webpack_require__(14);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -22020,8 +22020,6 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _entity = __webpack_require__(14);
-
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -22039,8 +22037,29 @@ var StreetName = function (_React$Component) {
 
     var _this = _possibleConstructorReturn(this, (StreetName.__proto__ || Object.getPrototypeOf(StreetName)).call(this, props));
 
+    _this.onChange = function (e) {
+      if (e.target.value === '1') {
+        window.open(_this.state.el.getAttribute('streetmix-loader').streetmixStreetURL);
+      }
+      if (e.target.value === '2') {
+        window.open(_this.state.el.getAttribute('streetmix-loader').streetmixAPIURL);
+      }
+      if (e.target.value === '3') {
+        var newStreetURL = prompt("Paste a Streetmix Street URL:", _this.state.el.getAttribute('streetmix-loader').streetmixStreetURL);
+        if (newStreetURL == null || newStreetURL == "") {
+          e.target.value = 0;
+          return;
+        } else {
+          window.open(window.location.origin + "#" + newStreetURL, "_self");
+          location.reload();
+        }
+      }
+      e.target.value = 0;
+    };
+
     _this.state = {
-      streetName: "Street Name"
+      streetName: "Street Name",
+      el: null
     };
     return _this;
   }
@@ -22051,7 +22070,10 @@ var StreetName = function (_React$Component) {
       var _this2 = this;
 
       Events.on('streetloaded', function (el) {
-        _this2.setState({ streetName: el.getAttribute('streetmix-loader').name });
+        _this2.setState({
+          streetName: el.getAttribute('streetmix-loader').name,
+          el: el
+        });
       });
     }
   }, {
@@ -22061,9 +22083,31 @@ var StreetName = function (_React$Component) {
         'div',
         { id: 'streetname' },
         React.createElement(
-          'p',
-          { style: { border: "1px solid black", borderRadius: "5px", background: "white", paddingRight: "5px", paddingLeft: "5px", fontWeight: "600" } },
-          this.state.streetName
+          'select',
+          {
+            id: 'dropdown',
+            style: { color: "black", border: "1px solid black", borderRadius: "5px", background: "white", padding: "3px", fontWeight: "600", cursor: "pointer" },
+            onChange: this.onChange.bind(this) },
+          React.createElement(
+            'option',
+            { value: '0' },
+            this.state.streetName
+          ),
+          React.createElement(
+            'option',
+            { value: '1' },
+            'Open this street in Streetmix...'
+          ),
+          React.createElement(
+            'option',
+            { value: '2' },
+            'View JSON API request...'
+          ),
+          React.createElement(
+            'option',
+            { value: '3' },
+            'Open a new Streetmix URL...'
+          )
         )
       );
     }
@@ -22210,7 +22254,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _entity = __webpack_require__(14);
+var _entity = __webpack_require__(15);
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -23980,9 +24024,9 @@ function getMousePosition(dom, x, y) {
 "use strict";
 
 
-var _entity = __webpack_require__(14);
+var _entity = __webpack_require__(15);
 
-var _utils = __webpack_require__(15);
+var _utils = __webpack_require__(14);
 
 /* globals AFRAME */
 var Events = __webpack_require__(5);
@@ -24222,7 +24266,7 @@ var _raycaster = __webpack_require__(134);
 
 var _streetNameLoader = __webpack_require__(136);
 
-var _utils = __webpack_require__(15);
+var _utils = __webpack_require__(14);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
