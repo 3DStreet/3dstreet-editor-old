@@ -172,7 +172,7 @@ export default class Main extends React.Component {
 
           <div id="viewportBar">
           
-			<a href="https://3d.st"><h1 style={{color: "#4B3461", fontSize: "18px", padding: "10px", whiteSpace: "nowrap"}}>3D Street</h1></a>
+			<a href="https://3d.st"><h1 style={{color: "#4B3461", fontSize: "18px", padding: "10px", whiteSpace: "nowrap", fontWeight: "300"}}>3D<span style={{fontWeight: "600"}}>Street</span></h1></a>
 			<StreetName />
 		    <CameraToolbar />
 		

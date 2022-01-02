@@ -19,7 +19,7 @@ export default class StreetName extends React.Component {
   render() {
     return (
       <div id="streetname">
-        <p style={{border: "1px solid black", borderRadius: "5px", background: "white", paddingRight: "5px", paddingLeft: "5px"}}>{this.state.streetName}</p>
+        <p style={{border: "1px solid black", borderRadius: "5px", background: "white", paddingRight: "5px", paddingLeft: "5px", fontWeight: "600"}}>{this.state.streetName}</p>
       </div>
     );
   }
