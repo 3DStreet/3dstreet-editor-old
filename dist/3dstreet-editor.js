@@ -19489,6 +19489,11 @@ var Main = function (_React$Component) {
                   'span',
                   { style: { fontWeight: "600" } },
                   'Street'
+                ),
+                _react2.default.createElement(
+                  'span',
+                  { style: { color: "#000000", fontSize: "10px", borderRadius: "3px", background: "#F7CC4E", margin: "6px", padding: "1.5px", paddingRight: "8px", paddingLeft: "8px", verticalAlign: "middle" } },
+                  'Editor'
                 )
               )
             ),
